@@ -1,0 +1,117 @@
+{
+  "seed": 42,
+  "cards": [
+    {
+      "dataset": "brfss2015_heart",
+      "source": "Kaggle alexteboul/heart-disease-health-indicators-dataset (CDC BRFSS 2015, cleaned)",
+      "url": "https://www.kaggle.com/datasets/alexteboul/heart-disease-health-indicators-dataset",
+      "rows": 253680,
+      "expected_rows": 253680,
+      "predictors": 21,
+      "outcome": "HeartDiseaseorAttack",
+      "outcome_definition": "Ever told coronary heart disease or myocardial infarction (_MICHD), self-reported",
+      "positives": 23893,
+      "prevalence": 0.09418558814254178,
+      "missing_values": 0
+    },
+    {
+      "dataset": "cdc_diabetes",
+      "source": "UCI Machine Learning Repository id 891 (CDC BRFSS 2015, cleaned)",
+      "url": "https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators",
+      "rows": 253680,
+      "expected_rows": 253680,
+      "predictors": 21,
+      "outcome": "Diabetes_binary",
+      "outcome_definition": "Diabetes_binary as published (self-reported); notebook 01 checks how prediabetes is coded",
+      "positives": 35346,
+      "prevalence": 0.13933301797540207,
+      "missing_values": 0
+    },
+    {
+      "dataset": "uci_heart",
+      "source": "UCI Machine Learning Repository id 45 (four sites: Cleveland, Hungary, Switzerland, VA Long Beach)",
+      "url": "https://archive.ics.uci.edu/static/public/45/heart+disease.zip",
+      "rows": 920,
+      "expected_rows": 920,
+      "predictors": 13,
+      "outcome": "num",
+      "outcome_definition": "Angiographic disease: num > 0 (any major vessel with more than 50% narrowing)",
+      "positives": 509,
+      "prevalence": 0.5532608695652174,
+      "missing_values": 1759
+    },
+    {
+      "dataset": "cardio70k",
+      "source": "Kaggle sulianova/cardiovascular-disease-dataset",
+      "url": "https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset",
+      "rows": 70000,
+      "expected_rows": 70000,
+      "predictors": 11,
+      "outcome": "cardio",
+      "outcome_definition": "Presence of cardiovascular disease as recorded at examination",
+      "positives": 34979,
+      "prevalence": 0.4997,
+      "missing_values": 0
+    }
+  ],
+  "sha256": {
+    "brfss2015_heart": "953fb23bb131736d7879539a071d3f6d1eaae8d4867ab05335d0ba89b94d5f99",
+    "cardio70k": "21a705d23381b0dfd6a6416da701b490744f1fc3b47e9ff3db3968c420ffa10c",
+    "cdc_diabetes": "95213aea77507410829efed404c82cbb554f437c3af478fb73e0d7da975332ff",
+    "uci_heart_cleveland": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+    "uci_heart_hungarian": "d1ad108f785768cd3d7e82dc522e6f5a61eea93cccfb3a46ee8076f73fc3d796",
+    "uci_heart_switzerland": "834a405ccf5b66ab4056bb77794adc8df0b7125186454c0a1d002d33c6c3b314",
+    "uci_heart_va": "e7c93d8d0d2acdadfa4c5e8de768e2191e7f618b952e29623f1f0d5949ff6b8f"
+  },
+  "uci_rows_per_site": {
+    "cleveland": 303,
+    "hungarian": 294,
+    "va": 200,
+    "switzerland": 123
+  },
+  "uci_prevalence_per_site": {
+    "cleveland": 0.4587,
+    "hungarian": 0.3605,
+    "switzerland": 0.935,
+    "va": 0.745
+  },
+  "brfss_heart_and_cdc_diabetes": {
+    "shared_predictors_identical_row_by_row": true,
+    "shared_predictor_sums_identical": true,
+    "diabetes_binary_crosstab": {
+      "Diabetes=0": {
+        "Diabetes_binary=0": 213703,
+        "Diabetes_binary=1": 0
+      },
+      "Diabetes=1": {
+        "Diabetes_binary=0": 4631,
+        "Diabetes_binary=1": 0
+      },
+      "Diabetes=2": {
+        "Diabetes_binary=0": 0,
+        "Diabetes_binary=1": 35346
+      }
+    },
+    "diabetes_binary_positives": 35346,
+    "heart_table_diabetes_level_counts": {
+      "Diabetes=0": 213703,
+      "Diabetes=1": 4631,
+      "Diabetes=2": 35346
+    },
+    "prediabetes_coded_as": 0,
+    "coding_method": "row-by-row crosstab"
+  },
+  "_written_utc": "2026-11-07T18:54:49+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": null,
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

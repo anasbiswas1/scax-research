@@ -1,0 +1,17 @@
+
+numpy
+pandas
+scipy
+statsmodels
+scikit-learn
+xgboost
+lightgbm
+z3-solver
+python-sat
+pyreadstat
+pyarrow
+matplotlib
+ucimlrepo
+kaggle==1.6.17
+pytest
+nbformat

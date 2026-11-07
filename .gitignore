@@ -1,0 +1,23 @@
+
+# data and large artefacts stay on Drive (patterns anchored to the repository root)
+/datasets/
+/data/
+/models/
+/cache/
+*.parquet
+*.zip
+*.XPT
+*.xpt
+*.pkl
+*.joblib
+*.keras
+# credentials
+.git-credentials
+.gitconfig
+kaggle.json
+.env
+# python and notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/

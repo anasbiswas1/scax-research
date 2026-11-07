@@ -1,0 +1,24 @@
+{
+  "z3_unsat_check": true,
+  "z3_sat_check": true,
+  "rc2_optimum_check": true,
+  "clopper_pearson_matches_statsmodels": true,
+  "naive_quantile_at_1e-18": 1.0,
+  "inverse_survival_at_1e-18": 0.07955042824682869,
+  "kaggle_installed": true,
+  "ucimlrepo_installed": true,
+  "passed": true,
+  "_written_utc": "2026-11-07T18:51:03+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.3.3",
+    "pysat": "1.9.dev21",
+    "statsmodels": "0.15.0"
+  }
+}

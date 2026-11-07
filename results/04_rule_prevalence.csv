@@ -1,0 +1,14 @@
+rule,eps,rule_share,prevalence,features
+P1,0.0,0.21415,0.21415,Age HighBP
+P1,0.05,0.21415,0.24273499999999995,Age HighBP
+P1,0.1,0.21415,0.27132,Age HighBP
+P1,0.2,0.21415,0.32849000000000006,Age HighBP
+P2,0.0,0.1874,0.1874,BMI HighBP HighChol Smoker
+P2,0.05,0.1874,0.21866,BMI HighBP HighChol Smoker
+P2,0.1,0.1874,0.2499200000000001,BMI HighBP HighChol Smoker
+P2,0.2,0.1874,0.31244000000000005,BMI HighBP HighChol Smoker
+P3,0.0,0.1487,0.1487,Age Diabetes DiffWalk GenHlth HighBP Sex Stroke
+P3,0.05,0.1487,0.18383,Age Diabetes DiffWalk GenHlth HighBP Sex Stroke
+P3,0.1,0.1487,0.21896000000000004,Age Diabetes DiffWalk GenHlth HighBP Sex Stroke
+P3,0.2,0.1487,0.28922000000000003,Age Diabetes DiffWalk GenHlth HighBP Sex Stroke
+P4,,,0.1,Age BMI HighBP HighChol

@@ -1,0 +1,133 @@
+{
+  "seed": 42,
+  "population_size": 20000,
+  "source_file_sha256": "953fb23bb131736d7879539a071d3f6d1eaae8d4867ab05335d0ba89b94d5f99",
+  "population_indices_sha256": "ba7e4b8f83b7e95af8201c5db703bdad254b805ef9bb4d14bc4031c361eaabbd",
+  "population_matrix_sha256": "5b45c549382ea03710f659d8fb815c7339b12a62b9c9f2e28caa095c52bd1763",
+  "distinct_covariate_rows": 19579,
+  "p4_intercept": -3.7935953857286666,
+  "p4_target_prevalence": 0.1,
+  "noise_levels": [
+    0.0,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "rule_prevalence": [
+    {
+      "rule": "P1",
+      "eps": 0.0,
+      "rule_share": 0.21415,
+      "prevalence": 0.21415,
+      "features": "Age HighBP"
+    },
+    {
+      "rule": "P1",
+      "eps": 0.05,
+      "rule_share": 0.21415,
+      "prevalence": 0.24273499999999995,
+      "features": "Age HighBP"
+    },
+    {
+      "rule": "P1",
+      "eps": 0.1,
+      "rule_share": 0.21415,
+      "prevalence": 0.27132,
+      "features": "Age HighBP"
+    },
+    {
+      "rule": "P1",
+      "eps": 0.2,
+      "rule_share": 0.21415,
+      "prevalence": 0.32849000000000006,
+      "features": "Age HighBP"
+    },
+    {
+      "rule": "P2",
+      "eps": 0.0,
+      "rule_share": 0.1874,
+      "prevalence": 0.1874,
+      "features": "BMI HighBP HighChol Smoker"
+    },
+    {
+      "rule": "P2",
+      "eps": 0.05,
+      "rule_share": 0.1874,
+      "prevalence": 0.21866,
+      "features": "BMI HighBP HighChol Smoker"
+    },
+    {
+      "rule": "P2",
+      "eps": 0.1,
+      "rule_share": 0.1874,
+      "prevalence": 0.2499200000000001,
+      "features": "BMI HighBP HighChol Smoker"
+    },
+    {
+      "rule": "P2",
+      "eps": 0.2,
+      "rule_share": 0.1874,
+      "prevalence": 0.31244000000000005,
+      "features": "BMI HighBP HighChol Smoker"
+    },
+    {
+      "rule": "P3",
+      "eps": 0.0,
+      "rule_share": 0.1487,
+      "prevalence": 0.1487,
+      "features": "Age Diabetes DiffWalk GenHlth HighBP Sex Stroke"
+    },
+    {
+      "rule": "P3",
+      "eps": 0.05,
+      "rule_share": 0.1487,
+      "prevalence": 0.18383,
+      "features": "Age Diabetes DiffWalk GenHlth HighBP Sex Stroke"
+    },
+    {
+      "rule": "P3",
+      "eps": 0.1,
+      "rule_share": 0.1487,
+      "prevalence": 0.21896000000000004,
+      "features": "Age Diabetes DiffWalk GenHlth HighBP Sex Stroke"
+    },
+    {
+      "rule": "P3",
+      "eps": 0.2,
+      "rule_share": 0.1487,
+      "prevalence": 0.28922000000000003,
+      "features": "Age Diabetes DiffWalk GenHlth HighBP Sex Stroke"
+    },
+    {
+      "rule": "P4",
+      "eps": NaN,
+      "rule_share": NaN,
+      "prevalence": 0.1,
+      "features": "Age BMI HighBP HighChol"
+    }
+  ],
+  "oracle_checks": {
+    "p1_rule_box_risk_equals_eps": {
+      "0.00": 0.0,
+      "0.05": 0.049999999999999926,
+      "0.10": 0.09999999999999999,
+      "0.20": 0.19999999999999998
+    },
+    "whole_space_risk_equals_prevalence": true,
+    "simulation_max_abs_z": 1.810675343679824,
+    "overlap_example_selective_risk": 0.09523809523809523
+  },
+  "_written_utc": "2026-11-07T19:00:03+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": null,
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

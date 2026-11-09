@@ -54,6 +54,15 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   computed; an unregularised model makes every population row its own cell and takes several
   seconds per cell.
 
+- Notebook 05, policy certification: negative-outcome releases (target alpha_0) and enrichment
+  releases (target alpha_1 = 1 - beta) are certified as two separate policies, each at delta_2 / 2,
+  with their own alpha_sel; one error rate over both kinds would mix a 5% claim with a 70% claim.
+  By the union bound both statements hold together with probability at least 1 - delta_2.
+- Notebook 05, freezing: only training-portion rows are kept in memory; the explained subsamples of
+  calibration split 2 and the test split are chosen from row indices alone. alpha_sel for each kind
+  is the smallest value on a fixed grid that the development selective error would pass at the
+  expected final number of accepted patients.
+
 ## Notebook map
 
 | NB | Purpose |

@@ -28,3 +28,10 @@ def test_overlap_union_exceeds_each_box():
     in2 = np.r_[np.ones(95), np.zeros(5), np.ones(5)].astype(bool)
     assert err[in1].mean() == 0.05 and err[in2].mean() == 0.05
     assert abs(err[in1 | in2].mean() - 10 / 105) < 1e-12
+
+
+def test_policy_by_class_splits_delta():
+    from scax.certify.decision import certify_policy_by_class
+    out = certify_policy_by_class({0: 30, 1: 600}, {0: 2000, 1: 1000}, {0: 0.05, 1: 0.70}, 0.025)
+    assert out[0]["delta_2"] == 0.0125 and out[1]["delta_2"] == 0.0125
+    assert out[0]["certified"] and out[1]["certified"]

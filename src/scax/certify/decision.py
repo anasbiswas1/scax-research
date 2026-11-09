@@ -32,3 +32,13 @@ def certify_policy(errors: int, accepted: int, alpha_sel: float, delta_2: float)
     u = float(cp_upper(errors, accepted, delta_2)) if accepted > 0 else 1.0
     return {"accepted": int(accepted), "errors": int(errors), "U_sel": u, "alpha_sel": alpha_sel,
             "delta_2": delta_2, "certified": bool(u <= alpha_sel)}
+
+
+def certify_policy_by_class(errors: dict, accepted: dict, alpha_sel: dict, delta_2: float) -> dict:
+    """Separate policy tests for negative-outcome releases (class 0) and enrichment releases (class 1).
+
+    One error rate over both kinds would mix a 5% claim with a 70% claim, so each kind is certified on
+    its own at delta_2 / 2; by the union bound both statements hold together with probability at least
+    1 - delta_2.
+    """
+    return {y: certify_policy(errors[y], accepted[y], alpha_sel[y], delta_2 / 2) for y in (0, 1)}

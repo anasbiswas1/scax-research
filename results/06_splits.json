@@ -1,0 +1,41 @@
+{
+  "seed": 42,
+  "shares": {
+    "train": 0.4,
+    "cal1": 0.3,
+    "cal2": 0.15,
+    "test": 0.15
+  },
+  "dev_train_share": 0.75,
+  "splits": {
+    "brfss2015_heart": {
+      "dev_train": 76104,
+      "dev_cal": 25368,
+      "cal1": 76104,
+      "cal2": 38052,
+      "test": 38052,
+      "sha256": "ff1956d2ce521004479ec4d1a1d0933ad8f314fbadf69de8b6056c9df01311b6"
+    },
+    "cdc_diabetes": {
+      "dev_train": 76104,
+      "dev_cal": 25368,
+      "cal1": 76104,
+      "cal2": 38052,
+      "test": 38052,
+      "sha256": "ff1956d2ce521004479ec4d1a1d0933ad8f314fbadf69de8b6056c9df01311b6"
+    }
+  },
+  "_written_utc": "2026-11-09T00:15:29+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.3.3",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

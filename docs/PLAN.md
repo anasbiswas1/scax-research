@@ -1,4 +1,3 @@
-
 # SCAX plan (fixed)
 
 The full plan, with the literature review, formal definitions, proofs and experiment design, is the
@@ -33,6 +32,27 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
 - Validity on the synthetic population is judged by the three-way rule (upper limit at or below
   delta: low enough; lower limit above delta: excess; otherwise inconclusive), with multiplicity
   correction, and always reported with the certification rate.
+
+## Implementation decisions recorded during the work
+
+- 7 Nov 2026, notebook 01: in the CDC Diabetes table prediabetes is coded 0, so task B is
+  diagnosed diabetes against no diabetes or prediabetes (plan v2 Sections 3 and 6.1 said
+  "prediabetes or diabetes"; corrected). The heart and diabetes tables hold the same 253,680
+  respondents in the same row order: they are two outcomes on one population, not two datasets.
+- Stage 2, soundness: Z3 on the path-literal or real-input encoding takes about 0.1 to 1 s per query
+  on 100-tree models and times out on some large boxes, too slow for the thousands of checks each
+  explanation needs. Soundness is therefore decided by an exact leaf branch-and-bound over grid
+  cells in integer arithmetic (encode/cell_search.py; complete, so its answer is exact), after the
+  interval pre-check. Every candidate box is re-checked by a second exact implementation on real
+  thresholds and fractions that shares no data structure with the first (encode/real_search.py); a
+  disagreement stops the run, a budget overrun removes the box. Z3 checks a random sample of
+  candidate boxes, and brute-force enumeration checks small ensembles exhaustively (notebook 06 and
+  the unit tests). PySAT is not used for boosted trees, whose rational leaf values would need a
+  pseudo-Boolean library.
+- Stage 2, synthetic study model: XGBoost with 100 trees of depth 4, min_child_weight 50, gamma 2
+  and max_bin 32, so that candidate sets for every one of the ~18,000 population cells can be
+  computed; an unregularised model makes every population row its own cell and takes several
+  seconds per cell.
 
 ## Notebook map
 

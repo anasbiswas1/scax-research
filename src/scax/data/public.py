@@ -1,4 +1,3 @@
-
 """Public datasets used by SCAX: sources, downloads, loaders and checks.
 
 Each dataset is its own task with its own recorded outcome; tables are never pooled across outcomes.
@@ -46,7 +45,7 @@ SPECS = {
         "cdc_diabetes", "UCI Machine Learning Repository id 891 (CDC BRFSS 2015, cleaned)",
         "https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators",
         "cdc_diabetes_health_indicators.csv", "Diabetes_binary",
-        "Diabetes_binary as published (self-reported); notebook 01 checks how prediabetes is coded", 253680),
+        "Self-reported diagnosed diabetes; prediabetes and no diabetes are both coded 0 (checked row by row against the heart table in notebook 01)", 253680),
     "uci_heart": Spec(
         "uci_heart", "UCI Machine Learning Repository id 45 (four sites: Cleveland, Hungary, Switzerland, VA Long Beach)",
         "https://archive.ics.uci.edu/static/public/45/heart+disease.zip",

@@ -1,0 +1,57 @@
+{
+  "box_table_sha256": {
+    "cdc_diabetes": "b400f3dd4e068fc3846744e02986be245f097b2f3962cc78a1ffe7d69c697d9d",
+    "brfss2015_heart": "f234d01c5c83d3315ce4162c48cf733d965746e99058b665cb5623103055611e"
+  },
+  "frozen_config_sha256": {
+    "cdc_diabetes": "42020030cd4a0f422f165f1f4130ae76b8ff48708090699343de7aae187489df",
+    "brfss2015_heart": "c656821f5d64dd87e4cd6b9b8b2dbccf9e483eb0ab7d45d88183fef527d57e1e"
+  },
+  "verification": {
+    "cdc_diabetes": {
+      "eligible_boxes": 63781,
+      "sound": 63781,
+      "unknown": 0,
+      "median_ms": 3.657113000372192,
+      "z3_sample": {
+        "sound": 58,
+        "unknown": 2,
+        "checked": 60
+      },
+      "seconds": 443.1666946411133
+    },
+    "brfss2015_heart": {
+      "eligible_boxes": 62356,
+      "sound": 62356,
+      "unknown": 0,
+      "median_ms": 2.7963809998254874,
+      "z3_sample": {
+        "sound": 59,
+        "unknown": 1,
+        "checked": 60
+      },
+      "seconds": 291.8807611465454
+    }
+  },
+  "candidate_cells": {
+    "cdc_diabetes": 7775,
+    "brfss2015_heart": 13788
+  },
+  "median_seconds_per_cell": {
+    "cdc_diabetes": 0.5462456789999806,
+    "brfss2015_heart": 0.4390006060007181
+  },
+  "_written_utc": "2026-11-10T11:36:46+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.4.0",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

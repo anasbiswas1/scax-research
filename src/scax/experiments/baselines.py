@@ -1,10 +1,12 @@
 """Baseline comparisons (plan Sections 6.8 and 7.1, RQ3).
 
-Real data. The frozen model, prior and candidate sets are kept; calibration splits 1 and 2 are pooled
-and re-partitioned at random into new splits of the same sizes (re-draws). The explained patients of
-the old split 2 that fall into the new split 2 are a uniform random subsample of it, because the
-splits and the subsample were drawn at random without labels. Every method then uses the same
-labelled records: the new split 1 and the explained patients of the new split 2. All methods are
+Real data. The frozen model, prior and candidate sets are kept. In each re-draw the explained
+patients of calibration split 2 stay in split 2, and the other records of splits 1 and 2 are
+re-partitioned at random into a new split 1 of the original size and the rest of split 2. Because the
+splits and the explained subsample were drawn at random without labels, the explained patients are a
+uniform random subset of the pooled records, so each re-draw is a random draw of the original design,
+and the policy test uses the same number of explained patients as notebook 09. Every method uses the
+same labelled records: the new split 1 and the explained patients of split 2. All methods are
 evaluated on the same 5,000 explained test patients; box claims are checked against the full test
 split, which no method sees.
 
@@ -50,6 +52,26 @@ def axp_order0(cands):
         if c.order == 0 and c.kind == "axp":
             return c
     return None
+
+
+def redraw_split(n_pool, n_cal1, keep_in_split2, seed):
+    """Boolean mask of the new split 1 over the pooled records; records in keep_in_split2 never enter it."""
+    rng = np.random.default_rng(seed)
+    free = np.setdiff1d(np.arange(n_pool), np.asarray(keep_in_split2))
+    in1 = np.zeros(n_pool, dtype=bool)
+    in1[rng.choice(free, n_cal1, replace=False)] = True
+    return in1
+
+
+def candidate_flags(cands, K):
+    """Per candidate: kind code (0 = AXp, 1 = inflated) and whether it is the widest box of its order."""
+    best = {}
+    for i, c in enumerate(cands):
+        v = sum(math.log((b - a + 1) / (K[j] + 1)) for j, a, b in c.key)
+        if c.order not in best or v > best[c.order][0]:
+            best[c.order] = (v, i)
+    widest = {i for _, i in best.values()}
+    return [(0 if c.kind == "axp" else 1, i in widest) for i, c in enumerate(cands)]
 
 
 def released_metrics(rel, kind_of_box, yhat, y, size, n_cal, n_test, k_test, alpha, n_patients):
@@ -117,22 +139,28 @@ class RealComparison:
         listsT = [gen.cache[gen.cell_key(c)] for c in CT]
         M = ft.M
 
-        def pairs(lists):
-            pp, pb = [], []
-            for i, cands in enumerate(lists):
-                for c in cands:
-                    if c.order < M and (c.key, c.y) in box_index:
-                        pp.append(i); pb.append(box_index[(c.key, c.y)])
-            return np.array(pp, dtype=np.int64), np.array(pb, dtype=np.int64)
+        K = self.g.K
 
-        self.ppE, self.pbE = pairs(listsE)
-        self.ppT, self.pbT = pairs(listsT)
+        def pairs(lists):
+            pp, pb, po, pk, pw = [], [], [], [], []
+            for i, cands in enumerate(lists):
+                for c, (kind, wide) in zip(cands, candidate_flags(cands, K)):
+                    if (c.key, c.y) in box_index:
+                        pp.append(i); pb.append(box_index[(c.key, c.y)]); po.append(c.order); pk.append(kind); pw.append(wide)
+            arr = lambda v, t: np.array(v, dtype=t)
+            return arr(pp, np.int64), arr(pb, np.int64), arr(po, np.int64), arr(pk, np.int8), arr(pw, bool)
+
+        self.ppE, self.pbE, self.poE, self.pkE, self.pwE = pairs(listsE)
+        self.ppT, self.pbT, self.poT, self.pkT, self.pwT = pairs(listsT)
+        self.M = M
+        mE, mT = self.poE < M, self.poT < M          # the frozen candidate sets: orders below M
+        self.ppE, self.pbE, self.poE, self.pkE, self.pwE = (a[mE] for a in (self.ppE, self.pbE, self.poE, self.pkE, self.pwE))
+        self.ppT, self.pbT, self.poT, self.pkT, self.pwT = (a[mT] for a in (self.ppT, self.pbT, self.poT, self.pkT, self.pwT))
         self.yhatE = ft.pred.predict_cells(CE).astype(int)
         self.yhatT = ft.pred.predict_cells(CT).astype(int)
         self.yE, self.yT = np.asarray(y)[E], np.asarray(y)[T]
         self.XT, self.CT = Xa[T], CT
         self.marginT = ft.pred.score(Xa[T])
-        K = self.g.K
         self.b1 = np.array([box_index[(c.key, c.y)] for c in (axp_order0(l) for l in listsT)])
         self.b2 = np.array([box_index[(c.key, c.y)] for c in (widest_order0(l, K) for l in listsT)])
         test_all = splits.indices(code, "test")
@@ -166,10 +194,7 @@ class RealComparison:
 
     # ------------------------------------------------------------------ one re-draw
     def split(self, seed):
-        rng = np.random.default_rng(seed)
-        in1 = np.zeros(len(self.pool), dtype=bool)
-        in1[rng.permutation(len(self.pool))[: self.n_cal1]] = True
-        return in1
+        return redraw_split(len(self.pool), self.n_cal1, self.E_pos, seed)
 
     def _subset_pairs(self, pp, pb, keep_patients):
         idx = np.flatnonzero(keep_patients)

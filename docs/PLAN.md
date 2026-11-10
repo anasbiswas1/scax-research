@@ -64,10 +64,23 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   expected final number of accepted patients.
 
 - Notebook 11, units: the plan's paired comparisons use 5 model seeds x 20 calibration re-draws.
-  Notebook 11 uses 20 re-draws of the frozen model: calibration splits 1 and 2 are pooled and
-  re-partitioned at random into splits of the same sizes, and the candidate sets of notebook 08 are
-  reused. Extra model seeds need new candidate sets for every explained patient and are run with a
-  smaller explained sample in notebook 12.
+  Notebook 11 uses 20 calibration re-draws of the frozen model (design below) and reuses the
+  candidate sets of notebook 08. Extra model seeds need new candidate sets for every explained
+  patient and are run with a smaller explained sample in notebook 12b.
+- Notebook 11, re-draw design: the explained patients of calibration split 2 stay in split 2 in
+  every re-draw, and split 1 is drawn at random from the other records of splits 1 and 2. This is a
+  random draw of the original design (the explained patients are a uniform random subset of the
+  pooled records) and keeps the policy test at the size used in notebook 09. The first run of
+  notebook 11 re-partitioned all records, so its policy tests used only the explained patients that
+  fell into the new split 2, about half of them; it was rerun with this design.
+- Notebook 12, ablations on the frozen model, one factor at a time on the final splits: prior
+  (Occam only, mixture with lambda 0.25, 0.5, 0.75, training support only), explanation construction
+  (AXps only, widest inflated box of each order only, every sound box on the inflation path),
+  selection rule (most succinct, largest support, tightest bound), candidates M (1, 3, 5, 10) and
+  subsamples of calibration split 1 (5,000 to 40,000 records, 10 draws each). The most general
+  explanation is not run (as for B3). Development results for M and lambda are those of notebook 05.
+  Model factors (family, depth, trees, monotone constraints, max_bin) and extra model seeds need new
+  candidate sets and are run in notebook 12b on smaller explained samples.
 - Notebook 11, equal calibration budget: every method uses the same labelled records, split 1 of the
   re-draw plus the explained patients of its split 2. SCAX releases only boxes that passed the second
   exact check; boxes that become releasable in a re-draw are checked then. The per-box-bound and
@@ -78,8 +91,8 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   rules) fitted on 20,000 training rows, every rule claimed for both classes, prior uniform over the
   dictionary. B8 runs on the synthetic population, where outcome risk is known, with confidence
   floors 1 - alpha_y. The synthetic comparison uses rule P4 only: under P1 to P3 every box that
-  follows the rule has true risk equal to the noise level, so every method's claims are true there. B9 and B10 run per kind at the frozen alpha_sel and delta_2 / 2; B11 at
-  epsilon = 0.05. B12 uses anchor-exp (the Anchors authors' implementation) because alibi does not
+  follows the rule has true risk equal to the noise level, so every method's claims are true there.
+  B9 and B10 run per kind at the frozen alpha_sel and delta_2 / 2; B11 at epsilon = 0.05. B12 uses anchor-exp (the Anchors authors' implementation) because alibi does not
   install (its spaCy dependency fails to build), and SHAP values from the native XGBoost model
   retrained with the frozen settings, used only when its export hash equals the frozen model hash.
 

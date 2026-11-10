@@ -46,12 +46,13 @@ class Stats:
 class SoundnessOracle:
     """Exact soundness with memoisation: interval pre-check, then branch-and-bound."""
 
-    def __init__(self, pred: ExactPredictor, node_budget: int = 200000):
+    def __init__(self, pred: ExactPredictor, node_budget: int = 200000, memo_limit: int = 300000):
         self.pred = pred
         self.grid = pred.grid
         self.ib = IntervalBound(pred)
         self.cs = CellSearch(self.ib, node_budget=node_budget)
         self.memo = {}
+        self.memo_limit = memo_limit          # the memo is a pure cache; clearing it never changes an answer
         self.stats = Stats()
 
     def sound(self, box, y) -> bool:
@@ -69,6 +70,8 @@ class SoundnessOracle:
             if out == "unknown":
                 self.stats.search_unknown += 1
             r = out == "sound"
+        if len(self.memo) >= self.memo_limit:
+            self.memo.clear()
         self.memo[k] = r
         return r
 

@@ -1,0 +1,189 @@
+{
+  "frozen_config_sha256": {
+    "cdc_diabetes": "42020030cd4a0f422f165f1f4130ae76b8ff48708090699343de7aae187489df",
+    "brfss2015_heart": "c656821f5d64dd87e4cd6b9b8b2dbccf9e483eb0ab7d45d88183fef527d57e1e"
+  },
+  "box_table_sha256": {
+    "cdc_diabetes": "b400f3dd4e068fc3846744e02986be245f097b2f3962cc78a1ffe7d69c697d9d",
+    "brfss2015_heart": "f234d01c5c83d3315ce4162c48cf733d965746e99058b665cb5623103055611e"
+  },
+  "policy": {
+    "cdc_diabetes": {
+      "negative_outcome": {
+        "accepted": 1673,
+        "errors": 56,
+        "U_sel": 0.04471645653721057,
+        "alpha_sel": 0.05,
+        "delta_2": 0.0125,
+        "certified": true
+      },
+      "enrichment": {
+        "accepted": 1004,
+        "errors": 682,
+        "U_sel": 0.7120807432349797,
+        "alpha_sel": 0.7,
+        "delta_2": 0.0125,
+        "certified": false
+      }
+    },
+    "brfss2015_heart": {
+      "negative_outcome": {
+        "accepted": 6101,
+        "errors": 140,
+        "U_sel": 0.027625458229914218,
+        "alpha_sel": 0.05,
+        "delta_2": 0.0125,
+        "certified": true
+      },
+      "enrichment": {
+        "accepted": 2526,
+        "errors": 1893,
+        "U_sel": 0.7685521346236438,
+        "alpha_sel": 0.8,
+        "delta_2": 0.0125,
+        "certified": true
+      }
+    }
+  },
+  "main": [
+    {
+      "task": "cdc_diabetes",
+      "kind": "negative outcome",
+      "alpha_0": 0.05,
+      "beta": 0.3,
+      "target": 0.05,
+      "frozen_targets": true,
+      "cal2_accepted": 1673,
+      "cal2_errors": 56,
+      "U_sel": 0.04471645653721057,
+      "alpha_sel": 0.05,
+      "policy_certified": true,
+      "test_patients": 5000,
+      "test_certified_share": 0.5864,
+      "test_certified_share_of_predicted_class": 0.9473344103392569,
+      "test_accepted": 2932,
+      "test_errors": 117,
+      "test_error_rate": 0.03990450204638472,
+      "test_error_lower_95": 0.03413157296761696,
+      "test_error_upper_95": 0.04637200831442712,
+      "mean_size": 5.161664392905866,
+      "median_calibration_support": 6445.0
+    },
+    {
+      "task": "cdc_diabetes",
+      "kind": "enrichment",
+      "alpha_0": 0.05,
+      "beta": 0.3,
+      "target": 0.7,
+      "frozen_targets": true,
+      "cal2_accepted": 1004,
+      "cal2_errors": 682,
+      "U_sel": 0.7120807432349797,
+      "alpha_sel": 0.7,
+      "policy_certified": false,
+      "test_patients": 5000,
+      "test_certified_share": 0.3498,
+      "test_certified_share_of_predicted_class": 0.9181102362204724,
+      "test_accepted": 1749,
+      "test_errors": 1186,
+      "test_error_rate": 0.6781017724413951,
+      "test_error_lower_95": 0.6592279416310886,
+      "test_error_upper_95": 0.6965321245928202,
+      "mean_size": 6.1778158947970265,
+      "median_calibration_support": 4053.0
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "negative outcome",
+      "alpha_0": 0.05,
+      "beta": 0.3,
+      "target": 0.05,
+      "frozen_targets": true,
+      "cal2_accepted": 6101,
+      "cal2_errors": 140,
+      "U_sel": 0.027625458229914218,
+      "alpha_sel": 0.05,
+      "policy_certified": true,
+      "test_patients": 5000,
+      "test_certified_share": 0.6526,
+      "test_certified_share_of_predicted_class": 0.9778243931675157,
+      "test_accepted": 3263,
+      "test_errors": 75,
+      "test_error_rate": 0.022984983144345696,
+      "test_error_lower_95": 0.018837178415608145,
+      "test_error_upper_95": 0.02778517535947295,
+      "mean_size": 5.9475942384308915,
+      "median_calibration_support": 7394.0
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "enrichment",
+      "alpha_0": 0.05,
+      "beta": 0.3,
+      "target": 0.7,
+      "frozen_targets": true,
+      "cal2_accepted": 2526,
+      "cal2_errors": 1893,
+      "U_sel": 0.7685521346236438,
+      "alpha_sel": 0.8,
+      "policy_certified": true,
+      "test_patients": 5000,
+      "test_certified_share": 0.26,
+      "test_certified_share_of_predicted_class": 0.7817197835237523,
+      "test_accepted": 1300,
+      "test_errors": 948,
+      "test_error_rate": 0.7292307692307692,
+      "test_error_lower_95": 0.7082019831598707,
+      "test_error_upper_95": 0.7494885700155993,
+      "mean_size": 5.293846153846154,
+      "median_calibration_support": 1798.0
+    }
+  ],
+  "model_metrics": [
+    {
+      "task": "cdc_diabetes",
+      "n": 38052,
+      "prevalence": 0.14009776095868812,
+      "auroc": 0.8302363574748833,
+      "auprc": 0.43824870196351984,
+      "brier": 0.0968574358268825,
+      "ece_15_equal_mass": 0.005322049275835648,
+      "calibration_slope": 1.0023970477140893,
+      "calibration_intercept": 0.014533274119567728,
+      "sensitivity": 0.8246107672106546,
+      "specificity": 0.6829864612939702,
+      "predicted_positive_share": 0.3881267738883633
+    },
+    {
+      "task": "brfss2015_heart",
+      "n": 38052,
+      "prevalence": 0.09573741196257753,
+      "auroc": 0.8482355768321408,
+      "auprc": 0.38145927919404937,
+      "brier": 0.07088446943260443,
+      "ece_15_equal_mass": 0.005026640943710557,
+      "calibration_slope": 0.9968394193699693,
+      "calibration_intercept": 0.023695868592552873,
+      "sensitivity": 0.8289870985451551,
+      "specificity": 0.7130401929727688,
+      "predicted_positive_share": 0.33885209713024284
+    }
+  ],
+  "consistency_flags": {
+    "cdc_diabetes": 0,
+    "brfss2015_heart": 0
+  },
+  "_written_utc": "2026-11-10T12:54:41+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.4.0",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

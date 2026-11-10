@@ -32,30 +32,7 @@
     "repetitions": 200,
     "n1": 10000,
     "M": 10,
-    "diagnostics": [
-      {
-        "targets": [
-          0.05,
-          0.7
-        ],
-        "cells": 17918,
-        "boxes": 22244,
-        "rules": 184,
-        "sound_rule_claims": 42,
-        "seconds": 237.19253015518188
-      },
-      {
-        "targets": [
-          0.02,
-          0.5
-        ],
-        "cells": 17918,
-        "boxes": 22244,
-        "rules": 184,
-        "sound_rule_claims": 42,
-        "seconds": 32.05654001235962
-      }
-    ]
+    "diagnostics": []
   },
   "key_rows": [
     {
@@ -387,7 +364,7 @@
       "anchor_sound_share": 0.0
     }
   ],
-  "_written_utc": "2026-11-10T18:37:23+00:00",
+  "_written_utc": "2026-11-10T19:52:54+00:00",
   "_versions": {
     "python": "3.13.18",
     "numpy": "2.4.6",

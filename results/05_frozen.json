@@ -1,0 +1,86 @@
+{
+  "frozen_config_sha256": {
+    "cdc_diabetes": "42020030cd4a0f422f165f1f4130ae76b8ff48708090699343de7aae187489df",
+    "brfss2015_heart": "c656821f5d64dd87e4cd6b9b8b2dbccf9e483eb0ab7d45d88183fef527d57e1e"
+  },
+  "written_before_calibration_split_1": true,
+  "choice": {
+    "cdc_diabetes": {
+      "config": "reg_depth4_bin32",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "min_child_weight": 50,
+        "gamma": 2,
+        "max_bin": 32
+      },
+      "lambda": 0.5,
+      "target_met": true
+    },
+    "brfss2015_heart": {
+      "config": "reg_depth4_bin32",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "min_child_weight": 50,
+        "gamma": 2,
+        "max_bin": 32
+      },
+      "lambda": 0.5,
+      "target_met": true
+    }
+  },
+  "targets": {
+    "cdc_diabetes": {
+      "n_cal2_explained": 2874,
+      "alpha_sel": {
+        "0": 0.05,
+        "1": 0.7
+      },
+      "projection": {
+        "0": {
+          "expected_accepted": 1549,
+          "development_selective_error": 0.03153988868274583,
+          "projected_upper": 0.04310868633746753
+        },
+        "1": {
+          "expected_accepted": 1000,
+          "development_selective_error": 0.6379310344827587,
+          "projected_upper": 0.6719949137948882
+        }
+      }
+    },
+    "brfss2015_heart": {
+      "n_cal2_explained": 9346,
+      "alpha_sel": {
+        "0": 0.05,
+        "1": 0.8
+      },
+      "projection": {
+        "0": {
+          "expected_accepted": 5897,
+          "development_selective_error": 0.025356576862123614,
+          "projected_upper": 0.030424904079127995
+        },
+        "1": {
+          "expected_accepted": 1000,
+          "development_selective_error": 0.719626168224299,
+          "projected_upper": 0.7514551791816184
+        }
+      }
+    }
+  },
+  "_written_utc": "2026-11-10T00:03:22+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.3.3",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

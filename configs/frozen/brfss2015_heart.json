@@ -1,0 +1,109 @@
+{
+ "calibration_split_1_opened": false,
+ "candidates": {
+  "M": 10,
+  "inflation": "binary search per side, every sound visited box kept",
+  "node_budget": 200000,
+  "order_seed": 42,
+  "soundness": "interval pre-check, then exact leaf branch-and-bound; every candidate re-checked by the second exact implementation"
+ },
+ "data_sha256": "953fb23bb131736d7879539a071d3f6d1eaae8d4867ab05335d0ba89b94d5f99",
+ "development": {
+  "alpha_sel_projection": {
+   "0": {
+    "development_selective_error": 0.025356576862123614,
+    "expected_accepted": 5897,
+    "projected_upper": 0.030424904079127995
+   },
+   "1": {
+    "development_selective_error": 0.719626168224299,
+    "expected_accepted": 1000,
+    "projected_upper": 0.7514551791816184
+   }
+  },
+  "g1_reference_auroc": 0.8532293329253884,
+  "release_rate_enrichment": 0.107,
+  "release_rate_negative": 0.631,
+  "selective_error_enrichment": 0.719626168224299,
+  "selective_error_negative": 0.025356576862123614,
+  "target_met": true,
+  "target_negative_release": 0.5
+ },
+ "explained": {
+  "cal2": 9346,
+  "cal2_sha256": "63547964be54e92693c82da79da1febafd04da8ff50af16900fd4ff99b8988db",
+  "test": 5000,
+  "test_sha256": "0edacaaa120aa39a01b9da4d3fd8232a1f4a557858e311d1e5f18ecac7d1b09d"
+ },
+ "frozen_model_checks": {
+  "exported_vs_native_disagreements": 0,
+  "log10_family_size": 17.350973645633655,
+  "prior_boxes": 67524,
+  "prior_unverified_removed": 0,
+  "prior_z3_sample": {
+   "checked": 30,
+   "sound": 29,
+   "unknown": 1
+  },
+  "soundness_checks": {
+   "boxes": 300,
+   "primary_vs_second_disagree": 0,
+   "sound": 52,
+   "z3_checked": 30,
+   "z3_disagree": 0,
+   "z3_unknown": 0
+  },
+  "thresholds": 65
+ },
+ "model": {
+  "config": "reg_depth4_bin32",
+  "family": "xgboost",
+  "file": "datasets/derived/frozen/brfss2015_heart__model.json",
+  "params": {
+   "gamma": 2,
+   "max_bin": 32,
+   "max_depth": 4,
+   "min_child_weight": 50,
+   "n_estimators": 100
+  },
+  "sha256": "b5ecb9ace94e7ed1f96a8513302c36d842d3cef64c5d0c0d20c2f453b2c66364",
+  "tau": -2.3570371866226196,
+  "tau_rule": "Youden on 5-fold out-of-fold scores of the training portion",
+  "trained_on": "training portion (dev-train and dev-cal)"
+ },
+ "outcome": "HeartDiseaseorAttack",
+ "outcome_definition": "Ever told coronary heart disease or myocardial infarction (_MICHD), self-reported",
+ "prior": {
+  "file": "datasets/derived/frozen/brfss2015_heart__prior.json",
+  "lambda": 0.5,
+  "sha256": "9d2d9e75797d20387d6d277327e1103ffe9d0042baffed0f5cc87261ea81be7f",
+  "training_patients": 2000,
+  "type": "mixture"
+ },
+ "release_rule": "fewest constrained features, then most calibration support, then tightest bound; abstain if no candidate passes",
+ "seed": 42,
+ "split_sha256": "ff1956d2ce521004479ec4d1a1d0933ad8f314fbadf69de8b6056c9df01311b6",
+ "targets": {
+  "alpha_0": 0.05,
+  "alpha_0_grid": [
+   0.02,
+   0.05,
+   0.1
+  ],
+  "alpha_1": 0.7,
+  "alpha_sel": {
+   "enrichment": 0.8,
+   "negative_outcome": 0.05
+  },
+  "beta": 0.3,
+  "beta_grid": [
+   0.2,
+   0.3,
+   0.5
+  ],
+  "delta_1": 0.025,
+  "delta_2": 0.025,
+  "policy": "negative-outcome and enrichment releases certified separately at delta_2 / 2 each"
+ },
+ "task": "brfss2015_heart"
+}

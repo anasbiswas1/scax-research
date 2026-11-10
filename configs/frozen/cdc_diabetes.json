@@ -1,0 +1,109 @@
+{
+ "calibration_split_1_opened": false,
+ "candidates": {
+  "M": 10,
+  "inflation": "binary search per side, every sound visited box kept",
+  "node_budget": 200000,
+  "order_seed": 42,
+  "soundness": "interval pre-check, then exact leaf branch-and-bound; every candidate re-checked by the second exact implementation"
+ },
+ "data_sha256": "95213aea77507410829efed404c82cbb554f437c3af478fb73e0d7da975332ff",
+ "development": {
+  "alpha_sel_projection": {
+   "0": {
+    "development_selective_error": 0.03153988868274583,
+    "expected_accepted": 1549,
+    "projected_upper": 0.04310868633746753
+   },
+   "1": {
+    "development_selective_error": 0.6379310344827587,
+    "expected_accepted": 1000,
+    "projected_upper": 0.6719949137948882
+   }
+  },
+  "g1_reference_auroc": 0.8277022187270854,
+  "release_rate_enrichment": 0.348,
+  "release_rate_negative": 0.539,
+  "selective_error_enrichment": 0.6379310344827587,
+  "selective_error_negative": 0.03153988868274583,
+  "target_met": true,
+  "target_negative_release": 0.5
+ },
+ "explained": {
+  "cal2": 2874,
+  "cal2_sha256": "bafa8c4c19bfa41967b0c64c58ead805a63fbd4bb3b1c2e27b7a21bc51ec7c38",
+  "test": 5000,
+  "test_sha256": "0edacaaa120aa39a01b9da4d3fd8232a1f4a557858e311d1e5f18ecac7d1b09d"
+ },
+ "frozen_model_checks": {
+  "exported_vs_native_disagreements": 0,
+  "log10_family_size": 17.671258440590375,
+  "prior_boxes": 87408,
+  "prior_unverified_removed": 0,
+  "prior_z3_sample": {
+   "checked": 30,
+   "sound": 29,
+   "unknown": 1
+  },
+  "soundness_checks": {
+   "boxes": 300,
+   "primary_vs_second_disagree": 0,
+   "sound": 54,
+   "z3_checked": 30,
+   "z3_disagree": 0,
+   "z3_unknown": 0
+  },
+  "thresholds": 72
+ },
+ "model": {
+  "config": "reg_depth4_bin32",
+  "family": "xgboost",
+  "file": "datasets/derived/frozen/cdc_diabetes__model.json",
+  "params": {
+   "gamma": 2,
+   "max_bin": 32,
+   "max_depth": 4,
+   "min_child_weight": 50,
+   "n_estimators": 100
+  },
+  "sha256": "105b5739ddd02d53cc22538a8b3194e85c3da50faf03f9f6443b788638bad259",
+  "tau": -1.96975177526474,
+  "tau_rule": "Youden on 5-fold out-of-fold scores of the training portion",
+  "trained_on": "training portion (dev-train and dev-cal)"
+ },
+ "outcome": "Diabetes_binary",
+ "outcome_definition": "Self-reported diagnosed diabetes; prediabetes and no diabetes are both coded 0 (checked row by row against the heart table in notebook 01)",
+ "prior": {
+  "file": "datasets/derived/frozen/cdc_diabetes__prior.json",
+  "lambda": 0.5,
+  "sha256": "6f6570f145541de8cef195d8f8579bfc339c864e53c674cf1a543fb80816bcd6",
+  "training_patients": 2000,
+  "type": "mixture"
+ },
+ "release_rule": "fewest constrained features, then most calibration support, then tightest bound; abstain if no candidate passes",
+ "seed": 42,
+ "split_sha256": "ff1956d2ce521004479ec4d1a1d0933ad8f314fbadf69de8b6056c9df01311b6",
+ "targets": {
+  "alpha_0": 0.05,
+  "alpha_0_grid": [
+   0.02,
+   0.05,
+   0.1
+  ],
+  "alpha_1": 0.7,
+  "alpha_sel": {
+   "enrichment": 0.7,
+   "negative_outcome": 0.05
+  },
+  "beta": 0.3,
+  "beta_grid": [
+   0.2,
+   0.3,
+   0.5
+  ],
+  "delta_1": 0.025,
+  "delta_2": 0.025,
+  "policy": "negative-outcome and enrichment releases certified separately at delta_2 / 2 each"
+ },
+ "task": "cdc_diabetes"
+}

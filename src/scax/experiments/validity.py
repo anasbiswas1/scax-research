@@ -32,6 +32,7 @@ class Setting:
     def __init__(self, grid, pred, XP, p, cache, cell_keys, cell_of_row, box_list, prior_logs, alpha, alpha_sel,
                  rule_features=None):
         self.grid = grid
+        self.cache, self.cell_keys = cache, cell_keys      # kept for the baseline comparisons (notebook 11)
         self.p = np.asarray(p, dtype=float)
         self.N = len(self.p)
         self.cell_of_row = np.asarray(cell_of_row)          # population row -> distinct cell index
@@ -244,6 +245,7 @@ def build_setting(XP, rule, eps, p4_b0, model_params, n_train, M, seed, alpha, a
     rule_features = planted.RULE_FEATURES[rule]
     st = Setting(grid, pred, XP, p, gen.cache, cell_keys, inv, box_list, None, alpha, alpha_sel, rule_features)
     st.set_priors(OccamPrior(grid.K), lam, np.bincount(inv[idx_train], minlength=len(cell_keys)))
+    st.XP, st.pred, st.idx_train, st.y_train = XP, pred, idx_train, y_train
     bayes = (p > 0.5).astype(int)
     kappa = pred.predict_cells(C)
     diag = {"rule": rule, "eps": eps, "cells": len(cell_keys), "active_features": int(len(grid.active)),

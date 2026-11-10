@@ -1,0 +1,156 @@
+task,kind,metric,baseline,units,median_difference,p,reference_mean,baseline_mean,p_holm
+brfss2015_heart,negative outcome,coverage,Learn-then-Test,20,-0.015000000000000013,7.347754715733e-05,0.6524300000000001,0.6674000000000001,0.00088173056588796
+brfss2015_heart,negative outcome,coverage,Rule dictionary,20,-0.015000000000000013,7.347754715733e-05,0.6524300000000001,0.6674000000000001,0.00088173056588796
+brfss2015_heart,negative outcome,coverage,"Rule dictionary, sound rules only",20,0.6524,7.347754715733e-05,0.6524300000000001,0.0,0.00088173056588796
+brfss2015_heart,negative outcome,coverage,SGR,20,-0.015000000000000013,7.347754715733e-05,0.6524300000000001,0.6674000000000001,0.00088173056588796
+brfss2015_heart,negative outcome,coverage,"Uncertified AXp, all patients",20,-0.015000000000000013,7.347754715733e-05,0.6524300000000001,0.6674000000000001,0.00088173056588796
+brfss2015_heart,negative outcome,coverage,"Uncertified inflated box, all patients",20,-0.015000000000000013,7.347754715733e-05,0.6524300000000001,0.6674000000000001,0.00088173056588796
+brfss2015_heart,negative outcome,coverage,Empirical error rule,20,-0.015000000000000013,7.953619237840905e-05,0.6524300000000001,0.66737,0.00088173056588796
+brfss2015_heart,negative outcome,coverage,Per-box bound without prior,20,-0.012700000000000045,8.450631631864117e-05,0.6524300000000001,0.66516,0.00088173056588796
+brfss2015_heart,negative outcome,coverage,"Split conformal, singletons",20,-0.23270000000000002,8.819870204194453e-05,0.6524300000000001,0.8847499999999998,0.00088173056588796
+brfss2015_heart,negative outcome,coverage,"Mondrian conformal, singletons",20,0.19429999999999997,8.832385863081277e-05,0.6524300000000001,0.45747,0.00088173056588796
+brfss2015_heart,negative outcome,coverage,"Uncertified AXp, matched coverage",20,0.0,1.0,0.6524300000000001,0.6524300000000001,1.0
+brfss2015_heart,negative outcome,coverage,"Uncertified inflated box, matched coverage",20,0.0,1.0,0.6524300000000001,0.6524300000000001,1.0
+brfss2015_heart,enrichment,coverage,Learn-then-Test,20,-0.0728,8.70783521016157e-05,0.2610100000000001,0.33260000000000006,0.0010449402252193883
+brfss2015_heart,enrichment,coverage,"Rule dictionary, sound rules only",20,0.25980000000000003,8.70783521016157e-05,0.2610100000000001,0.0,0.0010449402252193883
+brfss2015_heart,enrichment,coverage,SGR,20,-0.0728,8.70783521016157e-05,0.2610100000000001,0.33260000000000006,0.0010449402252193883
+brfss2015_heart,enrichment,coverage,"Uncertified AXp, all patients",20,-0.0728,8.70783521016157e-05,0.2610100000000001,0.33260000000000006,0.0010449402252193883
+brfss2015_heart,enrichment,coverage,"Uncertified inflated box, all patients",20,-0.0728,8.70783521016157e-05,0.2610100000000001,0.33260000000000006,0.0010449402252193883
+brfss2015_heart,enrichment,coverage,Rule dictionary,20,0.1149,8.807368035275503e-05,0.2610100000000001,0.14665000000000003,0.0010449402252193883
+brfss2015_heart,enrichment,coverage,"Mondrian conformal, singletons",20,0.18310000000000004,8.819870204194453e-05,0.2610100000000001,0.07683,0.0010449402252193883
+brfss2015_heart,enrichment,coverage,"Split conformal, singletons",20,0.259,8.819870204194453e-05,0.2610100000000001,0.00086,0.0010449402252193883
+brfss2015_heart,enrichment,coverage,Empirical error rule,20,-0.07070000000000001,8.844915021211901e-05,0.2610100000000001,0.33085000000000003,0.0010449402252193883
+brfss2015_heart,enrichment,coverage,Per-box bound without prior,20,-0.061100000000000015,8.844915021211901e-05,0.2610100000000001,0.32095999999999997,0.0010449402252193883
+brfss2015_heart,enrichment,coverage,"Uncertified AXp, matched coverage",20,0.0,1.0,0.2610100000000001,0.2610100000000001,1.0
+brfss2015_heart,enrichment,coverage,"Uncertified inflated box, matched coverage",20,0.0,1.0,0.2610100000000001,0.2610100000000001,1.0
+cdc_diabetes,negative outcome,coverage,Per-box bound without prior,20,-0.022599999999999953,8.70783521016157e-05,0.58626,0.6085900000000001,0.0010449402252193883
+cdc_diabetes,negative outcome,coverage,Empirical error rule,20,-0.03259999999999996,8.745059215649785e-05,0.58626,0.61872,0.0010449402252193883
+cdc_diabetes,negative outcome,coverage,Rule dictionary,20,0.3071,8.782404130245517e-05,0.58626,0.279,0.0010449402252193883
+cdc_diabetes,negative outcome,coverage,"Rule dictionary, sound rules only",20,0.5861000000000001,8.782404130245517e-05,0.58626,0.0,0.0010449402252193883
+cdc_diabetes,negative outcome,coverage,SGR,20,-0.03270000000000001,8.782404130245517e-05,0.58626,0.6188,0.0010449402252193883
+cdc_diabetes,negative outcome,coverage,"Uncertified AXp, all patients",20,-0.032899999999999985,8.782404130245517e-05,0.58626,0.619,0.0010449402252193883
+cdc_diabetes,negative outcome,coverage,"Uncertified inflated box, all patients",20,-0.032899999999999985,8.782404130245517e-05,0.58626,0.619,0.0010449402252193883
+cdc_diabetes,negative outcome,coverage,Learn-then-Test,20,-0.032799999999999996,8.794879347050151e-05,0.58626,0.6189,0.0010449402252193883
+cdc_diabetes,negative outcome,coverage,"Split conformal, singletons",20,-0.18170000000000003,8.807368035275503e-05,0.58626,0.7677600000000001,0.0010449402252193883
+cdc_diabetes,negative outcome,coverage,"Mondrian conformal, singletons",20,0.17750000000000002,8.844915021211901e-05,0.58626,0.40923999999999994,0.0010449402252193883
+cdc_diabetes,negative outcome,coverage,"Uncertified AXp, matched coverage",20,0.0,1.0,0.58626,0.58626,1.0
+cdc_diabetes,negative outcome,coverage,"Uncertified inflated box, matched coverage",20,0.0,1.0,0.58626,0.58626,1.0
+cdc_diabetes,enrichment,coverage,"Rule dictionary, sound rules only",20,0.3527,8.199254746247181e-05,0.35248,0.0,0.0009839105695496617
+cdc_diabetes,enrichment,coverage,"Split conformal, singletons",20,0.3527,8.199254746247181e-05,0.35248,0.0,0.0009839105695496617
+cdc_diabetes,enrichment,coverage,"Uncertified AXp, all patients",20,-0.028299999999999992,8.199254746247181e-05,0.35248,0.38100000000000006,0.0009839105695496617
+cdc_diabetes,enrichment,coverage,"Uncertified inflated box, all patients",20,-0.028299999999999992,8.199254746247181e-05,0.35248,0.38100000000000006,0.0009839105695496617
+cdc_diabetes,enrichment,coverage,Empirical error rule,20,-0.02789999999999998,8.450631631864117e-05,0.35248,0.38057,0.0009839105695496617
+cdc_diabetes,enrichment,coverage,"Mondrian conformal, singletons",20,0.26970000000000005,8.523520069295667e-05,0.35248,0.08248000000000001,0.0009839105695496617
+cdc_diabetes,enrichment,coverage,Per-box bound without prior,20,-0.02479999999999999,8.769942375590214e-05,0.35248,0.37721,0.0009839105695496617
+cdc_diabetes,enrichment,coverage,SGR,20,0.0030000000000000027,0.0005501332267212842,0.35248,0.34945000000000004,0.0027506661336064208
+cdc_diabetes,enrichment,coverage,Rule dictionary,20,-0.0030000000000000027,0.0021882677108003555,0.35248,0.35776,0.008753070843201422
+cdc_diabetes,enrichment,coverage,Learn-then-Test,20,-0.0020000000000000018,0.14525950774328544,0.35248,0.35364,0.43577852322985633
+cdc_diabetes,enrichment,coverage,"Uncertified AXp, matched coverage",20,0.0,1.0,0.35248,0.35248,1.0
+cdc_diabetes,enrichment,coverage,"Uncertified inflated box, matched coverage",20,0.0,1.0,0.35248,0.35248,1.0
+brfss2015_heart,negative outcome,above_target_share,"Uncertified AXp, all patients",20,-0.051243632004794724,7.74421643104407e-06,0.0,0.051243632004794724,6.195373144835256e-05
+brfss2015_heart,negative outcome,above_target_share,"Uncertified inflated box, all patients",20,-0.001198681450404555,7.74421643104407e-06,0.0,0.0011986814504045549,6.195373144835256e-05
+brfss2015_heart,negative outcome,above_target_share,Empirical error rule,20,-0.00029967036260113877,2.2956210584350303e-05,0.0,0.0002996838369879463,0.0001377372635061018
+brfss2015_heart,negative outcome,above_target_share,"Uncertified AXp, matched coverage",20,-0.046903740036787246,7.347754715733e-05,0.0,0.046916905742677345,0.00036738773578665
+brfss2015_heart,negative outcome,above_target_share,"Uncertified inflated box, matched coverage",20,-0.001226241569589209,7.347754715733e-05,0.0,0.0012261854067188464,0.00036738773578665
+brfss2015_heart,negative outcome,above_target_share,Per-box bound without prior,20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,above_target_share,Rule dictionary,20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,above_target_share,"Rule dictionary, sound rules only",20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,enrichment,above_target_share,Per-box bound without prior,20,-0.006244175936431442,1.9073486328125e-06,0.0,0.00610355970042359,1.52587890625e-05
+brfss2015_heart,enrichment,above_target_share,"Uncertified AXp, all patients",20,-0.5105231509320505,7.74421643104407e-06,0.0,0.5105231509320504,5.420951501730849e-05
+brfss2015_heart,enrichment,above_target_share,"Uncertified inflated box, all patients",20,-0.08538785327720987,7.74421643104407e-06,0.0,0.08538785327720987,5.420951501730849e-05
+brfss2015_heart,enrichment,above_target_share,"Uncertified AXp, matched coverage",20,-0.425711910119551,8.70783521016157e-05,0.0,0.42707393715963626,0.0004353917605080785
+brfss2015_heart,enrichment,above_target_share,"Uncertified inflated box, matched coverage",20,-0.05818820857098392,8.70783521016157e-05,0.0,0.0578999887117807,0.0004353917605080785
+brfss2015_heart,enrichment,above_target_share,Empirical error rule,20,-0.019033057030533505,8.844915021211901e-05,0.0,0.019041115220127587,0.0004353917605080785
+brfss2015_heart,enrichment,above_target_share,Rule dictionary,20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,enrichment,above_target_share,"Rule dictionary, sound rules only",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,negative outcome,above_target_share,"Uncertified AXp, all patients",20,-0.14022617124394185,7.74421643104407e-06,0.0,0.14022617124394185,6.195373144835256e-05
+cdc_diabetes,negative outcome,above_target_share,"Uncertified inflated box, all patients",20,-0.011631663974151859,7.74421643104407e-06,0.0,0.011631663974151859,6.195373144835256e-05
+cdc_diabetes,negative outcome,above_target_share,Empirical error rule,20,-0.005980255267069896,8.487016270161307e-05,0.0,0.005915378963974623,0.0005092209762096784
+cdc_diabetes,negative outcome,above_target_share,"Uncertified AXp, matched coverage",20,-0.13385692724162185,8.782404130245517e-05,0.0,0.13395043871825352,0.0005092209762096784
+cdc_diabetes,negative outcome,above_target_share,"Uncertified inflated box, matched coverage",20,-0.008530967660049162,8.782404130245517e-05,0.0,0.008528662783911106,0.0005092209762096784
+cdc_diabetes,negative outcome,above_target_share,Per-box bound without prior,20,-0.0003287310979618672,0.0004084629396096804,0.0,0.0003778896113249035,0.001225388818829041
+cdc_diabetes,negative outcome,above_target_share,Rule dictionary,20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,negative outcome,above_target_share,"Rule dictionary, sound rules only",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,enrichment,above_target_share,"Uncertified AXp, all patients",20,-0.47086614173228347,7.74421643104407e-06,0.0,0.4708661417322835,6.195373144835256e-05
+cdc_diabetes,enrichment,above_target_share,"Uncertified inflated box, all patients",20,-0.014173228346456693,7.74421643104407e-06,0.0,0.01417322834645669,6.195373144835256e-05
+cdc_diabetes,enrichment,above_target_share,Empirical error rule,20,-0.005780346820809248,7.207324041374859e-05,0.0,0.005623143047697669,0.0004324394424824915
+cdc_diabetes,enrichment,above_target_share,"Uncertified AXp, matched coverage",20,-0.4505244809211263,8.199254746247181e-05,0.0,0.4504925400369114,0.0004324394424824915
+cdc_diabetes,enrichment,above_target_share,"Uncertified inflated box, matched coverage",20,-0.007661143299615928,8.199254746247181e-05,0.0,0.007659566223551825,0.0004324394424824915
+cdc_diabetes,enrichment,above_target_share,Per-box bound without prior,20,-0.0015919343121188058,8.819870204194453e-05,0.0,0.0016963499000624594,0.0004324394424824915
+cdc_diabetes,enrichment,above_target_share,Rule dictionary,20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,enrichment,above_target_share,"Rule dictionary, sound rules only",20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,refuted_share,Empirical error rule,20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,refuted_share,Per-box bound without prior,20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,refuted_share,Rule dictionary,20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,refuted_share,"Rule dictionary, sound rules only",20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,refuted_share,"Uncertified AXp, all patients",20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,refuted_share,"Uncertified AXp, matched coverage",20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,refuted_share,"Uncertified inflated box, all patients",20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,refuted_share,"Uncertified inflated box, matched coverage",20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,enrichment,refuted_share,"Uncertified AXp, all patients",20,-0.01683704149128082,7.74421643104407e-06,0.0,0.016837041491280826,6.195373144835256e-05
+brfss2015_heart,enrichment,refuted_share,"Uncertified inflated box, all patients",20,-0.0006013229104028864,7.74421643104407e-06,0.0,0.0006013229104028864,6.195373144835256e-05
+brfss2015_heart,enrichment,refuted_share,"Uncertified AXp, matched coverage",20,-0.013855660523279346,8.70783521016157e-05,0.0,0.01363486642004989,0.0005224701126096942
+brfss2015_heart,enrichment,refuted_share,Empirical error rule,20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,enrichment,refuted_share,Per-box bound without prior,20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,enrichment,refuted_share,Rule dictionary,20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,enrichment,refuted_share,"Rule dictionary, sound rules only",20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,enrichment,refuted_share,"Uncertified inflated box, matched coverage",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,negative outcome,refuted_share,Empirical error rule,20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,negative outcome,refuted_share,Per-box bound without prior,20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,negative outcome,refuted_share,Rule dictionary,20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,negative outcome,refuted_share,"Rule dictionary, sound rules only",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,negative outcome,refuted_share,"Uncertified AXp, all patients",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,negative outcome,refuted_share,"Uncertified AXp, matched coverage",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,negative outcome,refuted_share,"Uncertified inflated box, all patients",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,negative outcome,refuted_share,"Uncertified inflated box, matched coverage",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,enrichment,refuted_share,Empirical error rule,20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,enrichment,refuted_share,Per-box bound without prior,20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,enrichment,refuted_share,Rule dictionary,20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,enrichment,refuted_share,"Rule dictionary, sound rules only",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,enrichment,refuted_share,"Uncertified AXp, all patients",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,enrichment,refuted_share,"Uncertified AXp, matched coverage",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,enrichment,refuted_share,"Uncertified inflated box, all patients",20,0.0,1.0,0.0,0.0,1.0
+cdc_diabetes,enrichment,refuted_share,"Uncertified inflated box, matched coverage",20,0.0,1.0,0.0,0.0,1.0
+brfss2015_heart,negative outcome,error_rate,Learn-then-Test,20,-0.0006819292156922917,7.347754715733e-05,0.022990976375978377,0.023673958645489955,0.00080825301873063
+brfss2015_heart,negative outcome,error_rate,Rule dictionary,20,-0.0006819292156922917,7.347754715733e-05,0.022990976375978377,0.023673958645489955,0.00080825301873063
+brfss2015_heart,negative outcome,error_rate,SGR,20,-0.0006819292156922917,7.347754715733e-05,0.022990976375978377,0.023673958645489955,0.00080825301873063
+brfss2015_heart,negative outcome,error_rate,"Uncertified AXp, all patients",20,-0.0006819292156922917,7.347754715733e-05,0.022990976375978377,0.023673958645489955,0.00080825301873063
+brfss2015_heart,negative outcome,error_rate,"Uncertified AXp, matched coverage",20,0.0009196811771919056,7.347754715733e-05,0.022990976375978377,0.022040657768138787,0.00080825301873063
+brfss2015_heart,negative outcome,error_rate,"Uncertified inflated box, all patients",20,-0.0006819292156922917,7.347754715733e-05,0.022990976375978377,0.023673958645489955,0.00080825301873063
+brfss2015_heart,negative outcome,error_rate,"Uncertified inflated box, matched coverage",20,0.0009196811771919056,7.347754715733e-05,0.022990976375978377,0.022040657768138787,0.00080825301873063
+brfss2015_heart,negative outcome,error_rate,Empirical error rule,20,-0.0006819292156922917,8.058194031965037e-05,0.022990976375978377,0.023675023122047768,0.00080825301873063
+brfss2015_heart,negative outcome,error_rate,Per-box bound without prior,20,-0.0007638437629425027,8.757494073814436e-05,0.022990976375978377,0.023753686244547996,0.00080825301873063
+brfss2015_heart,negative outcome,error_rate,"Mondrian conformal, singletons",20,0.01382220336258456,8.832385863081277e-05,0.022990976375978377,0.009181607342632642,0.00080825301873063
+brfss2015_heart,negative outcome,error_rate,"Split conformal, singletons",20,-0.032989911879457406,8.844915021211901e-05,0.022990976375978377,0.05573232226447479,0.00080825301873063
+brfss2015_heart,enrichment,error_rate,Empirical error rule,20,-0.03207344143472124,1.9073486328125e-06,0.7297287491341494,0.7623393780549264,2.09808349609375e-05
+brfss2015_heart,enrichment,error_rate,"Mondrian conformal, singletons",20,0.15810917726084706,1.9073486328125e-06,0.7297287491341494,0.5719033769301127,2.09808349609375e-05
+brfss2015_heart,enrichment,error_rate,Per-box bound without prior,20,-0.02696799026002278,1.9073486328125e-06,0.7297287491341494,0.7571003636987683,2.09808349609375e-05
+brfss2015_heart,enrichment,error_rate,Rule dictionary,20,0.05232037488443497,1.9073486328125e-06,0.7297287491341494,0.6746363637441354,2.09808349609375e-05
+brfss2015_heart,enrichment,error_rate,Learn-then-Test,20,-0.03293228139686799,8.844915021211901e-05,0.7297287491341494,0.7630787733012628,0.0006191440514848331
+brfss2015_heart,enrichment,error_rate,SGR,20,-0.03293228139686799,8.844915021211901e-05,0.7297287491341494,0.7630787733012628,0.0006191440514848331
+brfss2015_heart,enrichment,error_rate,"Split conformal, singletons",20,0.48184579245385595,8.844915021211901e-05,0.7297287491341494,0.23833333333333334,0.0006191440514848331
+brfss2015_heart,enrichment,error_rate,"Uncertified AXp, all patients",20,-0.03293228139686799,8.844915021211901e-05,0.7297287491341494,0.7630787733012628,0.0006191440514848331
+brfss2015_heart,enrichment,error_rate,"Uncertified inflated box, all patients",20,-0.03293228139686799,8.844915021211901e-05,0.7297287491341494,0.7630787733012628,0.0006191440514848331
+brfss2015_heart,enrichment,error_rate,"Uncertified AXp, matched coverage",20,-0.002309474296801506,0.0030859289517654316,0.7297287491341494,0.7316326432157566,0.006171857903530863
+brfss2015_heart,enrichment,error_rate,"Uncertified inflated box, matched coverage",20,-0.002309474296801506,0.0030859289517654316,0.7297287491341494,0.7316326432157566,0.006171857903530863
+cdc_diabetes,negative outcome,error_rate,Empirical error rule,20,-0.004297919662596749,1.9073486328125e-06,0.039623748125881895,0.04391322716600991,2.09808349609375e-05
+cdc_diabetes,negative outcome,error_rate,Learn-then-Test,20,-0.004338219450667889,1.9073486328125e-06,0.039623748125881895,0.0439489428180866,2.09808349609375e-05
+cdc_diabetes,negative outcome,error_rate,"Mondrian conformal, singletons",20,0.016098996722955,1.9073486328125e-06,0.039623748125881895,0.02347988796005875,2.09808349609375e-05
+cdc_diabetes,negative outcome,error_rate,Per-box bound without prior,20,-0.002439494239850813,1.9073486328125e-06,0.039623748125881895,0.04208087143467591,2.09808349609375e-05
+cdc_diabetes,negative outcome,error_rate,"Split conformal, singletons",20,-0.037125471243416155,1.9073486328125e-06,0.039623748125881895,0.07670298256106446,2.09808349609375e-05
+cdc_diabetes,negative outcome,error_rate,Rule dictionary,20,0.011653734120106882,8.844915021211901e-05,0.039623748125881895,0.027956989247311832,0.0005306949012727141
+cdc_diabetes,negative outcome,error_rate,SGR,20,-0.004345320588625249,8.844915021211901e-05,0.039623748125881895,0.04395604395604395,0.0005306949012727141
+cdc_diabetes,negative outcome,error_rate,"Uncertified AXp, all patients",20,-0.0043311183127105295,8.844915021211901e-05,0.039623748125881895,0.04394184168012925,0.0005306949012727141
+cdc_diabetes,negative outcome,error_rate,"Uncertified inflated box, all patients",20,-0.0043311183127105295,8.844915021211901e-05,0.039623748125881895,0.04394184168012925,0.0005306949012727141
+cdc_diabetes,negative outcome,error_rate,"Uncertified AXp, matched coverage",20,0.0,1.0,0.039623748125881895,0.03960674703013134,1.0
+cdc_diabetes,negative outcome,error_rate,"Uncertified inflated box, matched coverage",20,0.0,1.0,0.039623748125881895,0.03960674703013134,1.0
+cdc_diabetes,enrichment,error_rate,Per-box bound without prior,20,-0.00861832857612288,1.9073486328125e-06,0.6789883549470095,0.68776000996288,1.9073486328125e-05
+cdc_diabetes,enrichment,error_rate,"Uncertified AXp, all patients",20,-0.009768024868362979,8.70783521016157e-05,0.6789883549470095,0.688713910761155,0.0007837051689145412
+cdc_diabetes,enrichment,error_rate,"Uncertified inflated box, all patients",20,-0.009768024868362979,8.70783521016157e-05,0.6789883549470095,0.688713910761155,0.0007837051689145412
+cdc_diabetes,enrichment,error_rate,"Mondrian conformal, singletons",20,0.23696501396564307,8.720229793087962e-05,0.6789883549470095,0.44240613887907454,0.0007837051689145412
+cdc_diabetes,enrichment,error_rate,Empirical error rule,20,-0.009358954602016023,8.782404130245517e-05,0.6789883549470095,0.688362182574086,0.0007837051689145412
+cdc_diabetes,enrichment,error_rate,"Uncertified AXp, matched coverage",20,-0.0011366866504728956,0.00012936777246760716,0.6789883549470095,0.6802935331300436,0.0007837051689145412
+cdc_diabetes,enrichment,error_rate,"Uncertified inflated box, matched coverage",20,-0.0011366866504728956,0.00012936777246760716,0.6789883549470095,0.6802935331300436,0.0007837051689145412
+cdc_diabetes,enrichment,error_rate,Learn-then-Test,20,-0.0008766894189616292,0.001161273127949132,0.6789883549470095,0.6797833040277241,0.0034838193838473957
+cdc_diabetes,enrichment,error_rate,Rule dictionary,20,0.0001938002718475107,0.23206284673343192,0.6789883549470095,0.6796375295379476,0.46412569346686383
+cdc_diabetes,enrichment,error_rate,SGR,20,-0.0002880747732464384,0.4304332733154297,0.6789883549470095,0.6791762421229393,0.46412569346686383

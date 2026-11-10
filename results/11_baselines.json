@@ -1,0 +1,403 @@
+{
+  "seed": 42,
+  "redraws": 20,
+  "redraw_seeds": [
+    11000,
+    11019
+  ],
+  "frozen_config_sha256": {
+    "cdc_diabetes": "42020030cd4a0f422f165f1f4130ae76b8ff48708090699343de7aae187489df",
+    "brfss2015_heart": "c656821f5d64dd87e4cd6b9b8b2dbccf9e483eb0ab7d45d88183fef527d57e1e"
+  },
+  "box_table_sha256": {
+    "cdc_diabetes": "b400f3dd4e068fc3846744e02986be245f097b2f3962cc78a1ffe7d69c697d9d",
+    "brfss2015_heart": "f234d01c5c83d3315ce4162c48cf733d965746e99058b665cb5623103055611e"
+  },
+  "rules": {
+    "cdc_diabetes": 194,
+    "brfss2015_heart": 195
+  },
+  "synthetic": {
+    "rule": "P4",
+    "targets": [
+      [
+        0.05,
+        0.7
+      ],
+      [
+        0.02,
+        0.5
+      ]
+    ],
+    "repetitions": 200,
+    "n1": 10000,
+    "M": 10,
+    "diagnostics": [
+      {
+        "targets": [
+          0.05,
+          0.7
+        ],
+        "cells": 17918,
+        "boxes": 22244,
+        "rules": 184,
+        "sound_rule_claims": 42,
+        "seconds": 237.19253015518188
+      },
+      {
+        "targets": [
+          0.02,
+          0.5
+        ],
+        "cells": 17918,
+        "boxes": 22244,
+        "rules": 184,
+        "sound_rule_claims": 42,
+        "seconds": 32.05654001235962
+      }
+    ]
+  },
+  "key_rows": [
+    {
+      "task": "cdc_diabetes",
+      "kind": "negative outcome",
+      "method": "SCAX",
+      "coverage": 0.58626,
+      "coverage_lo": 0.5848949999999999,
+      "coverage_hi": 0.5880099999999999,
+      "error_rate": 0.039623748125881895,
+      "mean_size": 5.165057796501235,
+      "median_support": 6427.4,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 0.25,
+      "sound_share": NaN
+    },
+    {
+      "task": "cdc_diabetes",
+      "kind": "enrichment",
+      "method": "SCAX",
+      "coverage": 0.35248,
+      "coverage_lo": 0.3516,
+      "coverage_hi": 0.3532,
+      "error_rate": 0.6789883549470094,
+      "mean_size": 6.200825148158342,
+      "median_support": 4099.25,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 0.0,
+      "sound_share": NaN
+    },
+    {
+      "task": "cdc_diabetes",
+      "kind": "negative outcome",
+      "method": "Uncertified AXp, all patients",
+      "coverage": 0.619,
+      "coverage_lo": 0.619,
+      "coverage_hi": 0.619,
+      "error_rate": 0.04394184168012924,
+      "mean_size": 5.72827140549273,
+      "median_support": 41.1,
+      "above_target_share": 0.14022617124394185,
+      "refuted_share": 0.0,
+      "policy_certified": NaN,
+      "sound_share": NaN
+    },
+    {
+      "task": "cdc_diabetes",
+      "kind": "enrichment",
+      "method": "Uncertified AXp, all patients",
+      "coverage": 0.381,
+      "coverage_lo": 0.381,
+      "coverage_hi": 0.381,
+      "error_rate": 0.6887139107611548,
+      "mean_size": 6.9863517060367455,
+      "median_support": 10.75,
+      "above_target_share": 0.4708661417322835,
+      "refuted_share": 0.0,
+      "policy_certified": NaN,
+      "sound_share": NaN
+    },
+    {
+      "task": "cdc_diabetes",
+      "kind": "negative outcome",
+      "method": "Rule dictionary",
+      "coverage": 0.279,
+      "coverage_lo": 0.279,
+      "coverage_hi": 0.279,
+      "error_rate": 0.027956989247311832,
+      "mean_size": 2.0,
+      "median_support": 22940.25,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 0.3,
+      "sound_share": 0.0
+    },
+    {
+      "task": "cdc_diabetes",
+      "kind": "enrichment",
+      "method": "Rule dictionary",
+      "coverage": 0.35775999999999997,
+      "coverage_lo": 0.3514,
+      "coverage_hi": 0.3638,
+      "error_rate": 0.6796375295379475,
+      "mean_size": 1.772138972273389,
+      "median_support": 15519.85,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 0.0,
+      "sound_share": 0.0
+    },
+    {
+      "task": "cdc_diabetes",
+      "kind": "negative outcome",
+      "method": "Rule dictionary, sound rules only",
+      "coverage": 0.0,
+      "coverage_lo": 0.0,
+      "coverage_hi": 0.0,
+      "error_rate": NaN,
+      "mean_size": NaN,
+      "median_support": NaN,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 0.0,
+      "sound_share": NaN
+    },
+    {
+      "task": "cdc_diabetes",
+      "kind": "enrichment",
+      "method": "Rule dictionary, sound rules only",
+      "coverage": 0.0,
+      "coverage_lo": 0.0,
+      "coverage_hi": 0.0,
+      "error_rate": NaN,
+      "mean_size": NaN,
+      "median_support": NaN,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 0.0,
+      "sound_share": NaN
+    },
+    {
+      "task": "cdc_diabetes",
+      "kind": "negative outcome",
+      "method": "SGR",
+      "coverage": 0.6188,
+      "coverage_lo": 0.6188,
+      "coverage_hi": 0.6188,
+      "error_rate": 0.04395604395604396,
+      "mean_size": NaN,
+      "median_support": NaN,
+      "above_target_share": NaN,
+      "refuted_share": NaN,
+      "policy_certified": NaN,
+      "sound_share": NaN
+    },
+    {
+      "task": "cdc_diabetes",
+      "kind": "enrichment",
+      "method": "SGR",
+      "coverage": 0.34945,
+      "coverage_lo": 0.344265,
+      "coverage_hi": 0.35449,
+      "error_rate": 0.6791762421229393,
+      "mean_size": NaN,
+      "median_support": NaN,
+      "above_target_share": NaN,
+      "refuted_share": NaN,
+      "policy_certified": NaN,
+      "sound_share": NaN
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "negative outcome",
+      "method": "SCAX",
+      "coverage": 0.6524300000000001,
+      "coverage_lo": 0.651895,
+      "coverage_hi": 0.6529050000000001,
+      "error_rate": 0.022990976375978373,
+      "mean_size": 5.947641505329262,
+      "median_support": 7357.55,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 1.0,
+      "sound_share": NaN
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "enrichment",
+      "method": "SCAX",
+      "coverage": 0.26101,
+      "coverage_lo": 0.24891,
+      "coverage_hi": 0.269105,
+      "error_rate": 0.7297287491341494,
+      "mean_size": 5.286623111627946,
+      "median_support": 1796.575,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 1.0,
+      "sound_share": NaN
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "negative outcome",
+      "method": "Uncertified AXp, all patients",
+      "coverage": 0.6674,
+      "coverage_lo": 0.6674,
+      "coverage_hi": 0.6674,
+      "error_rate": 0.023673958645489962,
+      "mean_size": 6.371890919988013,
+      "median_support": 451.0,
+      "above_target_share": 0.051243632004794724,
+      "refuted_share": 0.0,
+      "policy_certified": NaN,
+      "sound_share": NaN
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "enrichment",
+      "method": "Uncertified AXp, all patients",
+      "coverage": 0.3326,
+      "coverage_lo": 0.3326,
+      "coverage_hi": 0.3326,
+      "error_rate": 0.7630787733012627,
+      "mean_size": 6.343355381840048,
+      "median_support": 33.55,
+      "above_target_share": 0.5105231509320505,
+      "refuted_share": 0.01683704149128082,
+      "policy_certified": NaN,
+      "sound_share": NaN
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "negative outcome",
+      "method": "Rule dictionary",
+      "coverage": 0.6674,
+      "coverage_lo": 0.6674,
+      "coverage_hi": 0.6674,
+      "error_rate": 0.023673958645489962,
+      "mean_size": 1.0254719808210968,
+      "median_support": 43442.65,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 1.0,
+      "sound_share": 0.0
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "enrichment",
+      "method": "Rule dictionary",
+      "coverage": 0.14665,
+      "coverage_lo": 0.13162500000000002,
+      "coverage_hi": 0.1542,
+      "error_rate": 0.6746363637441354,
+      "mean_size": 2.014606929046026,
+      "median_support": 3597.5,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 1.0,
+      "sound_share": 0.0
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "negative outcome",
+      "method": "Rule dictionary, sound rules only",
+      "coverage": 0.0,
+      "coverage_lo": 0.0,
+      "coverage_hi": 0.0,
+      "error_rate": NaN,
+      "mean_size": NaN,
+      "median_support": NaN,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 0.0,
+      "sound_share": NaN
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "enrichment",
+      "method": "Rule dictionary, sound rules only",
+      "coverage": 0.0,
+      "coverage_lo": 0.0,
+      "coverage_hi": 0.0,
+      "error_rate": NaN,
+      "mean_size": NaN,
+      "median_support": NaN,
+      "above_target_share": 0.0,
+      "refuted_share": 0.0,
+      "policy_certified": 0.0,
+      "sound_share": NaN
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "negative outcome",
+      "method": "SGR",
+      "coverage": 0.6674,
+      "coverage_lo": 0.6674,
+      "coverage_hi": 0.6674,
+      "error_rate": 0.023673958645489962,
+      "mean_size": NaN,
+      "median_support": NaN,
+      "above_target_share": NaN,
+      "refuted_share": NaN,
+      "policy_certified": NaN,
+      "sound_share": NaN
+    },
+    {
+      "task": "brfss2015_heart",
+      "kind": "enrichment",
+      "method": "SGR",
+      "coverage": 0.3326,
+      "coverage_lo": 0.3326,
+      "coverage_hi": 0.3326,
+      "error_rate": 0.7630787733012627,
+      "mean_size": NaN,
+      "median_support": NaN,
+      "above_target_share": NaN,
+      "refuted_share": NaN,
+      "policy_certified": NaN,
+      "sound_share": NaN
+    }
+  ],
+  "attribution": [
+    {
+      "task": "cdc_diabetes",
+      "patients": 200,
+      "median_smallest_candidate_size": 5.0,
+      "shap_k_median": 10.0,
+      "shap_top5_sufficient": 0.26,
+      "lime_k_median": 13.0,
+      "lime_top5_sufficient": 0.11,
+      "anchors_run": 200,
+      "anchor_median_size": 3.0,
+      "anchor_mean_precision": 0.9716171364555569,
+      "anchor_sound_share": 0.0
+    },
+    {
+      "task": "brfss2015_heart",
+      "patients": 200,
+      "median_smallest_candidate_size": 6.0,
+      "shap_k_median": 10.0,
+      "shap_top5_sufficient": 0.065,
+      "lime_k_median": 13.0,
+      "lime_top5_sufficient": 0.04,
+      "anchors_run": 200,
+      "anchor_median_size": 2.0,
+      "anchor_mean_precision": 0.9794766081408688,
+      "anchor_sound_share": 0.0
+    }
+  ],
+  "_written_utc": "2026-11-10T18:37:23+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.4.0",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

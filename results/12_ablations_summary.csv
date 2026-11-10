@@ -1,0 +1,105 @@
+task,source,factor,level,kind,frozen,draws,explained_share,explained_lo,explained_hi,test_error,mean_size,median_support,policy_certified,U_sel
+cdc_diabetes,final splits,prior,Occam prior only,negative outcome,False,1,0.5828,0.5828,0.5828,0.0394646533973919,5.165408373369938,6445.0,1.0,0.04490323972972265
+cdc_diabetes,final splits,prior,Occam prior only,enrichment,False,1,0.3456,0.3456,0.3456,0.6753472222222222,6.157407407407407,4053.0,0.0,0.7097142348519869
+cdc_diabetes,final splits,prior,"mixture, lambda = 0.75",negative outcome,False,1,0.5866,0.5866,0.5866,0.039890896692806,5.164677804295943,6445.0,1.0,0.04471645653721057
+cdc_diabetes,final splits,prior,"mixture, lambda = 0.75",enrichment,False,1,0.3498,0.3498,0.3498,0.6781017724413951,6.180102915951973,4053.0,0.0,0.7117870471845378
+cdc_diabetes,final splits,prior,"mixture, lambda = 0.5",negative outcome,True,1,0.5864,0.5864,0.5864,0.03990450204638472,5.161664392905866,6445.0,1.0,0.04471645653721057
+cdc_diabetes,final splits,prior,"mixture, lambda = 0.5",enrichment,True,1,0.3498,0.3498,0.3498,0.6781017724413951,6.1778158947970265,4053.0,0.0,0.7120807432349797
+cdc_diabetes,final splits,prior,"mixture, lambda = 0.25",negative outcome,False,1,0.5864,0.5864,0.5864,0.03990450204638472,5.1609822646657575,6445.0,1.0,0.04471645653721057
+cdc_diabetes,final splits,prior,"mixture, lambda = 0.25",enrichment,False,1,0.3496,0.3496,0.3496,0.6779176201372997,6.176201372997712,4053.0,0.0,0.7111153500187013
+cdc_diabetes,final splits,prior,training support only,negative outcome,False,1,0.5354,0.5354,0.5354,0.03586103847590587,4.9122151662308555,6572.0,1.0,0.03633503631391676
+cdc_diabetes,final splits,prior,training support only,enrichment,False,1,0.3282,0.3282,0.3282,0.6727605118829981,6.052407068860451,4053.0,0.0,0.7042523817495908
+cdc_diabetes,final splits,explanation construction,AXps only,negative outcome,False,1,0.2742,0.2742,0.2742,0.013858497447118891,4.172137126185266,1034.0,1.0,0.02135948610098772
+cdc_diabetes,final splits,explanation construction,AXps only,enrichment,False,1,0.05,0.05,0.05,0.508,6.244,202.0,1.0,0.5619951079436128
+cdc_diabetes,final splits,explanation construction,widest inflated box of each order only,negative outcome,False,1,0.5864,0.5864,0.5864,0.03990450204638472,5.161664392905866,6445.0,1.0,0.04471645653721057
+cdc_diabetes,final splits,explanation construction,widest inflated box of each order only,enrichment,False,1,0.3496,0.3496,0.3496,0.6779176201372997,6.177345537757437,4053.0,0.0,0.7120807432349797
+cdc_diabetes,final splits,explanation construction,every sound box on the inflation path,negative outcome,True,1,0.5864,0.5864,0.5864,0.03990450204638472,5.161664392905866,6445.0,1.0,0.04471645653721057
+cdc_diabetes,final splits,explanation construction,every sound box on the inflation path,enrichment,True,1,0.3498,0.3498,0.3498,0.6781017724413951,6.1778158947970265,4053.0,0.0,0.7120807432349797
+cdc_diabetes,final splits,selection rule,most succinct,negative outcome,True,1,0.5864,0.5864,0.5864,0.03990450204638472,5.161664392905866,6445.0,1.0,0.04471645653721057
+cdc_diabetes,final splits,selection rule,most succinct,enrichment,True,1,0.3498,0.3498,0.3498,0.6781017724413951,6.1778158947970265,4053.0,0.0,0.7120807432349797
+cdc_diabetes,final splits,selection rule,largest support,negative outcome,False,1,0.5864,0.5864,0.5864,0.03990450204638472,5.609822646657571,7731.0,1.0,0.04471645653721057
+cdc_diabetes,final splits,selection rule,largest support,enrichment,False,1,0.3498,0.3498,0.3498,0.6781017724413951,6.391080617495712,4053.0,0.0,0.7120807432349797
+cdc_diabetes,final splits,selection rule,tightest bound,negative outcome,False,1,0.5864,0.5864,0.5864,0.03990450204638472,5.554911323328786,5407.0,1.0,0.04471645653721057
+cdc_diabetes,final splits,selection rule,tightest bound,enrichment,False,1,0.3498,0.3498,0.3498,0.6781017724413951,6.464837049742711,1915.0,0.0,0.7120807432349797
+cdc_diabetes,final splits,candidates M,M = 1,negative outcome,False,1,0.5046,0.5046,0.5046,0.0348791121680539,5.332936979785969,3996.0,1.0,0.043833686317440924
+cdc_diabetes,final splits,candidates M,M = 1,enrichment,False,1,0.292,0.292,0.292,0.6719178082191781,6.524657534246575,1883.0,0.0,0.7125716591490061
+cdc_diabetes,final splits,candidates M,M = 3,negative outcome,False,1,0.5572,0.5572,0.5572,0.03732950466618808,5.178750897343862,6445.0,1.0,0.04372877018414092
+cdc_diabetes,final splits,candidates M,M = 3,enrichment,False,1,0.3428,0.3428,0.3428,0.67561260210035,6.160443407234539,3535.0,0.0,0.7100318976282101
+cdc_diabetes,final splits,candidates M,M = 5,negative outcome,False,1,0.5726,0.5726,0.5726,0.03877052043311212,5.204331121201537,6445.0,1.0,0.04352462507144402
+cdc_diabetes,final splits,candidates M,M = 5,enrichment,False,1,0.3446,0.3446,0.3446,0.6767266395821242,6.1619268717353455,3783.0,0.0,0.7091936517892528
+cdc_diabetes,final splits,candidates M,M = 10,negative outcome,True,1,0.5864,0.5864,0.5864,0.03990450204638472,5.161664392905866,6445.0,1.0,0.04471645653721057
+cdc_diabetes,final splits,candidates M,M = 10,enrichment,True,1,0.3498,0.3498,0.3498,0.6781017724413951,6.1778158947970265,4053.0,0.0,0.7120807432349797
+cdc_diabetes,final splits,calibration size,"5,000 records",negative outcome,False,10,0.34316,0.303245,0.387315,0.031162986800242643,4.861897502451619,547.5,1.0,0.034951378804423575
+cdc_diabetes,final splits,calibration size,"5,000 records",enrichment,False,10,0.20918,0.12335499999999999,0.26805,0.6468989825276326,5.932747946539046,311.2,0.7,0.6958392612437854
+cdc_diabetes,final splits,calibration size,"10,000 records",negative outcome,False,10,0.49294000000000004,0.48438000000000003,0.50983,0.03455893670406242,4.960226657941919,961.2,1.0,0.03578867980430076
+cdc_diabetes,final splits,calibration size,"10,000 records",enrichment,False,10,0.28666,0.25962,0.30132,0.6629937622402483,5.962317763990795,583.7,0.9,0.6949398930159497
+cdc_diabetes,final splits,calibration size,"20,000 records",negative outcome,False,10,0.5436799999999999,0.541535,0.54604,0.0371540780674957,5.031528505641029,1834.1,1.0,0.03995400050532756
+cdc_diabetes,final splits,calibration size,"20,000 records",enrichment,False,10,0.3189,0.31316,0.326955,0.6709169829636996,6.005766011525876,1057.7,0.5,0.699931161424483
+cdc_diabetes,final splits,calibration size,"40,000 records",negative outcome,False,10,0.5723,0.5694,0.5749099999999999,0.03914042447301243,5.120213617982147,3446.05,1.0,0.04196326190354967
+cdc_diabetes,final splits,calibration size,"40,000 records",enrichment,False,10,0.33882,0.334545,0.340955,0.6748697695110125,6.102095729487858,2133.7,0.0,0.7062196064415928
+cdc_diabetes,final splits,calibration size,"76,104 records",negative outcome,True,1,0.5864,0.5864,0.5864,0.03990450204638472,5.161664392905866,6445.0,1.0,0.04471645653721057
+cdc_diabetes,final splits,calibration size,"76,104 records",enrichment,True,1,0.3498,0.3498,0.3498,0.6781017724413951,6.1778158947970265,4053.0,0.0,0.7120807432349797
+brfss2015_heart,final splits,prior,Occam prior only,negative outcome,False,1,0.6486,0.6486,0.6486,0.022510021584952206,5.934936786925686,7493.0,1.0,0.0274293311445645
+brfss2015_heart,final splits,prior,Occam prior only,enrichment,False,1,0.228,0.228,0.228,0.718421052631579,5.293859649122807,1716.5,1.0,0.754820596423605
+brfss2015_heart,final splits,prior,"mixture, lambda = 0.75",negative outcome,False,1,0.6526,0.6526,0.6526,0.022984983144345696,5.947900704872817,7394.0,1.0,0.027625458229914218
+brfss2015_heart,final splits,prior,"mixture, lambda = 0.75",enrichment,False,1,0.258,0.258,0.258,0.7271317829457364,5.296899224806202,1800.0,1.0,0.7669526814601215
+brfss2015_heart,final splits,prior,"mixture, lambda = 0.5",negative outcome,True,1,0.6526,0.6526,0.6526,0.022984983144345696,5.9475942384308915,7394.0,1.0,0.027625458229914218
+brfss2015_heart,final splits,prior,"mixture, lambda = 0.5",enrichment,True,1,0.26,0.26,0.26,0.7292307692307692,5.293846153846154,1798.0,1.0,0.7685521346236438
+brfss2015_heart,final splits,prior,"mixture, lambda = 0.25",negative outcome,False,1,0.6528,0.6528,0.6528,0.02297794117647059,5.947916666666667,7394.0,1.0,0.027795079462324766
+brfss2015_heart,final splits,prior,"mixture, lambda = 0.25",enrichment,False,1,0.2596,0.2596,0.2596,0.7295839753466872,5.288906009244992,1798.0,1.0,0.7685521346236438
+brfss2015_heart,final splits,prior,training support only,negative outcome,False,1,0.6352,0.6352,0.6352,0.020465994962216624,5.875,7394.0,1.0,0.024834480424426646
+brfss2015_heart,final splits,prior,training support only,enrichment,False,1,0.2534,0.2534,0.2534,0.7292817679558011,5.18863456985004,1798.0,1.0,0.7637353995337599
+brfss2015_heart,final splits,explanation construction,AXps only,negative outcome,False,1,0.4596,0.4596,0.4596,0.012619669277632724,5.3376849434290685,1395.0,1.0,0.01633160943659708
+brfss2015_heart,final splits,explanation construction,AXps only,enrichment,False,1,0.0678,0.0678,0.0678,0.5870206489675516,4.268436578171092,401.0,1.0,0.6911867622769938
+brfss2015_heart,final splits,explanation construction,widest inflated box of each order only,negative outcome,False,1,0.6526,0.6526,0.6526,0.022984983144345696,5.9475942384308915,7394.0,1.0,0.027625458229914218
+brfss2015_heart,final splits,explanation construction,widest inflated box of each order only,enrichment,False,1,0.26,0.26,0.26,0.7292307692307692,5.294615384615384,1798.0,1.0,0.7685521346236438
+brfss2015_heart,final splits,explanation construction,every sound box on the inflation path,negative outcome,True,1,0.6526,0.6526,0.6526,0.022984983144345696,5.9475942384308915,7394.0,1.0,0.027625458229914218
+brfss2015_heart,final splits,explanation construction,every sound box on the inflation path,enrichment,True,1,0.26,0.26,0.26,0.7292307692307692,5.293846153846154,1798.0,1.0,0.7685521346236438
+brfss2015_heart,final splits,selection rule,most succinct,negative outcome,True,1,0.6526,0.6526,0.6526,0.022984983144345696,5.9475942384308915,7394.0,1.0,0.027625458229914218
+brfss2015_heart,final splits,selection rule,most succinct,enrichment,True,1,0.26,0.26,0.26,0.7292307692307692,5.293846153846154,1798.0,1.0,0.7685521346236438
+brfss2015_heart,final splits,selection rule,largest support,negative outcome,False,1,0.6526,0.6526,0.6526,0.022984983144345696,6.486668709776279,8420.0,1.0,0.027625458229914218
+brfss2015_heart,final splits,selection rule,largest support,enrichment,False,1,0.26,0.26,0.26,0.7292307692307692,5.648461538461539,2259.0,1.0,0.7685521346236438
+brfss2015_heart,final splits,selection rule,tightest bound,negative outcome,False,1,0.6526,0.6526,0.6526,0.022984983144345696,6.3962611094085196,7060.0,1.0,0.027625458229914218
+brfss2015_heart,final splits,selection rule,tightest bound,enrichment,False,1,0.26,0.26,0.26,0.7292307692307692,5.588461538461538,1378.0,1.0,0.7685521346236438
+brfss2015_heart,final splits,candidates M,M = 1,negative outcome,False,1,0.6232,0.6232,0.6232,0.021501925545571246,6.189345314505776,5737.0,1.0,0.02555600630279792
+brfss2015_heart,final splits,candidates M,M = 1,enrichment,False,1,0.1674,0.1674,0.1674,0.6989247311827957,5.069295101553166,990.0,1.0,0.7485782760415076
+brfss2015_heart,final splits,candidates M,M = 3,negative outcome,False,1,0.6444,0.6444,0.6444,0.02265673494723774,6.172253258845438,5927.0,1.0,0.026771228711447093
+brfss2015_heart,final splits,candidates M,M = 3,enrichment,False,1,0.2298,0.2298,0.2298,0.72236727589208,5.2706701479547435,1566.0,1.0,0.7636700730392483
+brfss2015_heart,final splits,candidates M,M = 5,negative outcome,False,1,0.65,0.65,0.65,0.02276923076923077,6.135384615384615,6581.0,1.0,0.027240428424826355
+brfss2015_heart,final splits,candidates M,M = 5,enrichment,False,1,0.2462,0.2462,0.2462,0.7213647441104792,5.3070674248578396,1666.0,1.0,0.7653433297551401
+brfss2015_heart,final splits,candidates M,M = 10,negative outcome,True,1,0.6526,0.6526,0.6526,0.022984983144345696,5.9475942384308915,7394.0,1.0,0.027625458229914218
+brfss2015_heart,final splits,candidates M,M = 10,enrichment,True,1,0.26,0.26,0.26,0.7292307692307692,5.293846153846154,1798.0,1.0,0.7685521346236438
+brfss2015_heart,final splits,calibration size,"5,000 records",negative outcome,False,10,0.563,0.522275,0.58319,0.017606534357260176,5.839889093414368,549.9,1.0,0.022581814839195535
+brfss2015_heart,final splits,calibration size,"5,000 records",enrichment,False,10,0.0111,0.0,0.029085,0.6114457094448784,4.757635667699126,107.83333333333333,0.4,0.854576750003272
+brfss2015_heart,final splits,calibration size,"10,000 records",negative outcome,False,10,0.62364,0.61714,0.63102,0.019816446125893457,5.9236360759017,1059.5,1.0,0.024908547984819982
+brfss2015_heart,final splits,calibration size,"10,000 records",enrichment,False,10,0.03952,0.0018000000000000002,0.066345,0.6007844060565586,4.8637042311763246,213.72222222222223,0.9,0.7206944079286857
+brfss2015_heart,final splits,calibration size,"20,000 records",negative outcome,False,10,0.64124,0.640135,0.6418,0.02145831886501309,5.942551854675161,2015.7,1.0,0.02605705551768319
+brfss2015_heart,final splits,calibration size,"20,000 records",enrichment,False,10,0.12884,0.08986,0.15542999999999998,0.6852968721881851,4.9543473429515155,493.0,1.0,0.7253594484051703
+brfss2015_heart,final splits,calibration size,"40,000 records",negative outcome,False,10,0.6472800000000001,0.64649,0.648155,0.022370546779591306,5.928869486169609,3936.9,1.0,0.02709895478201669
+brfss2015_heart,final splits,calibration size,"40,000 records",enrichment,False,10,0.22218,0.198295,0.23981,0.7189799022202139,5.187994632796311,991.45,1.0,0.7533343960216439
+brfss2015_heart,final splits,calibration size,"76,104 records",negative outcome,True,1,0.6526,0.6526,0.6526,0.022984983144345696,5.9475942384308915,7394.0,1.0,0.027625458229914218
+brfss2015_heart,final splits,calibration size,"76,104 records",enrichment,True,1,0.26,0.26,0.26,0.7292307692307692,5.293846153846154,1798.0,1.0,0.7685521346236438
+cdc_diabetes,development (notebook 05),candidates M,M = 1,negative outcome,False,1,0.415,0.415,0.415,0.0289156626506024,4.732530120481928,,,
+cdc_diabetes,development (notebook 05),candidates M,M = 1,enrichment,False,1,0.207,0.207,0.207,0.6280193236714976,6.222222222222222,,,
+cdc_diabetes,development (notebook 05),candidates M,M = 5,negative outcome,False,1,0.504,0.504,0.504,0.0317460317460317,4.783730158730159,,,
+cdc_diabetes,development (notebook 05),candidates M,M = 5,enrichment,False,1,0.335,0.335,0.335,0.6328358208955224,5.874626865671642,,,
+cdc_diabetes,development (notebook 05),prior,Occam prior only,negative outcome,False,1,0.512,0.512,0.512,0.02734375,4.6953125,,,
+cdc_diabetes,development (notebook 05),prior,Occam prior only,enrichment,False,1,0.301,0.301,0.301,0.6179401993355482,5.72093023255814,,,
+cdc_diabetes,development (notebook 05),candidates M,M = 10,negative outcome,True,1,0.539,0.539,0.539,0.0315398886827458,4.6975881261595545,,,
+cdc_diabetes,development (notebook 05),prior,"mixture, lambda = 0.5",negative outcome,True,1,0.539,0.539,0.539,0.0315398886827458,4.6975881261595545,,,
+cdc_diabetes,development (notebook 05),candidates M,M = 10,enrichment,True,1,0.348,0.348,0.348,0.6379310344827587,5.85632183908046,,,
+cdc_diabetes,development (notebook 05),prior,"mixture, lambda = 0.5",enrichment,True,1,0.348,0.348,0.348,0.6379310344827587,5.85632183908046,,,
+cdc_diabetes,development (notebook 05),prior,"mixture, lambda = 0.25",negative outcome,False,1,0.537,0.537,0.537,0.031657355679702,4.683426443202979,,,
+cdc_diabetes,development (notebook 05),prior,"mixture, lambda = 0.25",enrichment,False,1,0.348,0.348,0.348,0.6379310344827587,5.85632183908046,,,
+brfss2015_heart,development (notebook 05),candidates M,M = 1,negative outcome,False,1,0.59,0.59,0.59,0.0271186440677966,5.9932203389830505,,,
+brfss2015_heart,development (notebook 05),candidates M,M = 1,enrichment,False,1,0.056,0.056,0.056,0.625,4.785714285714286,,,
+brfss2015_heart,development (notebook 05),candidates M,M = 5,negative outcome,False,1,0.629,0.629,0.629,0.0254372019077901,5.926868044515103,,,
+brfss2015_heart,development (notebook 05),candidates M,M = 5,enrichment,False,1,0.097,0.097,0.097,0.7010309278350515,5.288659793814433,,,
+brfss2015_heart,development (notebook 05),prior,Occam prior only,negative outcome,False,1,0.627,0.627,0.627,0.0255183413078149,5.752791068580542,,,
+brfss2015_heart,development (notebook 05),prior,Occam prior only,enrichment,False,1,0.014,0.014,0.014,0.5714285714285714,3.857142857142857,,,
+brfss2015_heart,development (notebook 05),candidates M,M = 10,negative outcome,True,1,0.631,0.631,0.631,0.0253565768621236,5.776545166402536,,,
+brfss2015_heart,development (notebook 05),prior,"mixture, lambda = 0.5",negative outcome,True,1,0.631,0.631,0.631,0.0253565768621236,5.776545166402536,,,
+brfss2015_heart,development (notebook 05),candidates M,M = 10,enrichment,True,1,0.107,0.107,0.107,0.719626168224299,5.373831775700935,,,
+brfss2015_heart,development (notebook 05),prior,"mixture, lambda = 0.5",enrichment,True,1,0.107,0.107,0.107,0.719626168224299,5.373831775700935,,,
+brfss2015_heart,development (notebook 05),prior,"mixture, lambda = 0.25",negative outcome,False,1,0.63,0.63,0.63,0.0253968253968253,5.768253968253968,,,
+brfss2015_heart,development (notebook 05),prior,"mixture, lambda = 0.25",enrichment,False,1,0.112,0.112,0.112,0.7321428571428571,5.348214285714286,,,

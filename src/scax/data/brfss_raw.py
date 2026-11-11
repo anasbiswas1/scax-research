@@ -84,15 +84,23 @@ def extract_xpt(zip_path, workdir) -> Path:
     return out
 
 
-def xpt_columns(xpt_path):
+def _read(xpt_path, **kw):
+    """pyreadstat reader; files whose variable labels are not valid UTF-8 (2023 has a Latin-1 byte)
+    are read as Latin-1. Labels are not used, column names are ASCII and values are numeric."""
     import pyreadstat
-    _, meta = pyreadstat.read_xport(str(xpt_path), metadataonly=True)
+    try:
+        return pyreadstat.read_xport(str(xpt_path), **kw)
+    except UnicodeDecodeError:
+        return pyreadstat.read_xport(str(xpt_path), encoding="latin1", **kw)
+
+
+def xpt_columns(xpt_path):
+    _, meta = _read(xpt_path, metadataonly=True)
     return list(meta.column_names)
 
 
 def read_xpt(xpt_path, columns):
-    import pyreadstat
-    df, _ = pyreadstat.read_xport(str(xpt_path), usecols=list(columns))
+    df, _ = _read(xpt_path, usecols=list(columns))
     return df
 
 

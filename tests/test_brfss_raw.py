@@ -105,3 +105,18 @@ def test_compare_with_public():
     X2 = X.copy(); X2.loc[X2.index[0], "Income"] = 1 if X2.Income.iloc[0] != 1 else 2
     res = br.compare_with_public(table, X2, y)
     assert not res["passed"] and res["marginal_mismatches"] == ["Income"]
+
+
+def test_xpt_with_latin1_label(tmp_path):
+    import pyreadstat
+    raw = _raw_year(2023, n=50, seed=5)
+    xpt = tmp_path / "LLCP2023.XPT"
+    pyreadstat.write_xport(raw, str(xpt), table_name="LLCP2023", column_labels=["LABELXYZ"] + [""] * (raw.shape[1] - 1))
+    b = xpt.read_bytes()
+    assert b.count(b"LABELXYZ") == 1
+    xpt.write_bytes(b.replace(b"LABELXYZ", b"LABE\xb4XYZ"))
+    with pytest.raises(UnicodeDecodeError):
+        pyreadstat.read_xport(str(xpt), metadataonly=True)
+    assert br.xpt_columns(xpt) == list(raw.columns)
+    back = br.read_xpt(xpt, ["_RFHYPE6", "_BMI5"])
+    assert np.allclose(back._BMI5.fillna(-1), raw._BMI5.fillna(-1))

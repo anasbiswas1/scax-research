@@ -1,0 +1,326 @@
+{
+  "seed": 42,
+  "frozen_config_sha256": "c656821f5d64dd87e4cd6b9b8b2dbccf9e483eb0ab7d45d88183fef527d57e1e",
+  "brfss_2015_parquet_sha256": "db1b290516c4a7c0df637c52c6346a9a63efa5d4481806836527f948d8ed012e",
+  "nhanes_parquet_sha256": "cbd855a9eb679d4693701f8cf95d79b20d0974e509827c7571cd6e01cafc99f4",
+  "uci_parquet_sha256": "dfd33e1cb754fe93be3cf4d7c71a20536e4916801ddad2d725355ac2498d32b2",
+  "targets": {
+    "frozen": {
+      "0": 0.05,
+      "1": 0.7
+    },
+    "lenient_uci": {
+      "0": 0.1,
+      "1": 0.8
+    },
+    "delta_1": 0.025
+  },
+  "sizes": {
+    "prior_patients": 1000,
+    "explained_reference": 500,
+    "explained_nhanes": 500,
+    "recertification_sizes": [
+      500,
+      1000,
+      2000,
+      5000
+    ],
+    "draws": 20,
+    "min_checking_records": 500
+  },
+  "predictors_measurement": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "Diabetes",
+    "PhysActivity",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "GenHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "predictors_uci": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak"
+  ],
+  "uci_settings_grid": [
+    {
+      "n_estimators": 100,
+      "max_bin": 32,
+      "max_depth": 2,
+      "min_child_weight": 1
+    },
+    {
+      "n_estimators": 100,
+      "max_bin": 32,
+      "max_depth": 2,
+      "min_child_weight": 5
+    },
+    {
+      "n_estimators": 100,
+      "max_bin": 32,
+      "max_depth": 3,
+      "min_child_weight": 1
+    },
+    {
+      "n_estimators": 100,
+      "max_bin": 32,
+      "max_depth": 3,
+      "min_child_weight": 5
+    },
+    {
+      "n_estimators": 100,
+      "max_bin": 32,
+      "max_depth": 4,
+      "min_child_weight": 1
+    },
+    {
+      "n_estimators": 100,
+      "max_bin": 32,
+      "max_depth": 4,
+      "min_child_weight": 5
+    }
+  ],
+  "models": {
+    "measurement_brfss2015_common16": {
+      "model_sha256": "331183848d4c13da0f6fc2abb060cbca97a36d4a8b6f79c290c41bb38b9e2e67",
+      "predictors": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "BMI",
+        "Smoker",
+        "Stroke",
+        "Diabetes",
+        "PhysActivity",
+        "HvyAlcoholConsump",
+        "AnyHealthcare",
+        "GenHlth",
+        "DiffWalk",
+        "Sex",
+        "Age",
+        "Education",
+        "Income"
+      ],
+      "settings": {
+        "gamma": 2,
+        "max_bin": 32,
+        "max_depth": 4,
+        "min_child_weight": 50,
+        "n_estimators": 100
+      },
+      "input_cast": "float64",
+      "training_records": 101472,
+      "training_prevalence": 0.09405550299590035,
+      "calibration_records": 76104,
+      "prior_patients": 1000,
+      "prior_boxes": 23213,
+      "thresholds": 45,
+      "tau": -2.2688602209091187,
+      "exported_vs_native": {
+        "disagreements": 2,
+        "within_rounding": 2,
+        "beyond_rounding": 0,
+        "rounding_bound": 0.00021720188213044685,
+        "max_gap": 9.400431282280408e-07
+      }
+    },
+    "site_cleveland": {
+      "model_sha256": "0e44b9f1d866f8ba00a29b28c86887f5a74385ff468395af8d5468eec92f5a41",
+      "predictors": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak"
+      ],
+      "settings": {
+        "n_estimators": 100,
+        "max_bin": 32,
+        "max_depth": 2,
+        "min_child_weight": 5
+      },
+      "input_cast": "float32",
+      "training_records": 152,
+      "training_prevalence": 0.4605263157894737,
+      "calibration_records": 105,
+      "prior_patients": 152,
+      "prior_boxes": 2492,
+      "thresholds": 38,
+      "tau": -0.43148021399974823,
+      "exported_vs_native": {
+        "disagreements": 0,
+        "within_rounding": 0,
+        "beyond_rounding": 0,
+        "rounding_bound": 0.00023410005982205107,
+        "max_gap": 0.0
+      }
+    },
+    "uci_without_cleveland": {
+      "model_sha256": "f7ccc878572d7efdd8a4653f37c7ab2eea3a407dd5cec84070ff39a366264ec7",
+      "predictors": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak"
+      ],
+      "settings": {
+        "n_estimators": 100,
+        "max_bin": 32,
+        "max_depth": 2,
+        "min_child_weight": 1
+      },
+      "input_cast": "float32",
+      "training_records": 274,
+      "training_prevalence": 0.5912408759124088,
+      "calibration_records": 192,
+      "prior_patients": 274,
+      "prior_boxes": 8829,
+      "thresholds": 61,
+      "tau": -0.24697601050138474,
+      "exported_vs_native": {
+        "disagreements": 0,
+        "within_rounding": 0,
+        "beyond_rounding": 0,
+        "rounding_bound": 0.0004480000702491438,
+        "max_gap": 0.0
+      }
+    },
+    "uci_without_hungarian": {
+      "model_sha256": "61e449754bc33859ddc09d3e1214151c7bcc3157d51d7046e967925710274919",
+      "predictors": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak"
+      ],
+      "settings": {
+        "n_estimators": 100,
+        "max_bin": 32,
+        "max_depth": 2,
+        "min_child_weight": 1
+      },
+      "input_cast": "float32",
+      "training_records": 279,
+      "training_prevalence": 0.6379928315412187,
+      "calibration_records": 196,
+      "prior_patients": 279,
+      "prior_boxes": 9048,
+      "thresholds": 71,
+      "tau": 0.23170287162065506,
+      "exported_vs_native": {
+        "disagreements": 0,
+        "within_rounding": 0,
+        "beyond_rounding": 0,
+        "rounding_bound": 0.00043478697994814297,
+        "max_gap": 0.0
+      }
+    },
+    "uci_without_switzerland": {
+      "model_sha256": "85949cea5b269df207f103cb60533fb4d9ab81464cb9580e95bac7bb91e2c537",
+      "predictors": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak"
+      ],
+      "settings": {
+        "n_estimators": 100,
+        "max_bin": 32,
+        "max_depth": 2,
+        "min_child_weight": 1
+      },
+      "input_cast": "float32",
+      "training_records": 367,
+      "training_prevalence": 0.4822888283378747,
+      "calibration_records": 258,
+      "prior_patients": 367,
+      "prior_boxes": 11804,
+      "thresholds": 66,
+      "tau": -0.027429970912635326,
+      "exported_vs_native": {
+        "disagreements": 0,
+        "within_rounding": 0,
+        "beyond_rounding": 0,
+        "rounding_bound": 0.0004344211854172553,
+        "max_gap": 0.0
+      }
+    },
+    "uci_without_va": {
+      "model_sha256": "1b5eaf0bc02dd9f17fa419222cc73cef8db3272481582cf526129721f5b8bc01",
+      "predictors": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak"
+      ],
+      "settings": {
+        "n_estimators": 100,
+        "max_bin": 32,
+        "max_depth": 2,
+        "min_child_weight": 5
+      },
+      "input_cast": "float32",
+      "training_records": 356,
+      "training_prevalence": 0.4943820224719101,
+      "calibration_records": 248,
+      "prior_patients": 356,
+      "prior_boxes": 8078,
+      "thresholds": 59,
+      "tau": -0.44166456162929535,
+      "exported_vs_native": {
+        "disagreements": 0,
+        "within_rounding": 0,
+        "beyond_rounding": 0,
+        "rounding_bound": 0.00029824562760882856,
+        "max_gap": 0.0
+      }
+    }
+  },
+  "seconds_total": 340.6948387622833,
+  "_written_utc": "2026-11-11T15:01:04+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.4.1",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

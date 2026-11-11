@@ -1,0 +1,25 @@
+m,kind,draws,coverage,coverage_q025,coverage_q975,error_rate,refuted_share,draws_with_refuted_claims,above_target_share,mean_size,setting,model,target,role,targets_set,kind_name
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,enrichment
+1000,0,20,0.0482,0.0,0.1649499999999999,0.0,0.0,0.0,0.0,5.1559628251815806,measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,enrichment
+2000,0,20,0.4795,0.3518,0.5941,0.01751978304938378,0.0,0.0,0.0,5.012893115140117,measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,negative outcome
+2000,1,20,0.0002,0.0,0.0020999999999999942,0.5,0.0,0.0,0.0,4.5,measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,enrichment
+5000,0,20,0.6677,0.65285,0.67905,0.02396657942298895,0.0,0.0,0.0,5.086115400206146,measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,negative outcome
+5000,1,20,0.010100000000000001,0.0,0.03324999999999999,0.7975553320948058,0.0,0.0,0.0,5.2573033691454745,measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,enrichment
+1000,0,20,0.1564,0.0,0.29905,0.004240181228308841,0.0,0.0,0.0,4.544826223582396,measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,enrichment
+2000,0,20,0.49910000000000004,0.47075,0.52105,0.004011090741232823,0.0,0.0,0.0,4.7340029130587915,measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,negative outcome
+2000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,enrichment
+5000,0,20,0.5636,0.5589500000000001,0.568,0.0035487395293043447,0.0,0.0,0.0,4.889370627760767,measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,negative outcome
+5000,1,20,0.0201,0.018,0.032,0.45511363636363633,0.0,0.0,0.09744318181818182,4.09375,measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,enrichment
+1000,0,20,0.1639,0.0,0.32115,0.0,0.0,0.0,0.0,4.591349517979974,measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,enrichment
+2000,0,20,0.5440000000000002,0.5079,0.5691499999999999,0.003113177166015827,0.0,0.0,0.0,4.797212636443967,measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,negative outcome
+2000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,enrichment
+5000,0,20,0.6113999999999999,0.61,0.616,0.003271216109694055,0.0,0.0,0.0,4.951931336007009,measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,negative outcome
+5000,1,20,0.0194,0.018,0.028099999999999993,0.4416627816627816,0.0,0.0,0.08405594405594405,4.056410256410257,measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,enrichment

@@ -1,0 +1,481 @@
+setting,model,target,role,targets_set,m,draw,kind,accepted,coverage,errors,error_rate,mean_size,median_support,distinct_boxes,refuted_share,refuted_boxes,above_target_share,predicted,error_upper_95
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,0,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,0,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,1,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,1,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,2,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,2,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,3,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,3,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,4,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,4,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,5,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,5,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,6,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,6,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,7,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,7,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,8,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,8,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,9,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,9,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,10,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,10,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,11,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,11,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,12,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,12,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,13,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,13,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,14,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,14,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,15,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,15,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,16,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,16,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,17,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,17,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,18,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,18,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,19,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,500,19,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,0,0,18,0.036,0,0.0,5.0,227.0,1,0.0,0,0.0,351,0.15331755395727825
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,0,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,1,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,1,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,2,0,101,0.202,0,0.0,5.207920792079208,276.0,3,0.0,0,0.0,351,0.029225153539039074
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,2,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,3,0,41,0.082,0,0.0,5.0,244.0,1,0.0,0,0.0,351,0.07046111727016408
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,3,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,4,0,62,0.124,0,0.0,5.338709677419355,269.0,2,0.0,0,0.0,351,0.047169511375356826
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,4,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,5,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,5,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,6,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,6,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,7,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,7,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,8,0,49,0.098,0,0.0,5.122448979591836,264.0,4,0.0,0,0.0,351,0.05930601418969708
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,8,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,9,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,9,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,10,0,41,0.082,0,0.0,5.0,280.0,1,0.0,0,0.0,351,0.07046111727016408
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,10,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,11,0,43,0.086,0,0.0,5.0,264.0,2,0.0,0,0.0,351,0.06729675341386783
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,11,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,12,0,41,0.082,0,0.0,5.0,273.0,1,0.0,0,0.0,351,0.07046111727016408
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,12,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,13,0,2,0.004,0,0.0,6.0,261.0,1,0.0,0,0.0,351,0.7763932022500211
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,13,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,14,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,14,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,15,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,15,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,16,0,43,0.086,0,0.0,5.046511627906977,235.0,2,0.0,0,0.0,351,0.06729675341386783
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,16,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,17,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,17,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,18,0,0,0.0,0,,,,0,0.0,0,0.0,351,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,18,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,19,0,41,0.082,0,0.0,5.0,230.0,1,0.0,0,0.0,351,0.07046111727016408
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,1000,19,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,0,0,270,0.54,3,0.011111111111111112,5.003703703703704,412.0,29,0.0,0,0.0,351,0.028465323033504075
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,0,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,1,0,250,0.5,5,0.02,4.912,427.5,30,0.0,0,0.0,351,0.041589828782820984
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,1,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,2,0,193,0.386,5,0.025906735751295335,4.678756476683938,368.0,24,0.0,0,0.0,351,0.053696639404755615
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,2,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,3,0,229,0.458,5,0.021834061135371178,4.860262008733624,432.0,26,0.0,0,0.0,351,0.045357607281626224
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,3,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,4,0,263,0.526,4,0.015209125475285171,4.9505703422053235,389.0,29,0.0,0,0.0,351,0.0344643505145499
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,4,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,5,0,178,0.356,1,0.0056179775280898875,5.713483146067416,422.0,21,0.0,0,0.0,351,0.026372284802073206
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,5,1,2,0.004,1,0.5,4.5,26.0,2,0.0,0,0.0,149,0.9746794344808964
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,6,0,298,0.596,6,0.020134228187919462,5.097315436241611,401.0,46,0.0,0,0.0,351,0.039350828322341665
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,6,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,7,0,182,0.364,3,0.016483516483516484,4.642857142857143,453.0,13,0.0,0,0.0,351,0.042048997511811376
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,7,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,8,0,276,0.552,8,0.028985507246376812,5.134057971014493,406.0,32,0.0,0,0.0,351,0.05169055241755291
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,8,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,9,0,210,0.42,4,0.01904761904761905,4.6571428571428575,394.0,23,0.0,0,0.0,351,0.0430554897397427
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,9,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,10,0,174,0.348,0,0.0,5.551724137931035,458.0,16,0.0,0,0.0,351,0.017069489069354196
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,10,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,11,0,296,0.592,6,0.02027027027027027,5.04054054054054,411.0,45,0.0,0,0.0,351,0.03961407324741446
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,11,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,12,0,229,0.458,4,0.017467248908296942,4.882096069868996,402.0,21,0.0,0,0.0,351,0.039523582030397096
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,12,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,13,0,274,0.548,5,0.01824817518248175,5.135036496350365,399.0,35,0.0,0,0.0,351,0.037983773162314556
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,13,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,14,0,246,0.492,4,0.016260162601626018,5.028455284552845,395.0,22,0.0,0,0.0,351,0.03682100650925211
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,14,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,15,0,263,0.526,6,0.022813688212927757,5.068441064638783,390.0,27,0.0,0,0.0,351,0.04452914521046863
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,15,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,16,0,249,0.498,2,0.008032128514056224,5.028112449799197,410.0,24,0.0,0,0.0,351,0.02506708818832234
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,16,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,17,0,249,0.498,4,0.01606425702811245,5.016064257028113,389.0,24,0.0,0,0.0,351,0.03638198770053515
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,17,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,18,0,227,0.454,4,0.01762114537444934,4.740088105726873,404.0,28,0.0,0,0.0,351,0.03986783920794798
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,18,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,19,0,239,0.478,7,0.029288702928870293,5.117154811715481,447.0,28,0.0,0,0.0,351,0.0543068573719228
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,2000,19,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,0,0,332,0.664,8,0.024096385542168676,5.090361445783133,916.0,67,0.0,0,0.0,351,0.04305696182755856
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,0,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,1,0,337,0.674,8,0.02373887240356083,5.056379821958457,923.0,72,0.0,0,0.0,351,0.04242428057805352
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,1,1,8,0.016,5,0.625,4.25,46.0,4,0.0,0,0.0,149,0.8888872933923708
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,2,0,338,0.676,8,0.023668639053254437,5.071005917159764,894.0,73,0.0,0,0.0,351,0.042299968798652124
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,2,1,2,0.004,2,1.0,5.5,59.0,2,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,3,0,333,0.666,8,0.024024024024024024,5.099099099099099,916.0,69,0.0,0,0.0,351,0.04292892055098152
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,3,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,4,0,339,0.678,8,0.02359882005899705,5.079646017699115,924.0,75,0.0,0,0.0,351,0.04217638334743503
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,4,1,11,0.022,9,0.8181818181818182,5.181818181818182,120.0,7,0.0,0,0.0,149,0.9666807823157701
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,5,0,340,0.68,8,0.023529411764705882,5.094117647058823,923.0,75,0.0,0,0.0,351,0.04205351787780678
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,5,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,6,0,328,0.656,8,0.024390243902439025,5.097560975609756,955.0,61,0.0,0,0.0,351,0.04357685647223005
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,6,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,7,0,329,0.658,8,0.0243161094224924,5.051671732522796,893.0,66,0.0,0,0.0,351,0.04344570942530742
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,7,1,14,0.028,11,0.7857142857142857,5.285714285714286,104.0,7,0.0,0,0.0,149,0.9388970711410224
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,8,0,336,0.672,8,0.023809523809523808,5.071428571428571,917.5,72,0.0,0,0.0,351,0.042549325107040986
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,8,1,12,0.024,11,0.9166666666666666,6.166666666666667,92.0,8,0.0,0,0.0,149,0.9957346812224394
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,9,0,339,0.678,8,0.02359882005899705,5.0825958702064895,951.0,72,0.0,0,0.0,351,0.04217638334743503
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,9,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,10,0,335,0.67,8,0.023880597014925373,5.071641791044776,895.0,71,0.0,0,0.0,351,0.042675108882927894
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,10,1,2,0.004,2,1.0,5.5,39.5,2,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,11,0,329,0.658,8,0.0243161094224924,5.091185410334346,928.0,60,0.0,0,0.0,351,0.04344570942530742
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,11,1,2,0.004,1,0.5,5.0,45.5,2,0.0,0,0.0,149,0.9746794344808964
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,12,0,334,0.668,8,0.023952095808383235,5.059880239520958,921.0,71,0.0,0,0.0,351,0.04280163848006421
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,12,1,13,0.026,11,0.8461538461538461,4.769230769230769,75.0,6,0.0,0,0.0,149,0.9719466226798241
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,13,0,325,0.65,8,0.024615384615384615,5.153846153846154,941.0,61,0.0,0,0.0,351,0.043975091220927395
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,13,1,3,0.006,2,0.6666666666666666,5.666666666666667,35.0,3,0.0,0,0.0,149,0.9830475724915585
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,14,0,334,0.668,8,0.023952095808383235,5.098802395209581,985.0,70,0.0,0,0.0,351,0.04280163848006421
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,14,1,12,0.024,10,0.8333333333333334,6.083333333333333,108.0,5,0.0,0,0.0,149,0.9695398343408628
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,15,0,338,0.676,8,0.023668639053254437,5.076923076923077,899.0,72,0.0,0,0.0,351,0.042299968798652124
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,15,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,16,0,330,0.66,8,0.024242424242424242,5.112121212121212,948.0,68,0.0,0,0.0,351,0.043315349329082396
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,16,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,17,0,337,0.674,8,0.02373887240356083,5.074183976261128,942.0,71,0.0,0,0.0,351,0.04242428057805352
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,17,1,19,0.038,11,0.5789473684210527,4.684210526315789,97.0,7,0.0,0,0.0,149,0.7702790806738375
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,18,0,330,0.66,8,0.024242424242424242,5.1030303030303035,899.0,65,0.0,0,0.0,351,0.043315349329082396
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,18,1,3,0.006,3,1.0,5.0,180.0,1,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,19,0,334,0.668,8,0.023952095808383235,5.086826347305389,876.0,69,0.0,0,0.0,351,0.04280163848006421
+measurement,measurement_brfss2015_common16,BRFSS 2015 test split,reference,frozen,5000,19,1,0,0.0,0,,,,0,0.0,0,0.0,149,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,0,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,0,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,1,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,1,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,2,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,2,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,3,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,3,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,4,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,4,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,5,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,5,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,6,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,6,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,7,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,7,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,8,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,8,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,9,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,9,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,10,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,10,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,11,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,11,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,12,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,12,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,13,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,13,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,14,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,14,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,15,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,15,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,16,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,16,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,17,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,17,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,18,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,18,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,19,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,500,19,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,0,0,113,0.226,1,0.008849557522123894,4.0,252.0,1,0.0,0,0.0,303,0.04129202431455111
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,0,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,1,0,113,0.226,1,0.008849557522123894,4.0,251.0,1,0.0,0,0.0,303,0.04129202431455111
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,1,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,2,0,145,0.29,1,0.006896551724137931,4.23448275862069,251.0,4,0.0,0,0.0,303,0.03229696379917889
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,2,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,3,0,10,0.02,0,0.0,5.0,245.0,1,0.0,0,0.0,303,0.2588655508930523
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,3,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,4,0,148,0.296,1,0.006756756756756757,4.236486486486487,271.0,6,0.0,0,0.0,303,0.03165056505661058
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,4,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,5,0,27,0.054,0,0.0,5.0,311.0,1,0.0,0,0.0,303,0.10501923017634429
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,5,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,6,0,24,0.048,0,0.0,5.166666666666667,215.0,3,0.0,0,0.0,303,0.11734615615494874
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,6,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,7,0,148,0.296,1,0.006756756756756757,4.236486486486487,261.0,6,0.0,0,0.0,303,0.03165056505661058
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,7,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,8,0,29,0.058,0,0.0,5.068965517241379,268.0,2,0.0,0,0.0,303,0.09814462767729573
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,8,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,9,0,150,0.3,1,0.006666666666666667,4.26,250.0,8,0.0,0,0.0,303,0.03123381692094288
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,9,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,10,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,10,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,11,0,145,0.29,1,0.006896551724137931,4.220689655172414,264.0,5,0.0,0,0.0,303,0.03229696379917889
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,11,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,12,0,149,0.298,1,0.006711409395973154,4.25503355704698,250.0,7,0.0,0,0.0,303,0.03144081014844204
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,12,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,13,0,147,0.294,1,0.006802721088435374,4.244897959183674,260.0,6,0.0,0,0.0,303,0.0318631372815206
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,13,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,14,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,14,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,15,0,0,0.0,0,,,,0,0.0,0,0.0,303,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,15,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,16,0,145,0.29,1,0.006896551724137931,4.220689655172414,265.0,5,0.0,0,0.0,303,0.03229696379917889
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,16,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,17,0,10,0.02,0,0.0,5.0,245.0,1,0.0,0,0.0,303,0.2588655508930523
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,17,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,18,0,27,0.054,0,0.0,5.0,266.0,1,0.0,0,0.0,303,0.10501923017634429
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,18,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,19,0,34,0.068,0,0.0,5.117647058823529,289.0,4,0.0,0,0.0,303,0.0843396433506254
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,1000,19,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,0,0,256,0.512,1,0.00390625,4.765625,528.0,50,0.0,0,0.0,303,0.018395769886273648
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,0,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,1,0,250,0.5,1,0.004,4.708,506.0,43,0.0,0,0.0,303,0.018833965611186228
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,1,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,2,0,256,0.512,1,0.00390625,4.75390625,520.0,49,0.0,0,0.0,303,0.018395769886273648
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,2,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,3,0,244,0.488,1,0.004098360655737705,4.758196721311475,533.0,42,0.0,0,0.0,303,0.019293546231122578
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,3,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,4,0,253,0.506,1,0.003952569169960474,4.758893280632411,522.0,47,0.0,0,0.0,303,0.018612289020057283
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,4,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,5,0,252,0.504,1,0.003968253968253968,4.734126984126984,520.0,46,0.0,0,0.0,303,0.01868559913819755
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,5,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,6,0,233,0.466,1,0.004291845493562232,4.67381974248927,513.0,35,0.0,0,0.0,303,0.020197090353315888
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,6,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,7,0,245,0.49,1,0.004081632653061225,4.751020408163265,499.0,41,0.0,0,0.0,303,0.01921539823510364
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,7,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,8,0,239,0.478,1,0.0041841004184100415,4.661087866108787,516.0,40,0.0,0,0.0,303,0.01969401856476187
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,8,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,9,0,238,0.476,1,0.004201680672268907,4.668067226890757,498.0,37,0.0,0,0.0,303,0.019776116298377194
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,9,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,10,0,260,0.52,1,0.0038461538461538464,4.780769230769231,514.0,53,0.0,0,0.0,303,0.01811479408819739
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,10,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,11,0,261,0.522,1,0.0038314176245210726,4.789272030651341,539.0,53,0.0,0,0.0,303,0.01804588613315171
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,11,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,12,0,259,0.518,1,0.003861003861003861,4.776061776061776,513.0,52,0.0,0,0.0,303,0.018184230296087487
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,12,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,13,0,251,0.502,1,0.00398406374501992,4.713147410358566,484.0,44,0.0,0,0.0,303,0.018759489033596675
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,13,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,14,0,252,0.504,1,0.003968253968253968,4.73015873015873,524.0,46,0.0,0,0.0,303,0.01868559913819755
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,14,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,15,0,256,0.512,1,0.00390625,4.75390625,535.0,49,0.0,0,0.0,303,0.018395769886273648
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,15,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,16,0,254,0.508,1,0.003937007874015748,4.755905511811024,539.0,47,0.0,0,0.0,303,0.01853955188217457
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,16,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,17,0,242,0.484,1,0.004132231404958678,4.7190082644628095,502.0,36,0.0,0,0.0,303,0.019451764751842158
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,17,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,18,0,248,0.496,1,0.004032258064516129,4.693548387096774,522.0,41,0.0,0,0.0,303,0.018984706985270657
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,18,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,19,0,242,0.484,1,0.004132231404958678,4.735537190082645,518.0,40,0.0,0,0.0,303,0.019451764751842158
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,2000,19,1,0,0.0,0,,,,0,0.0,0,0.0,197,1.0
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,0,0,279,0.558,1,0.0035842293906810036,4.870967741935484,1278.0,71,0.0,0,0.0,303,0.01688944252378001
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,0,1,9,0.018,4,0.4444444444444444,4.0,84.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,1,0,280,0.56,1,0.0035714285714285713,4.835714285714285,1296.0,72,0.0,0,0.0,303,0.016829526048082626
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,1,1,9,0.018,4,0.4444444444444444,4.0,85.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,2,0,280,0.56,1,0.0035714285714285713,4.885714285714286,1278.0,72,0.0,0,0.0,303,0.016829526048082626
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,2,1,9,0.018,4,0.4444444444444444,4.0,84.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,3,0,284,0.568,1,0.0035211267605633804,4.919014084507042,1299.0,74,0.0,0,0.0,303,0.016594051740107703
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,3,1,9,0.018,4,0.4444444444444444,4.0,85.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,4,0,280,0.56,1,0.0035714285714285713,4.867857142857143,1267.0,72,0.0,0,0.0,303,0.016829526048082626
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,4,1,9,0.018,4,0.4444444444444444,4.0,86.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,5,0,283,0.566,1,0.0035335689045936395,4.904593639575972,1288.0,74,0.0,0,0.0,303,0.016652300405562762
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,5,1,9,0.018,4,0.4444444444444444,4.0,86.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,6,0,283,0.566,1,0.0035335689045936395,4.911660777385159,1278.0,73,0.0,0,0.0,303,0.016652300405562762
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,6,1,9,0.018,4,0.4444444444444444,4.0,82.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,7,0,282,0.564,1,0.0035460992907801418,4.907801418439717,1270.0,73,0.0,0,0.0,303,0.0167109594339101
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,7,1,9,0.018,4,0.4444444444444444,4.0,85.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,8,0,280,0.56,1,0.0035714285714285713,4.864285714285714,1275.0,72,0.0,0,0.0,303,0.016829526048082626
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,8,1,9,0.018,4,0.4444444444444444,4.0,87.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,9,0,283,0.566,1,0.0035335689045936395,4.908127208480566,1292.0,73,0.0,0,0.0,303,0.016652300405562762
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,9,1,9,0.018,4,0.4444444444444444,4.0,85.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,10,0,280,0.56,1,0.0035714285714285713,4.885714285714286,1285.0,72,0.0,0,0.0,303,0.016829526048082626
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,10,1,11,0.022,4,0.36363636363636365,4.0,119.0,2,0.0,0,0.0,197,0.6501884654280825
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,11,0,283,0.566,1,0.0035335689045936395,4.911660777385159,1276.0,73,0.0,0,0.0,303,0.016652300405562762
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,11,1,9,0.018,4,0.4444444444444444,4.0,83.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,12,0,284,0.568,1,0.0035211267605633804,4.883802816901408,1286.0,74,0.0,0,0.0,303,0.016594051740107703
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,12,1,9,0.018,4,0.4444444444444444,4.0,87.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,13,0,280,0.56,1,0.0035714285714285713,4.864285714285714,1276.0,72,0.0,0,0.0,303,0.016829526048082626
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,13,1,12,0.024,7,0.5833333333333334,4.25,87.0,2,0.0,0,0.25,197,0.818975242757679
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,14,0,283,0.566,1,0.0035335689045936395,4.915194346289753,1281.0,72,0.0,0,0.0,303,0.016652300405562762
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,14,1,9,0.018,4,0.4444444444444444,4.0,85.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,15,0,280,0.56,1,0.0035714285714285713,4.867857142857143,1283.0,72,0.0,0,0.0,303,0.016829526048082626
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,15,1,9,0.018,4,0.4444444444444444,4.0,83.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,16,0,283,0.566,1,0.0035335689045936395,4.911660777385159,1282.0,73,0.0,0,0.0,303,0.016652300405562762
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,16,1,16,0.032,9,0.5625,4.8125,124.0,5,0.0,0,0.3125,197,0.7733084315337128
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,17,0,283,0.566,1,0.0035335689045936395,4.876325088339223,1295.0,72,0.0,0,0.0,303,0.016652300405562762
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,17,1,16,0.032,9,0.5625,4.8125,121.0,5,0.0,0,0.75,197,0.7733084315337128
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,18,0,282,0.564,1,0.0035460992907801418,4.914893617021277,1275.0,72,0.0,0,0.0,303,0.0167109594339101
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,18,1,11,0.022,4,0.36363636363636365,4.0,129.0,2,0.0,0,0.6363636363636364,197,0.6501884654280825
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,19,0,284,0.568,1,0.0035211267605633804,4.880281690140845,1273.0,75,0.0,0,0.0,303,0.016594051740107703
+measurement,measurement_brfss2015_common16,"NHANES, self-reported",target,frozen,5000,19,1,9,0.018,4,0.4444444444444444,4.0,84.0,1,0.0,0,0.0,197,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,0,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,0,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,1,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,1,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,2,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,2,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,3,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,3,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,4,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,4,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,5,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,5,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,6,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,6,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,7,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,7,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,8,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,8,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,9,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,9,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,10,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,10,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,11,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,11,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,12,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,12,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,13,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,13,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,14,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,14,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,15,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,15,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,16,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,16,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,17,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,17,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,18,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,18,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,19,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,500,19,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,0,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,0,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,1,0,129,0.258,0,0.0,4.038759689922481,281.0,2,0.0,0,0.0,328,0.022955158445512654
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,1,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,2,0,35,0.07,0,0.0,5.371428571428571,214.0,3,0.0,0,0.0,328,0.08203163585667045
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,2,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,3,0,10,0.02,0,0.0,5.0,245.0,1,0.0,0,0.0,328,0.2588655508930523
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,3,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,4,0,158,0.316,0,0.0,4.215189873417722,297.0,6,0.0,0,0.0,328,0.01878171442924091
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,4,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,5,0,28,0.056,0,0.0,5.071428571428571,311.0,2,0.0,0,0.0,328,0.1014657355727247
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,5,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,6,0,23,0.046,0,0.0,5.086956521739131,215.0,2,0.0,0,0.0,328,0.12212338890652308
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,6,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,7,0,159,0.318,0,0.0,4.220125786163522,278.0,6,0.0,0,0.0,328,0.018664699758660752
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,7,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,8,0,27,0.054,0,0.0,5.0,268.0,1,0.0,0,0.0,328,0.10501923017634429
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,8,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,9,0,162,0.324,0,0.0,4.265432098765432,278.0,7,0.0,0,0.0,328,0.018322243346577744
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,9,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,10,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,10,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,11,0,154,0.308,0,0.0,4.194805194805195,288.0,4,0.0,0,0.0,328,0.01926482203988699
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,11,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,12,0,159,0.318,0,0.0,4.220125786163522,272.0,7,0.0,0,0.0,328,0.018664699758660752
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,12,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,13,0,34,0.068,0,0.0,5.176470588235294,289.0,3,0.0,0,0.0,328,0.0843396433506254
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,13,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,14,0,22,0.044,0,0.0,5.409090909090909,283.0,4,0.0,0,0.0,328,0.12730543165483874
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,14,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,15,0,0,0.0,0,,,,0,0.0,0,0.0,328,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,15,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,16,0,158,0.316,0,0.0,4.215189873417722,286.0,6,0.0,0,0.0,328,0.01878171442924091
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,16,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,17,0,134,0.268,0,0.0,4.074626865671642,290.0,2,0.0,0,0.0,328,0.022108162822640928
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,17,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,18,0,122,0.244,0,0.0,4.221311475409836,203.0,2,0.0,0,0.0,328,0.024256156620297877
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,18,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,19,0,125,0.25,0,0.0,4.272,214.0,5,0.0,0,0.0,328,0.023680957510334846
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,1000,19,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,0,0,283,0.566,1,0.0035335689045936395,4.869257950530035,573.0,51,0.0,0,0.0,328,0.016652300405562762
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,0,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,1,0,268,0.536,1,0.0037313432835820895,4.7611940298507465,560.0,42,0.0,0,0.0,328,0.017577828301531564
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,1,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,2,0,283,0.566,1,0.0035335689045936395,4.851590106007067,567.0,51,0.0,0,0.0,328,0.016652300405562762
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,2,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,3,0,262,0.524,1,0.003816793893129771,4.744274809160306,577.0,40,0.0,0,0.0,328,0.017977500425714974
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,3,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,4,0,274,0.548,1,0.0036496350364963502,4.791970802919708,568.0,49,0.0,0,0.0,328,0.01719554018566133
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,4,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,5,0,271,0.542,1,0.0036900369003690036,4.804428044280443,586.0,48,0.0,0,0.0,328,0.017384582907411787
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,5,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,6,0,253,0.506,0,0.0,4.715415019762846,562.0,37,0.0,0,0.0,328,0.01177101216608788
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,6,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,7,0,271,0.542,0,0.0,4.789667896678967,548.0,44,0.0,0,0.0,328,0.010993487684164962
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,7,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,8,0,255,0.51,1,0.00392156862745098,4.682352941176471,566.0,43,0.0,0,0.0,328,0.01846738103337786
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,8,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,9,0,265,0.53,1,0.0037735849056603774,4.739622641509434,540.0,39,0.0,0,0.0,328,0.01777541808668905
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,9,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,10,0,286,0.572,1,0.0034965034965034965,4.874125874125874,566.0,54,0.0,0,0.0,328,0.01647876839313333
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,10,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,11,0,277,0.554,1,0.0036101083032490976,4.830324909747293,591.0,52,0.0,0,0.0,328,0.017010564515198712
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,11,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,12,0,278,0.556,1,0.0035971223021582736,4.816546762589928,575.0,48,0.0,0,0.0,328,0.01694978714433584
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,12,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,13,0,279,0.558,1,0.0035842293906810036,4.831541218637993,545.0,49,0.0,0,0.0,328,0.01688944252378001
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,13,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,14,0,279,0.558,1,0.0035842293906810036,4.835125448028674,573.0,50,0.0,0,0.0,328,0.01688944252378001
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,14,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,15,0,282,0.564,1,0.0035460992907801418,4.8546099290780145,585.0,51,0.0,0,0.0,328,0.0167109594339101
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,15,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,16,0,280,0.56,1,0.0035714285714285713,4.85,579.0,48,0.0,0,0.0,328,0.016829526048082626
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,16,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,17,0,269,0.538,0,0.0,4.817843866171004,544.0,39,0.0,0,0.0,328,0.011074769374639184
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,17,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,18,0,269,0.538,1,0.0037174721189591076,4.769516728624535,584.0,43,0.0,0,0.0,328,0.017512937587665544
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,18,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,19,0,256,0.512,1,0.00390625,4.71484375,574.0,39,0.0,0,0.0,328,0.018395769886273648
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,2000,19,1,0,0.0,0,,,,0,0.0,0,0.0,172,1.0
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,0,0,305,0.61,1,0.003278688524590164,4.9573770491803275,1400.0,75,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,0,1,9,0.018,4,0.4444444444444444,4.0,84.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,1,0,307,0.614,1,0.003257328990228013,4.931596091205212,1421.0,79,0.0,0,0.0,328,0.015358425997935398
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,1,1,9,0.018,4,0.4444444444444444,4.0,85.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,2,0,305,0.61,1,0.003278688524590164,4.960655737704918,1399.0,75,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,2,1,9,0.018,4,0.4444444444444444,4.0,84.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,3,0,307,0.614,1,0.003257328990228013,4.964169381107492,1428.0,77,0.0,0,0.0,328,0.015358425997935398
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,3,1,9,0.018,4,0.4444444444444444,4.0,85.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,4,0,305,0.61,1,0.003278688524590164,4.9573770491803275,1386.0,75,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,4,1,9,0.018,4,0.4444444444444444,4.0,86.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,5,0,305,0.61,1,0.003278688524590164,4.9573770491803275,1410.0,76,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,5,1,9,0.018,4,0.4444444444444444,4.0,86.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,6,0,305,0.61,1,0.003278688524590164,4.9573770491803275,1401.0,76,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,6,1,9,0.018,4,0.4444444444444444,4.0,82.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,7,0,305,0.61,1,0.003278688524590164,4.9573770491803275,1399.0,77,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,7,1,9,0.018,4,0.4444444444444444,4.0,85.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,8,0,305,0.61,1,0.003278688524590164,4.944262295081967,1410.0,74,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,8,1,9,0.018,4,0.4444444444444444,4.0,87.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,9,0,306,0.612,1,0.0032679738562091504,4.957516339869281,1415.0,75,0.0,0,0.0,328,0.015408310109403384
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,9,1,9,0.018,4,0.4444444444444444,4.0,85.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,10,0,306,0.612,1,0.0032679738562091504,4.957516339869281,1408.0,76,0.0,0,0.0,328,0.015408310109403384
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,10,1,11,0.022,4,0.36363636363636365,4.0,119.0,2,0.0,0,0.0,172,0.6501884654280825
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,11,0,305,0.61,1,0.003278688524590164,4.9573770491803275,1408.0,76,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,11,1,9,0.018,4,0.4444444444444444,4.0,83.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,12,0,308,0.616,1,0.003246753246753247,4.935064935064935,1418.0,80,0.0,0,0.0,328,0.015308863836542456
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,12,1,9,0.018,4,0.4444444444444444,4.0,87.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,13,0,305,0.61,1,0.003278688524590164,4.940983606557377,1412.0,74,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,13,1,9,0.018,4,0.4444444444444444,4.0,87.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,14,0,306,0.612,1,0.0032679738562091504,4.957516339869281,1419.0,75,0.0,0,0.0,328,0.015408310109403384
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,14,1,9,0.018,4,0.4444444444444444,4.0,85.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,15,0,305,0.61,1,0.003278688524590164,4.9573770491803275,1410.0,76,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,15,1,9,0.018,4,0.4444444444444444,4.0,83.0,1,0.0,0,0.0,172,0.7486323725918227
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,16,0,305,0.61,1,0.003278688524590164,4.9573770491803275,1409.0,75,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,16,1,13,0.026,6,0.46153846153846156,4.461538461538462,124.0,3,0.0,0,0.15384615384615385,172,0.7129509972056111
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,17,0,306,0.612,1,0.0032679738562091504,4.934640522875817,1423.0,78,0.0,0,0.0,328,0.015408310109403384
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,17,1,15,0.03,8,0.5333333333333333,4.666666666666667,121.0,4,0.0,0,0.8,172,0.756272584233451
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,18,0,305,0.61,1,0.003278688524590164,4.9573770491803275,1403.0,76,0.0,0,0.0,328,0.01545851931814071
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,18,1,11,0.022,4,0.36363636363636365,4.0,129.0,2,0.0,0,0.7272727272727273,172,0.6501884654280825
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,19,0,308,0.616,1,0.003246753246753247,4.938311688311688,1403.0,80,0.0,0,0.0,328,0.015308863836542456
+measurement,measurement_brfss2015_common16,"NHANES, measured BMI and blood pressure",target,frozen,5000,19,1,9,0.018,4,0.4444444444444444,4.0,84.0,1,0.0,0,0.0,172,0.7486323725918227

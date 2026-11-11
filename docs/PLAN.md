@@ -93,6 +93,17 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   patients; certificates on the full calibration split 1. The policy test on split 2 is not run for
   variants. Model seeds are not varied: the frozen XGBoost uses no row or column sampling, and seeds
   42, 43 and 44 give the identical model.
+- Notebook 02, raw BRFSS years: only odd years are usable. CDC's variable layouts show that even
+  years (2016 checked; 2018 to 2022 follow the same rotation) do not ask about blood pressure,
+  cholesterol or fruit and vegetables, and 2023 does not ask about fruit and vegetables. Years used:
+  2015 (rebuild and gate G0), 2017, 2019, 2021, 2023. Raw names per year, checked against the
+  layouts: CholCheck is _CHOLCHK (2015), _CHOLCH1 (2017), _CHOLCH2 (2019), _CHOLCH3 (2021, 2023);
+  Fruits and Veggies are _FRTLT1A and _VEGLT1A from 2017; Diabetes is DIABETE4 from 2019; heavy
+  drinking is _RFDRHV7 (2019, 2021) and _RFDRHV8 (2023); Sex is SEXVAR from 2019; HighBP and
+  HighChol are _RFHYPE6 and TOLDHI3 from 2021; AnyHealthcare is _HLTHPLN (2021) and _HLTHPL1
+  (2023); NoDocbcCost is MEDCOST1 and Income is INCOME3 (11 levels collapsed to 8) from 2021. Any
+  raw code outside the expected set stops the build. The harmonised set H for the temporal shift is
+  the 19 predictors without Fruits and Veggies.
 - Notebook 11, equal calibration budget: every method uses the same labelled records, split 1 of the
   re-draw plus the explained patients of its split 2. SCAX releases only boxes that passed the second
   exact check; boxes that become releasable in a re-draw are checked then. The per-box-bound and

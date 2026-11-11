@@ -135,6 +135,22 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   10,000 records, 20 draws each, with at least 1,000 target records left to check claims (larger
   sizes are skipped for small targets). The policy test on a second split is not run in target
   domains. Site (UCI) and measurement (NHANES) shift follow in notebook 13b after notebook 03.
+- Notebook 03, NHANES and UCI preparation: NHANES 2015-2016 and 2017-2018, adults aged 20 and over,
+  outcome MCQ160C or MCQ160E built like _MICHD. NHANES has no days of poor physical or mental health
+  (HSQ470 and HSQ480 were dropped after 2012), no "could not see a doctor because of cost" item and no
+  comparable fruit and vegetable items, so the common predictor set has 16 predictors; education is
+  coarsened to 5 levels and income to 7 ($35k to $75k merged, because NHANES has a $45k to $55k band),
+  and the same coarsening is applied to BRFSS. HighChol is defined only for people whose cholesterol was
+  ever checked, as BRFSS asks it. Each item's rule and comparability is in
+  results/03_nhanes_variable_map.csv. Measured values: examination BMI; high blood pressure from the
+  mean of the examination readings (systolic 140 or more, or diastolic 90 or more, diastolic 0 left out);
+  total cholesterol 240 mg/dL or more. Complete cases on the 16 predictors, the outcome, measured BMI
+  and measured blood pressure, so the self-reported and measured versions describe the same people.
+  Survey weights are kept but not used, as for BRFSS. The files are downloaded by the notebook when
+  Colab can reach CDC, otherwise by hand. UCI: the eight predictors recorded at every site (age, sex,
+  chest pain type, resting blood pressure, resting ECG, maximum heart rate, exercise angina, ST
+  depression); cholesterol, fasting blood sugar, slope, vessels and thalassemia are left out; a zero
+  blood pressure or cholesterol is missing; complete cases.
 
 ## Notebook map
 

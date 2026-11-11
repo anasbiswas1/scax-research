@@ -62,10 +62,10 @@ def fit_rulefit(X, y, names, max_rules=200, seed=0):
     rules only, no linear terms)."""
     import warnings
 
-    from imodels import RuleFitClassifier
-    m = RuleFitClassifier(max_rules=max_rules, random_state=seed, cv=False, include_linear=False)
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore")             # scikit-learn deprecation notices from inside imodels
+    with warnings.catch_warnings():                 # importing imodels changes the session's warning filters;
+        warnings.simplefilter("ignore")             # the context restores them (and hides scikit-learn notices)
+        from imodels import RuleFitClassifier
+        m = RuleFitClassifier(max_rules=max_rules, random_state=seed, cv=False, include_linear=False)
         m.fit(np.asarray(X, dtype=float), np.asarray(y), feature_names=list(names))
     rules, seen = [], set()
     for r in m.rules_:

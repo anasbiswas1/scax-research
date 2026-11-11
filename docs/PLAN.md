@@ -81,6 +81,18 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   explanation is not run (as for B3). Development results for M and lambda are those of notebook 05.
   Model factors (family, depth, trees, monotone constraints, max_bin) and extra model seeds need new
   candidate sets and are run in notebook 12b on smaller explained samples.
+- Notebook 12b, model factors one at a time against the frozen XGBoost: family (LightGBM and random
+  forest with the closest equivalent settings: same trees, depth and bins, min_child_weight 50 read
+  as 50 records per leaf, gamma 2 as LightGBM's minimum split gain), depth 3, 5, 6, 25 and 50 trees,
+  max_bin 16, 64, 256, and clinically signed monotone constraints (risk rises with HighBP, HighChol,
+  BMI, Smoker, Stroke, the other disease, GenHlth, PhysHlth, DiffWalk and Age, and falls with
+  PhysActivity, Income and Education; no direction imposed elsewhere). Each variant is trained like
+  the frozen model (training portion, seed 42, Youden threshold on 5-fold out-of-fold scores); the
+  frozen model refitted this way must reproduce the frozen hash. All variants and the frozen model as
+  reference use the same 500 training patients for the prior and the same 500 explained test
+  patients; certificates on the full calibration split 1. The policy test on split 2 is not run for
+  variants. Model seeds are not varied: the frozen XGBoost uses no row or column sampling, and seeds
+  42, 43 and 44 give the identical model.
 - Notebook 11, equal calibration budget: every method uses the same labelled records, split 1 of the
   re-draw plus the explained patients of its split 2. SCAX releases only boxes that passed the second
   exact check; boxes that become releasable in a re-draw are checked then. The per-box-bound and

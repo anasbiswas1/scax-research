@@ -58,11 +58,11 @@ def variants(frozen_params, names):
     return out
 
 
-def fit_variant(family, X, y, params, seed, names):
+def fit_variant(family, X, y, params, seed, names, input_cast=None):
     oof = train.oof_scores(family, X, y, params, seed)
     tau = train.youden_threshold(oof, y)
     model = train.fit(family, X, y, params, seed)
-    ens = export_model(model, family, names)
+    ens = export_model(model, family, names, input_cast)
     ens.tau = tau
     return model, ens, ExactPredictor(ens)
 
@@ -71,6 +71,26 @@ def exported_vs_native(model, family, pred, X):
     """Number of rows whose exported class differs from the native model's class at the same threshold."""
     s = native_scores(model, family, X)
     return int((pred.predict(X) != (s > pred.ens.tau).astype(int)).sum())
+
+
+def exported_vs_native_detail(model, family, pred, X) -> dict:
+    """Disagreements between the exported class and the native class at the same threshold, split by the
+    distance of the exact score from the threshold.
+
+    XGBoost sums leaf values in float32, so a row whose exact score lies within that rounding error of
+    the threshold can be classified either way by the library; the exported exact sum decides those rows.
+    The bound is 2 (T + 1) eps32 max(1, S), with S the largest possible |score| plus |tau|. A disagreement
+    beyond the bound is an export error and stops the pipeline (gate G2).
+    """
+    X = np.asarray(X, dtype=float)
+    s = native_scores(model, family, X)
+    d = np.flatnonzero(pred.predict(X) != (s > pred.ens.tau).astype(int))
+    total = sum(max(abs(v) for v in li) for li in pred.leaf_int) / float(1 << pred.E) + abs(float(pred.ens.tau or 0))
+    bound = 2.0 * (pred.ens.n_trees + 1) * float(np.finfo(np.float32).eps) * max(1.0, total)
+    gap = np.abs(np.asarray(pred.margin_to_tau(X[d]), dtype=float)) if d.size else np.zeros(0)
+    return {"disagreements": int(d.size), "within_rounding": int((gap <= bound).sum()),
+            "beyond_rounding": int((gap > bound).sum()), "rounding_bound": float(bound),
+            "max_gap": float(gap.max()) if d.size else 0.0}
 
 
 class ModelVariantRun:

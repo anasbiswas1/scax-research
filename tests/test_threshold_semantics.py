@@ -41,3 +41,29 @@ def test_missing_values_refused():
     Z = X[:2].copy(); Z[0, 0] = np.nan
     with pytest.raises(ValueError):
         pred.grid.cells(Z)
+
+
+def test_xgboost_float32_input_conversion():
+    """XGBoost converts inputs to float32: a float32 export matches it everywhere, and a float64 export
+    refuses inputs whose cell would differ after that conversion."""
+    from scax.models.export import export_model
+    from scax.models.predictor import ExactPredictor
+    from scax.models.train import fit
+    rng = np.random.default_rng(0)
+    X = np.round(rng.uniform(0, 5, (3000, 2)), 1)
+    y = (X[:, 0] + rng.normal(0, 1, 3000) > 2.5).astype(int)
+    m = fit("xgboost", X, y, {"n_estimators": 5, "max_depth": 2}, 0)
+    e64, e32 = export_model(m, "xgboost", ["a", "b"]), export_model(m, "xgboost", ["a", "b"], input_cast="float32")
+    assert e64.input_cast == "float64" and e32.input_cast == "float32" and e64.hash() != e32.hash()
+    for e in (e64, e32):
+        e.tau = 0.0
+    p64, p32 = ExactPredictor(e64), ExactPredictor(e32)
+    j = int(p32.grid.active[0]); th = float(p32.grid.thresholds[j][0])
+    z = X[:1].copy(); z[0, j] = np.nextafter(th, -np.inf)       # float32 rounds it up onto the threshold
+    assert np.float32(z[0, j]) == np.float32(th)
+    assert np.allclose(p32.score(z), native_scores(m, "xgboost", z), atol=1e-5, rtol=0)
+    with pytest.raises(ValueError):
+        p64.grid.cells(z)
+    assert np.allclose(p32.score(X), native_scores(m, "xgboost", X), atol=1e-5, rtol=0)
+    with pytest.raises(ValueError):
+        export_model(m, "lightgbm", ["a", "b"], input_cast="float32")

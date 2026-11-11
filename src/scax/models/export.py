@@ -5,7 +5,11 @@ it, the comparison rule and the leaf values. Floats are written with float.hex()
 exact record. The library is used for training only; the exported classifier is what SCAX
 certifies and deploys.
 
-Rules: XGBoost stores float32 thresholds and routes x < threshold to the left child ("lt").
+Rules: XGBoost stores float32 thresholds, converts inputs to float32 and routes x < threshold to the left
+child ("lt"). Exports made with input_cast "float64" (every frozen model) agree with XGBoost except for
+inputs within float32 rounding of a threshold, which the integer-coded BRFSS, NHANES and synthetic
+tables never produce; Grid.cells refuses such inputs for them. Models trained on data with other values
+(UCI, Cardio) are exported with input_cast "float32", which is XGBoost's own conversion.
 LightGBM stores float64 thresholds and leaf values and routes x <= threshold left ("le").
 scikit-learn stores float64 thresholds, casts inputs to float32 and routes x <= threshold left.
 """
@@ -96,7 +100,7 @@ class Ensemble:
         return Fraction(self.tau) * self.n_trees
 
 
-def export_xgboost(model, feature_names) -> Ensemble:
+def export_xgboost(model, feature_names, input_cast: str = "float64") -> Ensemble:
     booster = model.get_booster() if hasattr(model, "get_booster") else model
     cfg = json.loads(booster.save_raw("json"))
     lmp = cfg["learner"]["learner_model_param"]
@@ -119,7 +123,9 @@ def export_xgboost(model, feature_names) -> Ensemble:
             else:
                 feat.append(int(idx[i])); thr.append(float(np.float32(cond[i]))); val.append(0.0)
         trees.append(Tree(feat, thr, [int(c) for c in left], [int(c) for c in right], val))
-    return Ensemble("xgboost", "lt", "float64", "margin_sum", list(feature_names), trees, 0.0,
+    if input_cast not in ("float64", "float32"):
+        raise ValueError(input_cast)
+    return Ensemble("xgboost", "lt", input_cast, "margin_sum", list(feature_names), trees, 0.0,
                     meta={"base_score": base_score})
 
 
@@ -174,6 +180,9 @@ def export_sklearn_rf(model, feature_names) -> Ensemble:
     return Ensemble("sklearn_rf", "le", "float32", "mean_probability", list(feature_names), trees, 0.0)
 
 
-def export_model(model, family, feature_names) -> Ensemble:
-    return {"xgboost": export_xgboost, "lightgbm": export_lightgbm, "sklearn_rf": export_sklearn_rf}[family](
-        model, feature_names)
+def export_model(model, family, feature_names, input_cast: str | None = None) -> Ensemble:
+    if family == "xgboost":
+        return export_xgboost(model, feature_names, input_cast or "float64")
+    if input_cast is not None:
+        raise ValueError("input_cast applies to XGBoost exports only")
+    return {"lightgbm": export_lightgbm, "sklearn_rf": export_sklearn_rf}[family](model, feature_names)

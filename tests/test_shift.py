@@ -95,3 +95,32 @@ def test_domain_classifier_and_box_diagnostics():
     have = df.ba_estimate.notna()
     assert have.any() and (df.ba_estimate[have] >= 1).all()
     assert ((df.adjusted_bound[have] >= df.U_source[have] - 1e-12) | (df.adjusted_bound[have] == 1.0)).all()
+
+
+def test_target_specific_alpha_and_small_sample_helpers():
+    X, y, part, sm = _setup()
+    tgt = np.flatnonzero(part >= 2)
+    strict = sh.TargetEval(sm, X[tgt[:80]], y[tgt[:80]], X[tgt[80:]], y[tgt[80:]], alpha={0: 0.2, 1: 0.6})
+    loose = sh.TargetEval(sm, X[tgt[:80]], y[tgt[:80]], X[tgt[80:]], y[tgt[80:]], alpha={0: 0.6, 1: 0.95})
+    a, b = strict.transport(), loose.transport()
+    assert sum(b[k]["accepted"] for k in (0, 1)) >= sum(a[k]["accepted"] for k in (0, 1))
+    assert sm.alpha == {0: 0.5, 1: 0.9}
+    yy = np.r_[np.zeros(200, int), np.ones(100, int)]
+    code = sh.split_small(yy, 0)
+    assert set(code) == {0, 1, 2} and abs((code == 0).mean() - 0.5) < 0.01 and abs((code == 2).mean() - 0.15) < 0.01
+    for c in (0, 1, 2):
+        assert abs(yy[code == c].mean() - 1 / 3) < 0.02            # stratified
+    assert np.array_equal(code, sh.split_small(yy, 0))
+    best, table = sh.choose_settings(X[part == 0], y[part == 0], [{"max_depth": 1, "n_estimators": 5},
+                                                                  {"max_depth": 3, "n_estimators": 30}], seed=0)
+    assert len(table) == 2 and best == [{"max_depth": 1, "n_estimators": 5},
+                                         {"max_depth": 3, "n_estimators": 30}][int(table.oof_auroc.idxmax())]
+
+
+def test_exported_vs_native_detail():
+    from scax.experiments.model_ablations import exported_vs_native_detail
+    X, y = small_data(3, n=2000)
+    model, _, pred = fit_variant("xgboost", X, y, SMALL_PARAMS["xgboost"], 0, ["a", "b", "c", "d"])
+    d = exported_vs_native_detail(model, "xgboost", pred, X)
+    assert d["disagreements"] == d["within_rounding"] + d["beyond_rounding"] == 0
+    assert 0 < d["rounding_bound"] < 1e-3

@@ -36,6 +36,7 @@ from ..certify.decision import release
 from ..certify.prior import OccamPrior
 from ..explain.candidates import CandidateGenerator
 from ..explain.verify import verify_boxes
+from ..models import train
 from .baselines import KINDS, released_metrics
 from .development import log_prior, prior_counts
 
@@ -174,7 +175,7 @@ class ShiftModel:
 class TargetEval:
     """One target domain under one fixed model: explained patients, the other target records."""
 
-    def __init__(self, sm: ShiftModel, X_exp, y_exp, X_rest, y_rest, log=None):
+    def __init__(self, sm: ShiftModel, X_exp, y_exp, X_rest, y_rest, log=None, alpha=None):
         if sm.C_cal is None:
             raise RuntimeError("set_calibration first")
         self.sm = sm
@@ -198,7 +199,9 @@ class TargetEval:
         self.C_rest = sm.g.cells(np.asarray(X_rest, dtype=float))
         self.y_rest = np.asarray(y_rest).astype(int)
         self.n_rest, self.k_rest = box_counts(self.keys, self.cls, self.C_rest, self.y_rest)
-        self.a_box = np.where(self.cls == 1, sm.alpha[1], sm.alpha[0])
+        # targets: the model's own, or another target pair for the same candidate sets
+        self.alpha = sm.alpha if alpha is None else {int(k): float(v) for k, v in dict(alpha).items()}
+        self.a_box = np.where(self.cls == 1, self.alpha[1], self.alpha[0])
         self.rel_transport = None
 
     def _release(self, U, support):
@@ -207,10 +210,10 @@ class TargetEval:
         if elig.size:
             ok = self.sm.second_check(self.keys, self.cls, elig)
             U[elig[~ok]] = 1.0
-        return release(self.pp, self.pb, self.n_patients, self.size, self.cls, support, U, self.sm.alpha)
+        return release(self.pp, self.pb, self.n_patients, self.size, self.cls, support, U, self.alpha)
 
     def _metrics(self, rel, support, n_eval, k_eval):
-        met = released_metrics(rel, self.cls, self.yhat, self.y, self.size, support, n_eval, k_eval, self.sm.alpha,
+        met = released_metrics(rel, self.cls, self.yhat, self.y, self.size, support, n_eval, k_eval, self.alpha,
                                self.n_patients)
         for k in KINDS:
             r = met[k]
@@ -336,3 +339,28 @@ def box_diagnostics(te: TargetEval, ids, C_src_sub, C_tgt_sub, p_src, p_tgt, min
     df["adjusted_bound"] = np.minimum(1.0, df.ba_estimate * df.U_source)
     df["above_adjusted_bound"] = np.where(df.ba_estimate.notna(), df.risk_target > df.adjusted_bound, np.nan)
     return df
+
+
+def split_small(y, seed, shares=(0.5, 0.35, 0.15)) -> np.ndarray:
+    """Stratified random split codes 0, 1, 2 (training, calibration split 1, test) for a small dataset."""
+    y = np.asarray(y).astype(int)
+    rng = np.random.default_rng(seed)
+    code = np.empty(len(y), dtype=int)
+    cum = np.cumsum(shares)[:-1] / np.sum(shares)
+    for c in np.unique(y):
+        idx = np.flatnonzero(y == c)
+        rng.shuffle(idx)
+        for k, part in enumerate(np.split(idx, np.round(cum * len(idx)).astype(int))):
+            code[part] = k
+    return code
+
+
+def choose_settings(X, y, grid, seed, family="xgboost", folds=5):
+    """The grid point with the highest out-of-fold AUROC on the given (training) rows; ties go to the first."""
+    y = np.asarray(y).astype(int)
+    rows = []
+    for p in grid:
+        s = train.oof_scores(family, X, y, p, seed, folds=folds)
+        rows.append({**p, "oof_auroc": float(roc_auc_score(y, s))})
+    table = pd.DataFrame(rows)
+    return dict(grid[int(np.argmax(table.oof_auroc.to_numpy()))]), table

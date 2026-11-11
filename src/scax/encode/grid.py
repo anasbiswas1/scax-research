@@ -60,6 +60,14 @@ class Grid:
         C = np.zeros(X.shape, dtype=np.int64)
         for j in self.active:
             C[:, j] = np.searchsorted(self.thresholds[j], X[:, j], side=side)
+        if self.ens.family == "xgboost" and self.ens.input_cast == "float64":
+            # XGBoost compares float32(x); a float64 export is exact only where that gives the same cell
+            X32 = X.astype(np.float32).astype(np.float64)
+            for j in self.active:
+                if not np.array_equal(np.searchsorted(self.thresholds[j], X32[:, j], side=side), C[:, j]):
+                    raise ValueError(f"feature {j}: an input lies within float32 rounding of a threshold, where "
+                                     "XGBoost (which converts inputs to float32) and this float64 export differ; "
+                                     "export with input_cast='float32'")
         return C
 
     def representative(self, j: int, c: int) -> float:

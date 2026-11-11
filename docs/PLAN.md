@@ -151,6 +151,47 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   chest pain type, resting blood pressure, resting ECG, maximum heart rate, exercise angina, ST
   depression); cholesterol, fasting blood sugar, slope, vessels and thalassemia are left out; a zero
   blood pressure or cholesterol is missing; complete cases.
+- Notebook 13b, measurement and site shift. Measurement: one XGBoost trained like the frozen heart
+  model on the BRFSS 2015 training portion with the 16 predictors NHANES shares (education and
+  income coarsened as in notebook 03) and diabetes coded yes or no: NHANES asks about prediabetes as
+  its own question and about 17% say yes, against about 2% in BRFSS, so prediabetes is coded as no in
+  both surveys (decided after notebook 03 and before any model was fitted). Prior from 1,000 training
+  patients, certificates on calibration split 1. Targets: NHANES with self-reported values, then the
+  same people with measured BMI and measured high blood pressure in place of the self-reported items;
+  both use the same 500 explained patients and the same records for checking claims. Re-certification
+  at 500 to 5,000 records (NHANES has 6,287 adults), 20 draws, at least 500 records left to check
+  claims. Site: UCI Cleveland split 50/35/15 (stratified, fixed seed per model) into training, calibration and test
+  rows; XGBoost settings (100 trees, 32 bins, depth 2 to 4, minimum child weight 1 or 5) chosen on the
+  Cleveland training rows only by 5-fold out-of-fold AUROC; prior from every training patient. Targets
+  Hungary, Switzerland and VA, every record explained and also used to check claims. Re-certification
+  is not run: each target site has fewer than 300 records.
+- Gate G2, exported against native at the threshold (notebook 13b onwards): XGBoost sums leaf values in
+  float32, so a row whose exact score lies within that rounding error of the threshold can be
+  classified either way by the library. Such rows are counted and reported, and the exported exact
+  sum decides them; a disagreement farther from the threshold than the bound 2 (T + 1) eps32 max(1, S)
+  is an export error and stops the pipeline. Found while testing notebook 13b: the 16-predictor
+  measurement model puts 2 calibration rows 9e-7 from its threshold (bound 2e-4); all earlier models
+  had no disagreements.
+- Gate G2, XGBoost input conversion (found while testing notebook 13b): XGBoost converts inputs to
+  float32 before comparing them with its float32 thresholds, while the export compared float64 inputs.
+  The two agree on every table used so far (BRFSS, CDC Diabetes, NHANES and the synthetic population
+  are integer-coded, and float32 represents those values exactly), so no committed result changes and
+  every frozen model keeps its hash. With decimal inputs they can differ: in testing on UCI, where ST
+  depression has one decimal, records with ST depression exactly at a threshold went the other way.
+  XGBoost models on such data are now exported with input_cast float32 (XGBoost's own conversion),
+  and a float64 export refuses any input whose cell would change under float32 conversion, so the
+  difference cannot pass silently.
+- UCI Heart main result (E1): the plan's leave-one-site-out design, in notebook 13b. For each site, a
+  model built the same way on the other three sites (split 50/35/15) is evaluated on the held-out site.
+  UCI uses the frozen heart targets (alpha_0 = 0.05, alpha_1 = 0.70) and the most lenient grid point
+  (alpha_0 = 0.10, beta = 0.2, so alpha_1 = 0.80). The policy test is not run: there is no second
+  calibration split at this size.
+- E1 scope still open (recorded 11 November 2026): the plan asks for main results on four tasks (BRFSS
+  Heart, CDC Diabetes, Cardio-70k, UCI Heart) with three model families. Done: BRFSS Heart and CDC
+  Diabetes with XGBoost (notebook 09) and UCI Heart (notebook 13b); LightGBM and random forest only as
+  ablations (notebook 12b, without the policy test). Cardio-70k (development, freezing, certificates,
+  release) and the LightGBM and random forest main rows with the policy test are planned as notebook
+  09b.
 
 ## Notebook map
 
@@ -166,11 +207,12 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
 | 07 | Candidate enumeration with all sound inflation-path boxes |
 | 08 | Prior and box certificates on calibration split 1 |
 | 09 | Release, policy certification on calibration split 2, main results |
+| 09b | Main results completed: Cardio-70k; LightGBM and random forest with the policy test |
 | 10 | Validity study on the synthetic population |
 | 11 | Baselines |
 | 12 | Ablations |
 | 13 | Shift, BRFSS: temporal and geographic; transport, re-certification sample sizes, within-box shift |
-| 13b | Shift: site (UCI) and measurement (NHANES), after notebook 03 |
+| 13b | Shift: measurement (NHANES) and site (UCI); UCI Heart main result, leave-one-site-out |
 | 14 | Subgroups and group-conditional certificates |
 | 15 | Runtime |
 | 16 | Paper results and claims check |

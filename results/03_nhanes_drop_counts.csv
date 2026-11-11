@@ -1,0 +1,41 @@
+cycle,step,records
+2015-2016,persons in the cycle,9971
+2015-2016,aged 20 or over,5719
+2015-2016,"heart disease outcome present (MCQ160C, MCQ160E)",5694
+2015-2016,HighBP present,5688
+2015-2016,HighChol present,4382
+2015-2016,CholCheck present,4353
+2015-2016,BMI present,4229
+2015-2016,Smoker present,4225
+2015-2016,Stroke present,4222
+2015-2016,Diabetes present,4220
+2015-2016,PhysActivity present,4220
+2015-2016,HvyAlcoholConsump present,3691
+2015-2016,AnyHealthcare present,3686
+2015-2016,GenHlth present,3683
+2015-2016,DiffWalk present,3669
+2015-2016,Sex present,3669
+2015-2016,Age present,3669
+2015-2016,Education present,3668
+2015-2016,Income present,3287
+2015-2016,measured BMI and blood pressure present,3218
+2017-2018,persons in the cycle,9254
+2017-2018,aged 20 or over,5569
+2017-2018,"heart disease outcome present (MCQ160C, MCQ160E)",5550
+2017-2018,HighBP present,5540
+2017-2018,HighChol present,4315
+2017-2018,CholCheck present,4303
+2017-2018,BMI present,4177
+2017-2018,Smoker present,4177
+2017-2018,Stroke present,4170
+2017-2018,Diabetes present,4169
+2017-2018,PhysActivity present,4169
+2017-2018,HvyAlcoholConsump present,3683
+2017-2018,AnyHealthcare present,3680
+2017-2018,GenHlth present,3678
+2017-2018,DiffWalk present,3655
+2017-2018,Sex present,3655
+2017-2018,Age present,3655
+2017-2018,Education present,3649
+2017-2018,Income present,3189
+2017-2018,measured BMI and blood pressure present,3069

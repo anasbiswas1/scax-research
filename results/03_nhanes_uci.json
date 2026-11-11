@@ -1,0 +1,186 @@
+{
+  "nhanes": {
+    "cycles": {
+      "2015-2016": "I",
+      "2017-2018": "J"
+    },
+    "components": [
+      "DEMO",
+      "BPQ",
+      "BPX",
+      "BMX",
+      "TCHOL",
+      "WHQ",
+      "SMQ",
+      "MCQ",
+      "DIQ",
+      "PAQ",
+      "ALQ",
+      "HIQ",
+      "HUQ",
+      "PFQ"
+    ],
+    "predictors": [
+      "HighBP",
+      "HighChol",
+      "CholCheck",
+      "BMI",
+      "Smoker",
+      "Stroke",
+      "Diabetes",
+      "PhysActivity",
+      "HvyAlcoholConsump",
+      "AnyHealthcare",
+      "GenHlth",
+      "DiffWalk",
+      "Sex",
+      "Age",
+      "Education",
+      "Income"
+    ],
+    "measured": {
+      "BMI": "BMI_measured",
+      "HighBP": "HighBP_measured",
+      "HighChol": "HighChol_measured"
+    },
+    "records": 6287,
+    "per_cycle": [
+      {
+        "cycle": 2015,
+        "records": 3218,
+        "heart_disease": 0.08452454940957116
+      },
+      {
+        "cycle": 2017,
+        "records": 3069,
+        "heart_disease": 0.08308895405669599
+      }
+    ],
+    "heart_disease_share": 0.08382376332113886,
+    "self_vs_measured": {
+      "high blood pressure": {
+        "records": 6287,
+        "self_reported_yes": 0.43152536981072054,
+        "measured_yes": 0.23572451089549865,
+        "both_yes": 0.16335295053284554,
+        "self_only": 0.268172419277875,
+        "measured_only": 0.07237156036265309,
+        "agreement": 0.6594560203594719,
+        "kappa": 0.26576466130097076
+      },
+      "high cholesterol": {
+        "records": 5993,
+        "self_reported_yes": 0.45135991990655766,
+        "measured_yes": 0.12080760887702319,
+        "both_yes": 0.07959285833472385,
+        "self_only": 0.3717670615718338,
+        "measured_only": 0.04121475054229935,
+        "agreement": 0.5870181878858668,
+        "kappa": 0.10824655836531827
+      },
+      "BMI": {
+        "records": 6287,
+        "mean_self_minus_measured": -0.8896358066328509,
+        "sd": 1.956578120544815,
+        "share_rounded_equal": 0.2629234929219023,
+        "obese_self_reported": 0.3764911722602195,
+        "obese_measured": 0.43454747892476536
+      }
+    },
+    "parquet_sha256": "cbd855a9eb679d4693701f8cf95d79b20d0974e509827c7571cd6e01cafc99f4",
+    "raw_file_sha256": {
+      "DEMO_I": "c9297c6c37ae8f78f29be9568fa2a03cf3b112616a39afee04030fc775a66a0d",
+      "BPQ_I": "7f7e51cd0497eb648f64eaafaf7ed07825d617c32b2cd6853ed249fce1143a38",
+      "BPX_I": "45d5c9fa101ccc6da82241bd45c99611595e699665eed2cfed232e9070b52cc1",
+      "BMX_I": "d31da84e14212b4e58e8340598a5b8e2144fac83333563e966eb1b332e4141d6",
+      "TCHOL_I": "e7f51cf7c002db01d023278922d89d72318c679967e72ff259ba532b2d72e54d",
+      "WHQ_I": "83a004cc6044936ffe3d192ded94e540e3133caa5e6605b95372bdb43bb6647a",
+      "SMQ_I": "529ce1c407e99dce937ca75d14c8c630e0c9c30a4a9a851760cd2884bbb28fe0",
+      "MCQ_I": "8b2bd62f5bcd5820d6aac380e4bad233d22ecab42fcf4a3a9a023ffc6b9f4002",
+      "DIQ_I": "e87587479b29f175b63eee5dd40d582837e3e3fe2665503012085eefdb978e0d",
+      "PAQ_I": "c508dc563a907b2fcd05048f37008197257a3e1c6eb64563623c60459c1afc9d",
+      "ALQ_I": "ed445c40ec3f3f993f78321f86e513340d4f131708c7624d88803bde3909102d",
+      "HIQ_I": "08ff064a49bb59f4ec78c6f97095a4fd42e1d55db7d8884fcb34f7c722e943c2",
+      "HUQ_I": "583c2a8ff7268900871e04e8c381c17f1fd64b3f549c9f27a198720f653500b0",
+      "PFQ_I": "3fcaa103214739ee6cb4fcf91121989d9d3bdd72740f03ba150f1ec7bbe5b90b",
+      "DEMO_J": "c0b46e0345ea19404928656277c8b0d10b0cca348a9b2fe4fc3c67e8b7ee73ec",
+      "BPQ_J": "63cfe1c331a1e7d3534328ac86312a21ffee3e01aa189bc1f74d06855239e5aa",
+      "BPX_J": "f98f1d9a4c18173e715c749b4294f6f1525140d5ad5751316bb17cc038fb3423",
+      "BMX_J": "8d675e42d8826ac98714b2c3dd4c5138a5e353fb4424f7eff5e6db4a01ce838a",
+      "TCHOL_J": "0291a6a4f6d82dac8392c8c992b519946824dfeda01647935520cf506ed9f4ab",
+      "WHQ_J": "7e1037070a4cc89d29a0f083e21f2ded15003d3d2dfbcf182dfd1df7282ea3d4",
+      "SMQ_J": "73c3708e540cbf520a566508aa629c3e4ba53cad77dae9388ca36384646455f4",
+      "MCQ_J": "79c50c805a377fcd61d44fae8b86a16af0a5741f8b1aeebda918d7d743c68f98",
+      "DIQ_J": "1ecbf5360dfc331d1efbf32198553dc30e9a1f4cff0a907ed30ca72bac797f89",
+      "PAQ_J": "048120aa3a5c8b5cd457ad3e13dfd62d728b12ea6644960e933ad374ec907e79",
+      "ALQ_J": "53006d407764ad16491f823d25f2781ba55363aee9cb304d3f5d9450cf25d5c1",
+      "HIQ_J": "96dfdd98507ea6dc67cb2c2b6999da3c035f3f8a9a87cf34756fe30762387860",
+      "HUQ_J": "0d8814ca6a72c003eb89885a3a24dcff3b475dfed454089cf4890f9ab9da06d2",
+      "PFQ_J": "114d6fea8e593de64ef63330f9ef491d48696e20826b32611ef546d25b87ca44"
+    },
+    "brfss_2015_parquet_sha256": "db1b290516c4a7c0df637c52c6346a9a63efa5d4481806836527f948d8ed012e"
+  },
+  "uci": {
+    "predictors": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak"
+    ],
+    "left_out": {
+      "chol": "stored as 0 (missing) for Switzerland",
+      "fbs": "missing for most Switzerland records",
+      "slope": "missing for most Hungary and VA records",
+      "ca": "missing for most Hungary, Switzerland and VA records",
+      "thal": "missing for most Hungary, Switzerland and VA records"
+    },
+    "sites": [
+      {
+        "site": "cleveland",
+        "site_name": "Cleveland",
+        "records": 303,
+        "complete_cases": 303,
+        "disease_share": 0.45874587458745875
+      },
+      {
+        "site": "hungarian",
+        "site_name": "Hungary",
+        "records": 294,
+        "complete_cases": 292,
+        "disease_share": 0.3595890410958904
+      },
+      {
+        "site": "switzerland",
+        "site_name": "Switzerland",
+        "records": 123,
+        "complete_cases": 116,
+        "disease_share": 0.9310344827586207
+      },
+      {
+        "site": "va",
+        "site_name": "VA Long Beach",
+        "records": 200,
+        "complete_cases": 140,
+        "disease_share": 0.7857142857142857
+      }
+    ],
+    "parquet_sha256": "dfd33e1cb754fe93be3cf4d7c71a20536e4916801ddad2d725355ac2498d32b2"
+  },
+  "_written_utc": "2026-11-11T14:01:30+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": null,
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

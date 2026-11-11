@@ -1,0 +1,6 @@
+dataset,outcome,definition,source_items,positive,negative,missing,kind,used_for
+BRFSS 2015 (public heart table) and BRFSS 2015-2023 rebuilt from the raw files,HeartDiseaseorAttack,ever told coronary heart disease or myocardial infarction,_MICHD (from CVDCRHD4 and CVDINFR4),_MICHD = 1,_MICHD = 2,dropped,self-reported diagnosis,task A; temporal and geographic shift
+CDC Diabetes Health Indicators (BRFSS 2015),Diabetes_binary,ever told diabetes (prediabetes and diabetes only during pregnancy coded as no),DIABETE3,DIABETE3 = 1,"DIABETE3 = 2, 3 or 4",dropped,self-reported diagnosis,task B
+"NHANES 2015-2016 and 2017-2018, adults 20 and over",HeartDiseaseorAttack,"ever told coronary heart disease or heart attack, built like _MICHD","MCQ160C, MCQ160E",MCQ160C = 1 or MCQ160E = 1,both = 2,"dropped (refused, don't know or not asked, with no yes)",self-reported diagnosis,measurement shift (same outcome as BRFSS)
+"UCI Heart Disease (Cleveland, Hungary, Switzerland, VA Long Beach)",angiographic_disease,more than 50% narrowing in any major vessel at angiography,num,num > 0,num = 0,none,clinical test,site shift (Cleveland to the other three sites)
+"Cardiovascular Disease dataset (Kaggle, 70,000 examinations)",cardio,cardiovascular disease as recorded at examination,cardio,1,0,none,recorded at examination,secondary task

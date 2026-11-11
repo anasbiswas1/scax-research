@@ -1,0 +1,5 @@
+site,site_name,records,complete_cases,disease_share
+cleveland,Cleveland,303,303,0.45874587458745875
+hungarian,Hungary,294,292,0.3595890410958904
+switzerland,Switzerland,123,116,0.9310344827586207
+va,VA Long Beach,200,140,0.7857142857142857

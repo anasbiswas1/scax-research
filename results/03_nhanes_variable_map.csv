@@ -1,0 +1,21 @@
+indicator,brfss_item,nhanes_2015_2016,nhanes_2017_2018,rule,comparability
+HighBP,_RFHYPE5 (ever told high blood pressure),BPQ020,BPQ020,"1 yes, 2 no",same question
+HighChol,TOLDHI2 (ever told cholesterol high; asked only if ever checked),"BPQ080, BPQ060","BPQ080, BPQ060","1 if BPQ080 = 1; 0 if BPQ080 = 2 and ever checked (BPQ060 = 1); missing if never checked, as in BRFSS",same question
+CholCheck,_CHOLCHK (checked within 5 years),BPQ070,BPQ070,"1 if less than 5 years ago, 0 if 5 years or more",same question
+BMI,_BMI5 (self-reported height and weight),"WHD010, WHD020","WHD010, WHD020","703.0696 x pounds / inches^2, rounded",same construction
+Smoker,SMOKE100 (at least 100 cigarettes),SMQ020,SMQ020,"1 yes, 2 no",same question
+Stroke,CVDSTRK3 (ever told stroke),MCQ160F,MCQ160F,"1 yes, 2 no",same question
+Diabetes,"DIABETE3 (0 no, 1 prediabetes or borderline, 2 diabetes)","DIQ010, DIQ160","DIQ010, DIQ160",2 if DIQ010 = 1; 1 if borderline (DIQ010 = 3) or told prediabetes (DIQ160 = 1); 0 otherwise,close
+PhysActivity,"_TOTINDA (any exercise outside work, past 30 days)","PAQ635, PAQ650, PAQ665","PAQ635, PAQ650, PAQ665","1 if walking or cycling for travel, or vigorous or moderate recreation, in a typical week","approximate (typical week, 10 minutes or more)"
+HvyAlcoholConsump,"_RFDRHV5 (men more than 14, women more than 7 drinks a week, past 30 days)","ALQ101, ALQ110, ALQ120Q, ALQ120U, ALQ130","ALQ111, ALQ121, ALQ130","drinking days per week x drinks per drinking day, same thresholds",approximate (past 12 months)
+AnyHealthcare,HLTHPLN1 (any health care coverage),HIQ011,HIQ011,"1 yes, 2 no",same question
+GenHlth,GENHLTH (1 excellent to 5 poor),HUQ010,HUQ010,same five levels,same question
+DiffWalk,DIFFWALK (serious difficulty walking or climbing stairs),"PFQ054, PFQ061B, PFQ049-PFQ059","PFQ054, PFQ061B, PFQ049-PFQ059","1 if special equipment needed to walk, or much difficulty or unable to walk a quarter mile; 0 if no or some difficulty, or routed past the questions because no limitation was reported (age 59 or under)",approximate
+Sex,SEX,RIAGENDR,RIAGENDR,"1 male, 0 female",same
+Age,_AGEG5YR (13 groups),RIDAGEYR,RIDAGEYR,"20-24 in group 1, then five-year groups, 80 and over in 13",same groups (NHANES starts at 20)
+Education,"EDUCA (6 levels), coarsened to 5",DMDEDUC2,DMDEDUC2,"1 less than 9th grade, 2 grades 9-11, 3 high school, 4 some college, 5 college graduate",same after coarsening
+Income,"INCOME2 (8 levels), coarsened to 7",INDHHIN2,INDHHIN2,"1 under $10k, 2 $10k-15k, 3 $15k-20k, 4 $20k-25k, 5 $25k-35k, 6 $35k-75k, 7 $75k and over; the codes 'under $20k' and '$20k and over' are missing",same after coarsening
+HeartDiseaseorAttack,_MICHD (ever told coronary heart disease or heart attack),"MCQ160C, MCQ160E","MCQ160C, MCQ160E","1 if either is yes, 0 if both are no, missing otherwise",same questions
+BMI_measured,(not in BRFSS),BMXBMI,BMXBMI,"examination BMI, rounded",measurement
+HighBP_measured,(not in BRFSS),"BPXSY1-4, BPXDI1-4","BPXSY1-4, BPXDI1-4",1 if mean systolic 140 or more or mean diastolic 90 or more (diastolic 0 readings left out),measurement
+HighChol_measured,(not in BRFSS),LBXTC,LBXTC,1 if total cholesterol 240 mg/dL or more,measurement

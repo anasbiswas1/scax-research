@@ -1,0 +1,12 @@
+role,box_class,auroc_bin,boxes,median_ba,above_certificate,certificate_refuted,claim_refuted,above_adjusted_bound
+reference,negative outcome,<= 0.55,717,1.129332,0.0,0.0,0.0,0.0
+reference,enrichment,<= 0.55,329,1.291871,0.0,0.0,0.0,0.0
+reference,enrichment,0.55 to 0.60,2,1.361129,0.0,0.0,0.0,0.0
+target,negative outcome,<= 0.55,327,1.707119,0.0,0.0,0.0,0.0
+target,negative outcome,0.55 to 0.60,1652,2.2991355,0.0,0.0,0.0,0.0
+target,negative outcome,0.60 to 0.70,390,4.347959,0.0,0.0,0.0,0.0
+target,negative outcome,> 0.70,1,8.478719,0.0,0.0,0.0,0.0
+target,enrichment,<= 0.55,338,2.0136760000000002,0.0029585798816568047,0.0,0.0,0.0
+target,enrichment,0.55 to 0.60,528,2.7868395,0.013257575757575758,0.0,0.0,0.0
+target,enrichment,0.60 to 0.70,283,4.358512,0.028268551236749116,0.0,0.0,0.0
+target,enrichment,> 0.70,4,8.6262065,0.0,0.0,0.0,0.0

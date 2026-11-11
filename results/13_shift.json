@@ -1,0 +1,293 @@
+{
+  "seed": 42,
+  "frozen_config_sha256": "c656821f5d64dd87e4cd6b9b8b2dbccf9e483eb0ab7d45d88183fef527d57e1e",
+  "brfss_parquet_sha256": {
+    "2015": "db1b290516c4a7c0df637c52c6346a9a63efa5d4481806836527f948d8ed012e",
+    "2017": "4a261dcc61ee147a981904b57f95e303b5d461d589f8acdcdea2b90c23e31b7b",
+    "2019": "45ff779e0ed60e03c08f7760f5c1142cbd07b2d3a01617010c79201215203d9b",
+    "2021": "fe583ccf4c05093200352d0c1216a222c7ddf407016b6fc230834db786652bbe",
+    "2023": "833b372fc3a216dace66f00d303b0a58d002e50434868d8a2ae3ff3fafeb6256"
+  },
+  "targets": {
+    "alpha": {
+      "0": 0.05,
+      "1": 0.7
+    },
+    "delta_1": 0.025
+  },
+  "harmonised_set_H": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "Diabetes",
+    "PhysActivity",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "sizes": {
+    "prior_patients": 1000,
+    "explained_per_target": 1000,
+    "explained_reference": 500,
+    "explained_per_state": 500,
+    "recertification_sizes": [
+      500,
+      1000,
+      2000,
+      5000,
+      10000
+    ],
+    "draws": 20,
+    "min_checking_records": 1000
+  },
+  "regions": [
+    {
+      "region": "Northeast",
+      "records": 46199,
+      "heart_disease": 0.08556462261087902
+    },
+    {
+      "region": "Midwest",
+      "records": 71864,
+      "heart_disease": 0.0963486585773127
+    },
+    {
+      "region": "South",
+      "records": 71452,
+      "heart_disease": 0.10861837317359906
+    },
+    {
+      "region": "West",
+      "records": 59835,
+      "heart_disease": 0.08008690565722404
+    }
+  ],
+  "records_without_region": 4330,
+  "states": [
+    {
+      "fips": 20,
+      "name": "Kansas",
+      "region": "Midwest",
+      "records": 12659
+    },
+    {
+      "fips": 31,
+      "name": "Nebraska",
+      "region": "Midwest",
+      "records": 10623
+    },
+    {
+      "fips": 27,
+      "name": "Minnesota",
+      "region": "Midwest",
+      "records": 9839
+    },
+    {
+      "fips": 53,
+      "name": "Washington",
+      "region": "West",
+      "records": 9480
+    },
+    {
+      "fips": 48,
+      "name": "Texas",
+      "region": "South",
+      "records": 7778
+    }
+  ],
+  "models": {
+    "temporal_2015_H": {
+      "model_sha256": "66d828fafd7a393f01b95a6aa588f007208491768ac56b078dc8b54d89d3187a",
+      "predictors": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "BMI",
+        "Smoker",
+        "Stroke",
+        "Diabetes",
+        "PhysActivity",
+        "HvyAlcoholConsump",
+        "AnyHealthcare",
+        "NoDocbcCost",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "Sex",
+        "Age",
+        "Education",
+        "Income"
+      ],
+      "training_records": 101472,
+      "training_prevalence": 0.09405550299590035,
+      "calibration_records": 76104,
+      "prior_patients": 1000,
+      "prior_boxes": 39708,
+      "thresholds": 62,
+      "tau": -2.3398609161376953,
+      "exported_vs_native_disagreements": 0
+    },
+    "geographic_without_Northeast": {
+      "model_sha256": "f1e01427fcb0b0eca2dff63f86fa286ba6a56193cd63261aafcaef6b557948ed",
+      "predictors": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "BMI",
+        "Smoker",
+        "Stroke",
+        "Diabetes",
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "HvyAlcoholConsump",
+        "AnyHealthcare",
+        "NoDocbcCost",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "Sex",
+        "Age",
+        "Education",
+        "Income"
+      ],
+      "training_records": 81269,
+      "training_prevalence": 0.0957683741648107,
+      "calibration_records": 60994,
+      "prior_patients": 1000,
+      "prior_boxes": 39220,
+      "thresholds": 70,
+      "tau": -2.3727660179138184,
+      "exported_vs_native_disagreements": 0
+    },
+    "geographic_without_Midwest": {
+      "model_sha256": "246b4a86ce2e5d623a8c806fe5fcff30e7b5991edf8e506d461b23e12a7ca567",
+      "predictors": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "BMI",
+        "Smoker",
+        "Stroke",
+        "Diabetes",
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "HvyAlcoholConsump",
+        "AnyHealthcare",
+        "NoDocbcCost",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "Sex",
+        "Age",
+        "Education",
+        "Income"
+      ],
+      "training_records": 71087,
+      "training_prevalence": 0.09325193073276408,
+      "calibration_records": 53117,
+      "prior_patients": 1000,
+      "prior_boxes": 37649,
+      "thresholds": 67,
+      "tau": -2.377861499786377,
+      "exported_vs_native_disagreements": 0
+    },
+    "geographic_without_South": {
+      "model_sha256": "3cb2da07b6636c24387c73d92bb8e90fd96d11332e1298fc91e36b3af77fa95b",
+      "predictors": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "BMI",
+        "Smoker",
+        "Stroke",
+        "Diabetes",
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "HvyAlcoholConsump",
+        "AnyHealthcare",
+        "NoDocbcCost",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "Sex",
+        "Age",
+        "Education",
+        "Income"
+      ],
+      "training_records": 71093,
+      "training_prevalence": 0.0884615925618556,
+      "calibration_records": 53520,
+      "prior_patients": 1000,
+      "prior_boxes": 37240,
+      "thresholds": 62,
+      "tau": -2.2664246559143066,
+      "exported_vs_native_disagreements": 0
+    },
+    "geographic_without_West": {
+      "model_sha256": "ed6bc7ec76400d5d712f1254e2647b676312f2e348332b940ad83d9e3bf4fc66",
+      "predictors": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "BMI",
+        "Smoker",
+        "Stroke",
+        "Diabetes",
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "HvyAlcoholConsump",
+        "AnyHealthcare",
+        "NoDocbcCost",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "Sex",
+        "Age",
+        "Education",
+        "Income"
+      ],
+      "training_records": 75774,
+      "training_prevalence": 0.09805474173199251,
+      "calibration_records": 56799,
+      "prior_patients": 1000,
+      "prior_boxes": 38474,
+      "thresholds": 67,
+      "tau": -2.350818395614624,
+      "exported_vs_native_disagreements": 0
+    }
+  },
+  "seconds_total": 6082.948047637939,
+  "_written_utc": "2026-11-11T13:02:40+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.4.1",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

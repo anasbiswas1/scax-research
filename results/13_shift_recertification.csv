@@ -1,0 +1,173 @@
+m,kind,draws,coverage,coverage_q025,coverage_q975,error_rate,refuted_share,draws_with_refuted_claims,above_target_share,mean_size,setting,model,target,role,kind_name
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2015 test split,reference,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2015 test split,reference,enrichment
+1000,0,20,0.0006000000000000001,0.0,0.006299999999999983,0.0,0.0,0.0,0.0,6.0,temporal,temporal_2015_H,2015 test split,reference,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2015 test split,reference,enrichment
+2000,0,20,0.23310000000000003,0.09095,0.37239999999999995,0.008209643806053522,0.0,0.0,0.0,5.550728117011877,temporal,temporal_2015_H,2015 test split,reference,negative outcome
+2000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2015 test split,reference,enrichment
+5000,0,20,0.5845,0.54845,0.60915,0.02573514061223941,0.0,0.0,0.0,5.9161964284927775,temporal,temporal_2015_H,2015 test split,reference,negative outcome
+5000,1,20,0.014500000000000002,0.0,0.08224999999999993,0.6950170709793351,0.0,0.0,0.0,5.103560347409404,temporal,temporal_2015_H,2015 test split,reference,enrichment
+10000,0,20,0.6482000000000001,0.642,0.652,0.03085540842447889,0.0,0.0,0.0,6.067346774179298,temporal,temporal_2015_H,2015 test split,reference,negative outcome
+10000,1,20,0.079,0.01685,0.11705,0.6712721724716734,0.0,0.0,0.0,5.017695356306997,temporal,temporal_2015_H,2015 test split,reference,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2017,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2017,target,enrichment
+1000,0,20,0.00625,0.0,0.056774999999999985,0.0,0.0,0.0,0.0,5.553605313092979,temporal,temporal_2015_H,2017,target,negative outcome
+1000,1,20,0.0001,0.0,0.0010499999999999971,0.5,0.0,0.0,0.0,6.0,temporal,temporal_2015_H,2017,target,enrichment
+2000,0,20,0.2838,0.10467499999999999,0.41924999999999996,0.006110998378673199,0.0,0.0,0.0,5.442545627280092,temporal,temporal_2015_H,2017,target,negative outcome
+2000,1,20,0.0002,0.0,0.0020999999999999942,0.25,0.0,0.0,0.0,4.0,temporal,temporal_2015_H,2017,target,enrichment
+5000,0,20,0.6017499999999999,0.576475,0.619525,0.014794091863371602,0.0,0.0,0.0,5.789071483535875,temporal,temporal_2015_H,2017,target,negative outcome
+5000,1,20,0.0103,0.0,0.046,0.6468435635123615,0.0,0.0,0.0,4.986033248081841,temporal,temporal_2015_H,2017,target,enrichment
+10000,0,20,0.6501,0.64495,0.654,0.014074802036417639,0.0,0.0,0.0,5.899431189550595,temporal,temporal_2015_H,2017,target,negative outcome
+10000,1,20,0.03250000000000001,0.004425,0.09372499999999999,0.6848040808165121,0.0,0.0,0.0,5.024200021575137,temporal,temporal_2015_H,2017,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2019,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2019,target,enrichment
+1000,0,20,0.00225,0.0,0.023624999999999934,0.0,0.0,0.0,0.0,5.0,temporal,temporal_2015_H,2019,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2019,target,enrichment
+2000,0,20,0.2465,0.01725,0.41877499999999995,0.009017850999599106,0.0,0.0,0.0,5.404472690663632,temporal,temporal_2015_H,2019,target,negative outcome
+2000,1,20,0.00015000000000000001,0.0,0.0015749999999999957,1.0,0.0,0.0,0.0,6.333333333333333,temporal,temporal_2015_H,2019,target,enrichment
+5000,0,20,0.56075,0.5286000000000001,0.579525,0.010615192429294464,0.0,0.0,0.0,5.69696766704351,temporal,temporal_2015_H,2019,target,negative outcome
+5000,1,20,0.00825,0.0,0.038974999999999975,0.4924684786793206,0.0,0.0,0.0,4.926059915846273,temporal,temporal_2015_H,2019,target,enrichment
+10000,0,20,0.6182,0.613475,0.623,0.010917319863143619,0.0,0.0,0.0,5.7993340160056075,temporal,temporal_2015_H,2019,target,negative outcome
+10000,1,20,0.039400000000000004,0.0033250000000000003,0.09519999999999999,0.6556601577013248,0.0,0.0,0.0,5.150480280363015,temporal,temporal_2015_H,2019,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2021,target,negative outcome
+500,1,20,0.0005499999999999999,0.0,0.005774999999999984,0.7272727272727273,0.0,0.0,0.0,5.0,temporal,temporal_2015_H,2021,target,enrichment
+1000,0,20,0.013500000000000002,0.0,0.062,0.0,0.0,0.0,0.0,5.349166962070187,temporal,temporal_2015_H,2021,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2021,target,enrichment
+2000,0,20,0.25775,0.07765,0.41962499999999997,0.007244721037892092,0.0,0.0,0.0,5.466305556807729,temporal,temporal_2015_H,2021,target,negative outcome
+2000,1,20,0.0005499999999999999,0.0,0.005774999999999984,0.8181818181818182,0.0,0.0,0.0,4.090909090909091,temporal,temporal_2015_H,2021,target,enrichment
+5000,0,20,0.57455,0.5629,0.588525,0.01878962188883623,0.0,0.0,0.0,5.769520342691206,temporal,temporal_2015_H,2021,target,negative outcome
+5000,1,20,0.0023,0.0,0.012524999999999998,0.603583916083916,0.0,0.0,0.0,4.7481060606060606,temporal,temporal_2015_H,2021,target,enrichment
+10000,0,20,0.62165,0.6139,0.62805,0.027659163264614827,0.0,0.0,0.0,5.894611034959521,temporal,temporal_2015_H,2021,target,negative outcome
+10000,1,20,0.0324,0.0,0.08354999999999997,0.6692256592912217,0.0,0.0,0.0,4.790962536829181,temporal,temporal_2015_H,2021,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2023,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2023,target,enrichment
+1000,0,20,0.0009,0.0,0.009,0.0,0.0,0.0,0.0,6.0,temporal,temporal_2015_H,2023,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2023,target,enrichment
+2000,0,20,0.22809999999999997,0.036575,0.37582499999999996,0.013184047162790502,0.0,0.0,0.0,5.442065542731264,temporal,temporal_2015_H,2023,target,negative outcome
+2000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,temporal,temporal_2015_H,2023,target,enrichment
+5000,0,20,0.5185000000000002,0.469775,0.54405,0.023481919346403056,0.0,0.0,0.0,5.836702831601075,temporal,temporal_2015_H,2023,target,negative outcome
+5000,1,20,0.0033,0.0,0.024124999999999962,0.5421401515151515,0.0,0.0,0.0,4.647885101010101,temporal,temporal_2015_H,2023,target,enrichment
+10000,0,20,0.59875,0.590475,0.6112,0.026725172392137498,0.0,0.0,0.0,6.007798251055712,temporal,temporal_2015_H,2023,target,negative outcome
+10000,1,20,0.026750000000000006,0.002425,0.09309999999999995,0.6650534028233306,0.0,0.0,0.0,4.6981302444092705,temporal,temporal_2015_H,2023,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Northeast,Northeast held out: source test split,reference,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Northeast,Northeast held out: source test split,reference,enrichment
+1000,0,20,0.022,0.0,0.11,0.01818181818181818,0.0,0.0,0.0,5.0,geographic,geographic_without_Northeast,Northeast held out: source test split,reference,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Northeast,Northeast held out: source test split,reference,enrichment
+2000,0,20,0.1775,0.1198,0.31114999999999987,0.020248644190898397,0.0,0.0,0.0,5.317004514164755,geographic,geographic_without_Northeast,Northeast held out: source test split,reference,negative outcome
+2000,1,20,0.0005,0.0,0.005149999999999991,0.625,0.0,0.0,0.0,4.5,geographic,geographic_without_Northeast,Northeast held out: source test split,reference,enrichment
+5000,0,20,0.4915000000000001,0.46285000000000004,0.5141,0.019309107251802442,0.0,0.0,0.0,5.775385157027744,geographic,geographic_without_Northeast,Northeast held out: source test split,reference,negative outcome
+5000,1,20,0.016900000000000005,0.0,0.054399999999999976,0.5652387603007543,0.0,0.0,0.0,5.325706369504323,geographic,geographic_without_Northeast,Northeast held out: source test split,reference,enrichment
+10000,0,20,0.5554,0.54895,0.56,0.02502606255703695,0.0,0.0,0.0,5.966998308303566,geographic,geographic_without_Northeast,Northeast held out: source test split,reference,negative outcome
+10000,1,20,0.07680000000000001,0.0335,0.13364999999999996,0.5389791926220682,0.0,0.0,0.0,5.165753713074077,geographic,geographic_without_Northeast,Northeast held out: source test split,reference,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Northeast,Northeast,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Northeast,Northeast,target,enrichment
+1000,0,20,0.053000000000000005,0.0,0.15,0.01833333333333333,0.0,0.0,0.0,5.125,geographic,geographic_without_Northeast,Northeast,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Northeast,Northeast,target,enrichment
+2000,0,20,0.28095,0.166175,0.4171749999999999,0.012924949427985047,0.0,0.0,0.0,5.482149024201652,geographic,geographic_without_Northeast,Northeast,target,negative outcome
+2000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Northeast,Northeast,target,enrichment
+5000,0,20,0.59205,0.5809,0.60205,0.015033497513929388,0.0,0.0,0.0,5.661804067331053,geographic,geographic_without_Northeast,Northeast,target,negative outcome
+5000,1,20,0.0041,0.0,0.01987499999999998,0.738262252151141,0.0,0.0,0.0,5.628741114852225,geographic,geographic_without_Northeast,Northeast,target,enrichment
+10000,0,20,0.6379,0.629425,0.644525,0.015518866757435495,0.0,0.0,0.0,5.806206330933958,geographic,geographic_without_Northeast,Northeast,target,negative outcome
+10000,1,20,0.03755000000000001,0.0019000000000000002,0.071625,0.6856884851135839,0.0,0.0,0.0,5.239734203344992,geographic,geographic_without_Northeast,Northeast,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Midwest,Midwest held out: source test split,reference,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Midwest,Midwest held out: source test split,reference,enrichment
+1000,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Midwest,Midwest held out: source test split,reference,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Midwest,Midwest held out: source test split,reference,enrichment
+2000,0,20,0.13240000000000002,0.0057,0.24209999999999998,0.004229060441975818,0.0,0.0,0.0,5.900888467810003,geographic,geographic_without_Midwest,Midwest held out: source test split,reference,negative outcome
+2000,1,20,0.0012000000000000001,0.0,0.012599999999999965,0.5833333333333334,0.0,0.0,0.0,4.833333333333333,geographic,geographic_without_Midwest,Midwest held out: source test split,reference,enrichment
+5000,0,20,0.5331000000000001,0.4949,0.55305,0.022493733711756354,0.0,0.0,0.0,5.646689024022406,geographic,geographic_without_Midwest,Midwest held out: source test split,reference,negative outcome
+5000,1,20,0.015500000000000003,0.0,0.048799999999999955,0.514616402116402,0.0,0.0,0.0,4.069464285714285,geographic,geographic_without_Midwest,Midwest held out: source test split,reference,enrichment
+10000,0,20,0.5803,0.57495,0.5881,0.024126487564374126,0.0,0.0,0.0,5.7444535166733095,geographic,geographic_without_Midwest,Midwest held out: source test split,reference,negative outcome
+10000,1,20,0.0503,0.02085,0.11224999999999993,0.5467220298052945,0.0,0.0,0.0,4.426477655805475,geographic,geographic_without_Midwest,Midwest held out: source test split,reference,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Midwest,Midwest,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Midwest,Midwest,target,enrichment
+1000,0,20,0.0005499999999999999,0.0,0.005774999999999984,0.18181818181818182,0.0,0.0,0.0,6.0,geographic,geographic_without_Midwest,Midwest,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_Midwest,Midwest,target,enrichment
+2000,0,20,0.19290000000000002,0.030675,0.30839999999999995,0.028306030188449384,0.0,0.0,0.0,5.7329620277207045,geographic,geographic_without_Midwest,Midwest,target,negative outcome
+2000,1,20,0.00025,0.0,0.002624999999999993,0.6,0.0,0.0,0.0,5.0,geographic,geographic_without_Midwest,Midwest,target,enrichment
+5000,0,20,0.59315,0.566225,0.608625,0.019645708841480175,0.0,0.0,0.0,5.5058051191830755,geographic,geographic_without_Midwest,Midwest,target,negative outcome
+5000,1,20,0.02315,0.0,0.07844999999999998,0.6897589781472159,0.0,0.0,0.0,4.589040663747711,geographic,geographic_without_Midwest,Midwest,target,enrichment
+10000,0,20,0.63395,0.63,0.638,0.02027015096035128,0.0,0.0,0.0,5.558912897925861,geographic,geographic_without_Midwest,Midwest,target,negative outcome
+10000,1,20,0.0931,0.047475,0.150825,0.7561065777566378,0.0,0.0,0.0,4.986053960294507,geographic,geographic_without_Midwest,Midwest,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Kansas,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Kansas,target,enrichment
+1000,0,20,0.0005,0.0,0.005249999999999986,0.0,0.0,0.0,0.0,6.0,state,geographic_without_Midwest,Kansas,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Kansas,target,enrichment
+2000,0,20,0.156,0.0038000000000000004,0.29544999999999993,0.014067686712192936,0.0,0.0,0.0,5.712673729706246,state,geographic_without_Midwest,Kansas,target,negative outcome
+2000,1,20,0.0001,0.0,0.0010499999999999971,0.0,0.0,0.0,0.0,9.0,state,geographic_without_Midwest,Kansas,target,enrichment
+5000,0,20,0.5499,0.53495,0.56,0.016536687095697417,0.0,0.0,0.0,5.570492759106156,state,geographic_without_Midwest,Kansas,target,negative outcome
+5000,1,20,0.015100000000000002,0.0,0.06515,0.7692056908073813,0.0,0.0,0.0,4.766934830450442,state,geographic_without_Midwest,Kansas,target,enrichment
+10000,0,20,0.6002,0.596,0.60715,0.023326303019022308,0.0,0.0,0.0,5.681007592572113,state,geographic_without_Midwest,Kansas,target,negative outcome
+10000,1,20,0.07830000000000002,0.05065,0.10534999999999999,0.7121435359387129,0.0,0.0,0.03250278637435886,4.552431201131362,state,geographic_without_Midwest,Kansas,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Nebraska,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Nebraska,target,enrichment
+1000,0,20,0.0006000000000000001,0.0,0.006299999999999983,0.0,0.0,0.0,0.0,6.0,state,geographic_without_Midwest,Nebraska,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Nebraska,target,enrichment
+2000,0,20,0.1824,0.0636,0.29514999999999997,0.03334110799909568,0.0,0.0,0.0,5.910744962591336,state,geographic_without_Midwest,Nebraska,target,negative outcome
+2000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Nebraska,target,enrichment
+5000,0,20,0.5742999999999999,0.54625,0.59105,0.015656893596334036,0.0,0.0,0.0,5.474221511331338,state,geographic_without_Midwest,Nebraska,target,negative outcome
+5000,1,20,0.0016,0.0,0.01619999999999999,0.45,0.0,0.0,0.0,3.5,state,geographic_without_Midwest,Nebraska,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Minnesota,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Minnesota,target,enrichment
+1000,0,20,0.016,0.0,0.09164999999999995,0.03497863247863248,0.0,0.0,0.0,6.127564102564103,state,geographic_without_Midwest,Minnesota,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Minnesota,target,enrichment
+2000,0,20,0.41880000000000006,0.23315000000000002,0.5081,0.01571419899463162,0.0,0.0,0.0,5.754751194142746,state,geographic_without_Midwest,Minnesota,target,negative outcome
+2000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_Midwest,Minnesota,target,enrichment
+5000,0,20,0.7051,0.69895,0.71305,0.019856207345235462,0.0,0.0,0.0,5.425097323184316,state,geographic_without_Midwest,Minnesota,target,negative outcome
+5000,1,20,0.0009000000000000001,0.0,0.009249999999999986,0.42857142857142855,0.0,0.0,0.0,4.75,state,geographic_without_Midwest,Minnesota,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_South,South held out: source test split,reference,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_South,South held out: source test split,reference,enrichment
+1000,0,20,0.003,0.0,0.030599999999999968,0.0,0.0,0.0,0.0,5.76984126984127,geographic,geographic_without_South,South held out: source test split,reference,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_South,South held out: source test split,reference,enrichment
+2000,0,20,0.23559999999999998,0.05265,0.3146,0.002135276204640266,0.0,0.0,0.0,5.087473849361368,geographic,geographic_without_South,South held out: source test split,reference,negative outcome
+2000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_South,South held out: source test split,reference,enrichment
+5000,0,20,0.5869,0.5538000000000001,0.61705,0.007809902570392846,0.0,0.0,0.0,5.483854411734494,geographic,geographic_without_South,South held out: source test split,reference,negative outcome
+5000,1,20,0.0063,0.0,0.029449999999999976,0.5277398040555935,0.0,0.0,0.0,4.775894281157439,geographic,geographic_without_South,South held out: source test split,reference,enrichment
+10000,0,20,0.6566,0.64885,0.662,0.009138350714541806,0.0,0.0,0.0,5.677341748017264,geographic,geographic_without_South,South held out: source test split,reference,negative outcome
+10000,1,20,0.055900000000000005,0.0218,0.09219999999999999,0.47256639123038446,0.0,0.0,0.0,4.794696379942223,geographic,geographic_without_South,South held out: source test split,reference,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_South,South,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_South,South,target,enrichment
+1000,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_South,South,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_South,South,target,enrichment
+2000,0,20,0.18955,0.0329,0.2701,0.019072334337314235,0.0,0.0,0.0,5.043485767815643,geographic,geographic_without_South,South,target,negative outcome
+2000,1,20,0.0001,0.0,0.0010499999999999971,0.5,0.0,0.0,0.0,5.0,geographic,geographic_without_South,South,target,enrichment
+5000,0,20,0.51155,0.4799,0.54715,0.014017047609288028,0.0,0.0,0.0,5.381419660452246,geographic,geographic_without_South,South,target,negative outcome
+5000,1,20,0.027950000000000003,0.0,0.06319999999999999,0.6481144653790496,0.0,0.0,0.0,5.1760312679329195,geographic,geographic_without_South,South,target,enrichment
+10000,0,20,0.5916,0.58,0.602,0.01756721562349269,0.0,0.0,0.0,5.589922565461728,geographic,geographic_without_South,South,target,negative outcome
+10000,1,20,0.0941,0.038075,0.14714999999999998,0.6605392093002881,0.0,0.0,0.0,5.000707448487235,geographic,geographic_without_South,South,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_South,Texas,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_South,Texas,target,enrichment
+1000,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_South,Texas,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_South,Texas,target,enrichment
+2000,0,20,0.1637,0.02475,0.3267,0.0013949657939160327,0.0,0.0,0.0,5.4792958564096645,state,geographic_without_South,Texas,target,negative outcome
+2000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_South,Texas,target,enrichment
+5000,0,20,0.5297999999999999,0.52,0.54705,0.018878388468709404,0.0,0.0,0.0,5.362893800163828,state,geographic_without_South,Texas,target,negative outcome
+5000,1,20,0.0045,0.0,0.014,0.3869047619047619,0.0,0.0,0.0,4.284126984126984,state,geographic_without_South,Texas,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_West,West held out: source test split,reference,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_West,West held out: source test split,reference,enrichment
+1000,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_West,West held out: source test split,reference,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_West,West held out: source test split,reference,enrichment
+2000,0,20,0.16199999999999998,0.0098,0.33715,0.020973954569003365,0.0,0.0,0.0,5.762579502499747,geographic,geographic_without_West,West held out: source test split,reference,negative outcome
+2000,1,20,0.0008,0.0,0.008299999999999983,0.8571428571428572,0.0,0.0,0.0,4.5,geographic,geographic_without_West,West held out: source test split,reference,enrichment
+5000,0,20,0.5782,0.55,0.6,0.020773460454185384,0.0,0.0,0.0,5.691580212912312,geographic,geographic_without_West,West held out: source test split,reference,negative outcome
+5000,1,20,0.0183,0.0,0.0642,0.6254796449023365,0.0,0.0,0.0,4.9251290471468945,geographic,geographic_without_West,West held out: source test split,reference,enrichment
+10000,0,20,0.6298,0.62495,0.63505,0.022229792311722032,0.0,0.0,0.0,5.774646846023231,geographic,geographic_without_West,West held out: source test split,reference,negative outcome
+10000,1,20,0.10149999999999999,0.01845,0.15105,0.6817502344144913,0.0,0.0,0.0,4.7469318634573225,geographic,geographic_without_West,West held out: source test split,reference,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_West,West,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_West,West,target,enrichment
+1000,0,20,0.0001,0.0,0.0010499999999999971,0.0,0.0,0.0,0.0,7.0,geographic,geographic_without_West,West,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,geographic,geographic_without_West,West,target,enrichment
+2000,0,20,0.2326,0.0599,0.37982499999999997,0.01679934849074207,0.0,0.0,0.0,5.607679004438933,geographic,geographic_without_West,West,target,negative outcome
+2000,1,20,0.00195,0.0,0.020474999999999945,0.5897435897435898,0.0,0.0,0.0,3.4615384615384617,geographic,geographic_without_West,West,target,enrichment
+5000,0,20,0.6204999999999999,0.588475,0.637625,0.01595480002562516,0.0,0.0,0.0,5.609712826452819,geographic,geographic_without_West,West,target,negative outcome
+5000,1,20,0.00045,0.0,0.004724999999999987,0.7777777777777778,0.0,0.0,0.0,6.444444444444445,geographic,geographic_without_West,West,target,enrichment
+10000,0,20,0.6724000000000001,0.664375,0.67905,0.017319372417690066,0.0,0.0,0.0,5.668411483205043,geographic,geographic_without_West,West,target,negative outcome
+10000,1,20,0.0137,0.0,0.053124999999999964,0.845381550876907,0.0,0.0,0.0,4.445237121456161,geographic,geographic_without_West,West,target,enrichment
+500,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_West,Washington,target,negative outcome
+500,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_West,Washington,target,enrichment
+1000,0,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_West,Washington,target,negative outcome
+1000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_West,Washington,target,enrichment
+2000,0,20,0.09590000000000001,0.0039000000000000003,0.24884999999999988,0.009089750648158815,0.0,0.0,0.0,6.28596298373712,state,geographic_without_West,Washington,target,negative outcome
+2000,1,20,0.0,0.0,0.0,,0.0,0.0,0.0,,state,geographic_without_West,Washington,target,enrichment
+5000,0,20,0.5499,0.5039,0.5781,0.014576085100455036,0.0,0.0,0.0,5.751667436532366,state,geographic_without_West,Washington,target,negative outcome
+5000,1,20,0.0153,0.0,0.05724999999999998,0.6049365473236442,0.0,0.0,0.014516129032258065,4.221157154673284,state,geographic_without_West,Washington,target,enrichment

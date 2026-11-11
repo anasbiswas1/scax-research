@@ -118,6 +118,23 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   B9 and B10 run per kind at the frozen alpha_sel and delta_2 / 2; B11 at epsilon = 0.05. B12 uses anchor-exp (the Anchors authors' implementation) because alibi does not
   install (its spaCy dependency fails to build), and SHAP values from the native XGBoost model
   retrained with the frozen settings, used only when its export hash equals the frozen model hash.
+- Notebook 13, shift (temporal and geographic): one fixed model per source, trained like the frozen
+  heart model (frozen XGBoost settings, seed 42, Youden threshold on 5-fold out-of-fold scores of the
+  source training rows), with its own prior (mixture with the frozen lambda, candidate sets of 1,000
+  source training patients) and its own box certificates (the source records of calibration split 1).
+  Its hash is recorded when it is first fitted and checked before every target evaluation. Temporal:
+  source 2015 with the 19 predictors of H, targets 2017, 2019, 2021 and 2023; the frozen splits apply
+  to the rebuilt 2015 table because it equals the public table row by row. Geographic: the frozen
+  splits restricted to three census regions of 2015, target the fourth (four models, all 21
+  predictors). The "five largest states" are the five states with the most 2015 records (not the most
+  populous), each a target of the model trained without its region, so that re-certification can be
+  run up to 10,000 records; Guam and Puerto Rico have no census region and are left out. The model
+  settings were chosen in development on all regions; only the fit excludes the target region. Per
+  target 1,000 explained patients (500 per state and for the no-shift reference, the source test
+  split); the other target records check claims. Re-certification: labelled target samples of 500 to
+  10,000 records, 20 draws each, with at least 1,000 target records left to check claims (larger
+  sizes are skipped for small targets). The policy test on a second split is not run in target
+  domains. Site (UCI) and measurement (NHANES) shift follow in notebook 13b after notebook 03.
 
 ## Notebook map
 
@@ -136,7 +153,8 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
 | 10 | Validity study on the synthetic population |
 | 11 | Baselines |
 | 12 | Ablations |
-| 13 | Shift: temporal, geographic, site, measurement; re-certification sample sizes |
+| 13 | Shift, BRFSS: temporal and geographic; transport, re-certification sample sizes, within-box shift |
+| 13b | Shift: site (UCI) and measurement (NHANES), after notebook 03 |
 | 14 | Subgroups and group-conditional certificates |
 | 15 | Runtime |
 | 16 | Paper results and claims check |

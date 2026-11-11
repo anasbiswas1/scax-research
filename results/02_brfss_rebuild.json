@@ -1,0 +1,67 @@
+{
+  "years_used": [
+    2015,
+    2017,
+    2019,
+    2021,
+    2023
+  ],
+  "years_ignored": [],
+  "gate_G0": {
+    "rows_rebuilt": 253680,
+    "rows_public": 253680,
+    "marginal_mismatches": [],
+    "rows_equal": true,
+    "row_by_row_equal": true,
+    "passed": true,
+    "diabetes_task_outcome_equal": true
+  },
+  "harmonised_set_H": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "Diabetes",
+    "PhysActivity",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "parquet_sha256": {
+    "2015": "db1b290516c4a7c0df637c52c6346a9a63efa5d4481806836527f948d8ed012e",
+    "2017": "4a261dcc61ee147a981904b57f95e303b5d461d589f8acdcdea2b90c23e31b7b",
+    "2019": "45ff779e0ed60e03c08f7760f5c1142cbd07b2d3a01617010c79201215203d9b",
+    "2021": "fe583ccf4c05093200352d0c1216a222c7ddf407016b6fc230834db786652bbe",
+    "2023": "833b372fc3a216dace66f00d303b0a58d002e50434868d8a2ae3ff3fafeb6256"
+  },
+  "raw_file_sha256": {
+    "2015": "38bfd48c64b99328c67feac36cedfff6f2991d49e89c4ffd549083cb626764f0",
+    "2017": "ed692aae6a5b240c07fe186f0397b874553b805dcc83ab043c234386003bea07",
+    "2019": "67f64f88ba45faf7c6e73341e75ee392e525c672fcadd5a6618bf5c4fffba304",
+    "2021": "e8a6e290cdcb6bff82d8f37dff6c3f3e435d428191eb529a716cf9f5316aa621",
+    "2023": "d1ab80e4806a1d07bd3e40ec78c971ad9ff920f3ea5f6049780aeaa41ff31f43"
+  },
+  "_written_utc": "2026-11-11T09:38:27+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": null,
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

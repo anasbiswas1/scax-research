@@ -1,0 +1,119 @@
+year,step,records
+2015,raw records,441456
+2015,every selected item present,343606
+2015,HighBP (_RFHYPE5) codes [9] removed,342900
+2015,"HighChol (TOLDHI2) codes [7, 9] removed",340178
+2015,CholCheck (_CHOLCHK) codes [9] removed,335825
+2015,BMI (_BMI5),335825
+2015,"Smoker (SMOKE100) codes [7, 9] removed",333858
+2015,"Stroke (CVDSTRK3) codes [7, 9] removed",333120
+2015,"Diabetes (DIABETE3) codes [7, 9] removed",332801
+2015,PhysActivity (_TOTINDA) codes [9] removed,317404
+2015,Fruits (_FRTLT1) codes [9] removed,309768
+2015,Veggies (_VEGLT1) codes [9] removed,302160
+2015,HvyAlcoholConsump (_RFDRHV5) codes [9] removed,298637
+2015,"AnyHealthcare (HLTHPLN1) codes [7, 9] removed",298145
+2015,"NoDocbcCost (MEDCOST) codes [7, 9] removed",297709
+2015,"GenHlth (GENHLTH) codes [7, 9] removed",297194
+2015,"MentHlth (MENTHLTH) codes [77, 99] removed",294102
+2015,"PhysHlth (PHYSHLTH) codes [77, 99] removed",290473
+2015,"DiffWalk (DIFFWALK) codes [7, 9] removed",289698
+2015,"Sex (SEX) codes [7, 9] removed",289698
+2015,Age (_AGEG5YR) codes [14] removed,288259
+2015,Education (EDUCA) codes [9] removed,287931
+2015,"Income (INCOME2) codes [77, 99] removed",253680
+2015,HeartDiseaseorAttack (_MICHD),253680
+2017,raw records,450016
+2017,every selected item present,378115
+2017,HighBP (_RFHYPE5) codes [9] removed,377266
+2017,"HighChol (TOLDHI2) codes [7, 9] removed",374016
+2017,CholCheck (_CHOLCH1) codes [9] removed,357458
+2017,BMI (_BMI5),357458
+2017,"Smoker (SMOKE100) codes [7, 9] removed",355872
+2017,"Stroke (CVDSTRK3) codes [7, 9] removed",355091
+2017,"Diabetes (DIABETE3) codes [7, 9] removed",354747
+2017,PhysActivity (_TOTINDA) codes [9] removed,341653
+2017,Fruits (_FRTLT1A) codes [9] removed,334199
+2017,Veggies (_VEGLT1A) codes [9] removed,326013
+2017,HvyAlcoholConsump (_RFDRHV5) codes [9] removed,321941
+2017,"AnyHealthcare (HLTHPLN1) codes [7, 9] removed",321255
+2017,"NoDocbcCost (MEDCOST) codes [7, 9] removed",320752
+2017,"GenHlth (GENHLTH) codes [7, 9] removed",320277
+2017,"MentHlth (MENTHLTH) codes [77, 99] removed",317056
+2017,"PhysHlth (PHYSHLTH) codes [77, 99] removed",313407
+2017,"DiffWalk (DIFFWALK) codes [7, 9] removed",312713
+2017,"Sex (SEX) codes [7, 9] removed",312657
+2017,Age (_AGEG5YR) codes [14] removed,310696
+2017,Education (EDUCA) codes [9] removed,310338
+2017,"Income (INCOME2) codes [77, 99] removed",275854
+2017,HeartDiseaseorAttack (_MICHD),275854
+2019,raw records,418268
+2019,every selected item present,351875
+2019,HighBP (_RFHYPE5) codes [9] removed,350954
+2019,"HighChol (TOLDHI2) codes [7, 9] removed",347457
+2019,CholCheck (_CHOLCH2) codes [9] removed,327897
+2019,BMI (_BMI5),327897
+2019,"Smoker (SMOKE100) codes [7, 9] removed",326226
+2019,"Stroke (CVDSTRK3) codes [7, 9] removed",325524
+2019,"Diabetes (DIABETE4) codes [7, 9] removed",325150
+2019,PhysActivity (_TOTINDA) codes [9] removed,321004
+2019,Fruits (_FRTLT1A) codes [9] removed,305002
+2019,Veggies (_VEGLT1A) codes [9] removed,294051
+2019,HvyAlcoholConsump (_RFDRHV7) codes [9] removed,290101
+2019,"AnyHealthcare (HLTHPLN1) codes [7, 9] removed",289378
+2019,"NoDocbcCost (MEDCOST) codes [7, 9] removed",288942
+2019,"GenHlth (GENHLTH) codes [7, 9] removed",288576
+2019,"MentHlth (MENTHLTH) codes [77, 99] removed",284509
+2019,"PhysHlth (PHYSHLTH) codes [77, 99] removed",280935
+2019,"DiffWalk (DIFFWALK) codes [7, 9] removed",280318
+2019,"Sex (SEXVAR) codes [7, 9] removed",280318
+2019,Age (_AGEG5YR) codes [14] removed,278197
+2019,Education (EDUCA) codes [9] removed,277893
+2019,"Income (INCOME2) codes [77, 99] removed",243317
+2019,HeartDiseaseorAttack (_MICHD),243317
+2021,raw records,438693
+2021,every selected item present,330355
+2021,HighBP (_RFHYPE6) codes [9] removed,329518
+2021,"HighChol (TOLDHI3) codes [7, 9] removed",327218
+2021,CholCheck (_CHOLCH3) codes [9] removed,326955
+2021,BMI (_BMI5),326955
+2021,"Smoker (SMOKE100) codes [7, 9] removed",325124
+2021,"Stroke (CVDSTRK3) codes [7, 9] removed",324441
+2021,"Diabetes (DIABETE4) codes [7, 9] removed",324135
+2021,PhysActivity (_TOTINDA) codes [9] removed,323679
+2021,Fruits (_FRTLT1A) codes [9] removed,304738
+2021,Veggies (_VEGLT1A) codes [9] removed,293204
+2021,HvyAlcoholConsump (_RFDRHV7) codes [9] removed,289517
+2021,"AnyHealthcare (_HLTHPLN) codes [7, 9] removed",282896
+2021,"NoDocbcCost (MEDCOST1) codes [7, 9] removed",282472
+2021,"GenHlth (GENHLTH) codes [7, 9] removed",282115
+2021,"MentHlth (MENTHLTH) codes [77, 99] removed",279200
+2021,"PhysHlth (PHYSHLTH) codes [77, 99] removed",275853
+2021,"DiffWalk (DIFFWALK) codes [7, 9] removed",275290
+2021,"Sex (SEXVAR) codes [7, 9] removed",275290
+2021,Age (_AGEG5YR) codes [14] removed,272775
+2021,Education (EDUCA) codes [9] removed,272471
+2021,"Income (INCOME3) codes [77, 99] removed",236378
+2021,HeartDiseaseorAttack (_MICHD),236378
+2023,raw records,433323
+2023,every selected item present,338867
+2023,HighBP (_RFHYPE6) codes [9] removed,337963
+2023,"HighChol (TOLDHI3) codes [7, 9] removed",335480
+2023,CholCheck (_CHOLCH3) codes [9] removed,335480
+2023,BMI (_BMI5),335480
+2023,"Smoker (SMOKE100) codes [7, 9] removed",333640
+2023,"Stroke (CVDSTRK3) codes [7, 9] removed",332913
+2023,"Diabetes (DIABETE4) codes [7, 9] removed",332544
+2023,PhysActivity (_TOTINDA) codes [9] removed,331880
+2023,HvyAlcoholConsump (_RFDRHV8) codes [9] removed,323297
+2023,"AnyHealthcare (_HLTHPL1) codes [7, 9] removed",314006
+2023,"NoDocbcCost (MEDCOST1) codes [7, 9] removed",313422
+2023,"GenHlth (GENHLTH) codes [7, 9] removed",312896
+2023,"MentHlth (MENTHLTH) codes [77, 99] removed",308960
+2023,"PhysHlth (PHYSHLTH) codes [77, 99] removed",304436
+2023,"DiffWalk (DIFFWALK) codes [7, 9] removed",303699
+2023,"Sex (SEXVAR) codes [7, 9] removed",303699
+2023,Age (_AGEG5YR) codes [14] removed,301228
+2023,Education (EDUCA) codes [9] removed,300760
+2023,"Income (INCOME3) codes [77, 99] removed",261589
+2023,HeartDiseaseorAttack (_MICHD),261589

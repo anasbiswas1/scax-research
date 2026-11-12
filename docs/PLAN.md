@@ -189,9 +189,19 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
 - E1 scope still open (recorded 11 November 2026): the plan asks for main results on four tasks (BRFSS
   Heart, CDC Diabetes, Cardio-70k, UCI Heart) with three model families. Done: BRFSS Heart and CDC
   Diabetes with XGBoost (notebook 09) and UCI Heart (notebook 13b); LightGBM and random forest only as
-  ablations (notebook 12b, without the policy test). Cardio-70k (development, freezing, certificates,
-  release) and the LightGBM and random forest main rows with the policy test are planned as notebook
-  09b.
+  ablations (notebook 12b, without the policy test). The LightGBM and random forest main rows with the
+  policy test are notebook 09b; Cardio-70k (development, freezing, certificates, release) is notebook
+  09c.
+- Notebook 09b, other model families (E1) on the frozen design of each task: same training portion and
+  seed, the same 2,000 prior training patients and lambda, the same M, feature-order seed and search
+  budget, the same explained subsamples of calibration split 2 and of the test split, calibration
+  split 1 for certificates, the frozen target grids and alpha_sel. Settings closest to the frozen
+  XGBoost, as in notebook 12b: LightGBM with 100 trees of depth 4 (15 leaves), 32 bins, learning rate
+  0.3, at least 50 records per leaf and minimum split gain 2; random forest with the plan's 50 trees
+  of depth 4 and at least 50 records per leaf. Each model is fitted on the training portion with a
+  Youden threshold on 5-fold out-of-fold scores, saved and hashed before calibration split 1 is read.
+  Prior boxes are not re-verified (release still requires the second exact check, as in notebooks 12b
+  and 13). Results use the layout of notebook 09, with the XGBoost rows taken from results/09_main.csv.
 
 ## Notebook map
 
@@ -207,7 +217,8 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
 | 07 | Candidate enumeration with all sound inflation-path boxes |
 | 08 | Prior and box certificates on calibration split 1 |
 | 09 | Release, policy certification on calibration split 2, main results |
-| 09b | Main results completed: Cardio-70k; LightGBM and random forest with the policy test |
+| 09b | Main results for LightGBM and random forest on the frozen design, with the policy test |
+| 09c | Main results for Cardio-70k: development, freezing, certificates, release |
 | 10 | Validity study on the synthetic population |
 | 11 | Baselines |
 | 12 | Ablations |

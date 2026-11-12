@@ -1,0 +1,44 @@
+{
+  "frozen_config_sha256": {
+    "cardio70k": "52e5b43fdcfcfa13f6820512ef55ac5ac50a22bdf501d361016e95c92c36317c"
+  },
+  "written_before_calibration_split_1": true,
+  "choice": {
+    "config": "reg_depth4_bin16",
+    "params": {
+      "n_estimators": 100,
+      "max_depth": 4,
+      "min_child_weight": 50,
+      "gamma": 2,
+      "max_bin": 16
+    },
+    "lambda": 0.5,
+    "target_met": false
+  },
+  "n_cal2_explained": 10500,
+  "alpha_sel": {
+    "0": 0.2,
+    "1": 0.2
+  },
+  "splits": {
+    "dev_train": 21000,
+    "dev_cal": 7000,
+    "cal1": 21000,
+    "cal2": 10500,
+    "test": 10500,
+    "sha256": "64cf07a70bcb1e82d417be5b8993b08b0671aaf3a9dc12427f0ca2e659c83ad4"
+  },
+  "_written_utc": "2026-11-12T10:14:35+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.4.1",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

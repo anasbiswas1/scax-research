@@ -1,0 +1,127 @@
+{
+ "calibration_split_1_opened": false,
+ "candidates": {
+  "M": 10,
+  "inflation": "binary search per side, every sound visited box kept",
+  "node_budget": 200000,
+  "order_seed": 42,
+  "soundness": "interval pre-check, then exact leaf branch-and-bound; every candidate re-checked by the second exact implementation"
+ },
+ "data_sha256": "21a705d23381b0dfd6a6416da701b490744f1fc3b47e9ff3db3968c420ffa10c",
+ "development": {
+  "alpha_sel_projection": {
+   "0": {
+    "development_selective_error": 0.14285714285714285,
+    "expected_accepted": 882,
+    "projected_upper": 0.17134142621025727
+   },
+   "1": {
+    "development_selective_error": 0.1387900355871886,
+    "expected_accepted": 2951,
+    "projected_upper": 0.15383071920530172
+   }
+  },
+  "g1_reference_auroc": 0.8015362485084678,
+  "release_rate_enrichment": 0.281,
+  "release_rate_negative": 0.084,
+  "selective_error_enrichment": 0.1387900355871886,
+  "selective_error_negative": 0.14285714285714285,
+  "target_met": false,
+  "target_negative_release": 0.5
+ },
+ "explained": {
+  "cal2": 10500,
+  "cal2_sha256": "8fafb58e12dff4d11f0c4b26f2912b4284425ea8039407e9b48dab09f41bd51c",
+  "test": 5000,
+  "test_sha256": "4d9b2bb9cfc1545fbced071f00e6cc2e364bf5402b93a40ac2501cc79b2a6c3b"
+ },
+ "frozen_model_checks": {
+  "exported_vs_native": {
+   "beyond_rounding": 0,
+   "disagreements": 0,
+   "max_gap": 0.0,
+   "rounding_bound": 8.501938149805712e-05,
+   "within_rounding": 0
+  },
+  "log10_family_size": 12.656543606841868,
+  "prior_boxes": 39461,
+  "prior_unverified_removed": 0,
+  "prior_z3_sample": {
+   "checked": 30,
+   "sound": 30,
+   "unknown": 0
+  },
+  "soundness_checks": {
+   "boxes": 300,
+   "primary_vs_second_disagree": 0,
+   "sound": 44,
+   "z3_checked": 30,
+   "z3_disagree": 0,
+   "z3_unknown": 0
+  },
+  "thresholds": 61
+ },
+ "model": {
+  "config": "reg_depth4_bin16",
+  "family": "xgboost",
+  "file": "datasets/derived/frozen/cardio70k__model.json",
+  "input_cast": "float32",
+  "params": {
+   "gamma": 2,
+   "max_bin": 16,
+   "max_depth": 4,
+   "min_child_weight": 50,
+   "n_estimators": 100
+  },
+  "sha256": "18506c06f83b805c7a6d05fc14f462a130bd7719123e34c288e79cbae0355a6a",
+  "tau": -0.052287789061665535,
+  "tau_rule": "Youden on 5-fold out-of-fold scores of the training portion",
+  "trained_on": "training portion (dev-train and dev-cal)"
+ },
+ "outcome": "cardio",
+ "outcome_definition": "Presence of cardiovascular disease as recorded at examination",
+ "prior": {
+  "file": "datasets/derived/frozen/cardio70k__prior.json",
+  "lambda": 0.5,
+  "sha256": "24ab6f12a647184d97e7a255b0408411f25bc11fd43bf21d6bab7bbcf573a5fe",
+  "training_patients": 2000,
+  "type": "mixture"
+ },
+ "release_rule": "fewest constrained features, then most calibration support, then tightest bound; abstain if no candidate passes",
+ "seed": 42,
+ "split_sha256": "64cf07a70bcb1e82d417be5b8993b08b0671aaf3a9dc12427f0ca2e659c83ad4",
+ "targets": {
+  "alpha_0": 0.2,
+  "alpha_0_grid": [
+   0.1,
+   0.2,
+   0.3
+  ],
+  "alpha_1": 0.2,
+  "alpha_sel": {
+   "enrichment": 0.2,
+   "negative_outcome": 0.2
+  },
+  "beta": 0.8,
+  "beta_grid": [
+   0.6,
+   0.7,
+   0.8
+  ],
+  "delta_1": 0.025,
+  "delta_2": 0.025,
+  "plan_alpha_0_grid": [
+   0.02,
+   0.05,
+   0.1
+  ],
+  "plan_beta_grid": [
+   0.2,
+   0.3,
+   0.5
+  ],
+  "policy": "negative-outcome and enrichment releases certified separately at delta_2 / 2 each",
+  "scaling": "targets scaled to the 50% base rate, chosen before any Cardio model was fitted"
+ },
+ "task": "cardio70k"
+}

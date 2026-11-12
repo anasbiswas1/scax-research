@@ -190,8 +190,8 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   Heart, CDC Diabetes, Cardio-70k, UCI Heart) with three model families. Done: BRFSS Heart and CDC
   Diabetes with XGBoost (notebook 09) and UCI Heart (notebook 13b); LightGBM and random forest only as
   ablations (notebook 12b, without the policy test). The LightGBM and random forest main rows with the
-  policy test are notebook 09b; Cardio-70k (development, freezing, certificates, release) is notebook
-  09c.
+  policy test are notebook 09b; Cardio-70k is notebooks 09c (development and freezing) and 09d
+  (certificates, release and policy test).
 - Notebook 09b, other model families (E1) on the frozen design of each task: same training portion and
   seed, the same 2,000 prior training patients and lambda, the same M, feature-order seed and search
   budget, the same explained subsamples of calibration split 2 and of the test split, calibration
@@ -202,6 +202,33 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   Youden threshold on 5-fold out-of-fold scores, saved and hashed before calibration split 1 is read.
   Prior boxes are not re-verified (release still requires the second exact check, as in notebooks 12b
   and 13). Results use the layout of notebook 09, with the XGBoost rows taken from results/09_main.csv.
+- Notebooks 09c and 09d, Cardio-70k (E1), decided 12 November 2026 before any Cardio model was
+  fitted (notebook 01 only described the table): half of the Cardio patients have the outcome, while
+  the plan's grid asks negative-outcome boxes for at most 2 to 10% with the outcome and allows
+  enrichment claims of 20 to 50%, at or below the base rate; the targets are scaled to the base
+  rate. On the odds scale against the base rate, the enrichment target (odds ratio 4) is as strict
+  as BRFSS Heart (4.1; CDC Diabetes 2.7) and the negative-outcome target (0.25) is stricter than
+  both BRFSS tasks (0.51 and 0.33). Negative-outcome claims: main target alpha_0 = 0.20, grid 0.10,
+  0.20, 0.30; enrichment claims: main beta = 0.80 (alpha_1 = 0.20), grid 0.6, 0.7, 0.8; alpha_sel
+  grids 0.20, 0.25, 0.30 (negative outcome) and 0.20, 0.25, 0.30, 0.35 (enrichment), chosen by the
+  notebook 05 rule. The plan's grid (alpha_0 0.02, 0.05, 0.10; beta 0.2, 0.3, 0.5) is reported as
+  descriptive rows without the policy guarantee. Everything else follows notebooks 05, 08 and 09:
+  label-independent splits with seed 42 and the same shares, gates G1 and G3 with the same
+  development cascade and the same utility rule (half of the development patients with a
+  negative-outcome explanation at the main target), alpha_sel from development, the explained
+  subsamples, a prior from 2,000 training patients with every box re-checked, and the frozen
+  configuration written and committed before calibration split 1 is opened. Weight has decimal
+  values, so the XGBoost export converts inputs to float32. Boxes are re-checked by the second exact
+  check when they could be released at the loosest target of either grid.
+- Notebook 09c utility rule (recorded 12 November 2026 after a test run of the development stage on
+  the Cardio file, before calibration split 1 was opened): the rule counts all development patients,
+  and only about 53% of Cardio patients are predicted negative, so the 50% target cannot be met in
+  practice (the test run reached 8% at alpha_0 = 0.20 and 42% at 0.30). As in notebook 05, the
+  G1-passing configuration with the highest development release rate at the main target is then
+  frozen and the shortfall recorded (target_met false in the frozen configuration); the targets are
+  not changed. Development certificates use 5,600 records against 21,000 in calibration split 1, so
+  development release rates understate the final ones (notebooks 05 and 09: CDC Diabetes 22% in
+  development and 51% on the test split at alpha_0 = 0.02).
 
 ## Notebook map
 
@@ -218,7 +245,8 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
 | 08 | Prior and box certificates on calibration split 1 |
 | 09 | Release, policy certification on calibration split 2, main results |
 | 09b | Main results for LightGBM and random forest on the frozen design, with the policy test |
-| 09c | Main results for Cardio-70k: development, freezing, certificates, release |
+| 09c | Cardio-70k: splits, development (gates G1, G3) and freezing |
+| 09d | Cardio-70k: certificates, release, policy test and results |
 | 10 | Validity study on the synthetic population |
 | 11 | Baselines |
 | 12 | Ablations |

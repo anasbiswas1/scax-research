@@ -67,3 +67,15 @@ def test_xgboost_float32_input_conversion():
     assert np.allclose(p32.score(X), native_scores(m, "xgboost", X), atol=1e-5, rtol=0)
     with pytest.raises(ValueError):
         export_model(m, "lightgbm", ["a", "b"], input_cast="float32")
+
+
+def test_fit_exported_passes_the_input_conversion():
+    from scax.experiments.development import fit_exported
+    rng = np.random.default_rng(1)
+    X = np.round(rng.uniform(0, 5, (2000, 2)), 1)
+    y = (X[:, 0] + rng.normal(0, 1, 2000) > 2.5).astype(int)
+    p = {"n_estimators": 5, "max_depth": 2}
+    _, e64, _ = fit_exported(X, y, p, 0, ["a", "b"])
+    m, e32, pred = fit_exported(X, y, p, 0, ["a", "b"], input_cast="float32")
+    assert e64.input_cast == "float64" and e32.input_cast == "float32" and e64.tau == e32.tau
+    assert np.allclose(pred.score(X), native_scores(m, "xgboost", X), atol=1e-5, rtol=0)

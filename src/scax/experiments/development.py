@@ -44,12 +44,15 @@ def tuned_reference(X_fit, y_fit, X_ev, y_ev, seed):
     return table
 
 
-def fit_exported(X_fit, y_fit, params, seed, feature_names):
-    """Train, choose tau on 5-fold out-of-fold scores, export, return (model, ensemble, predictor)."""
+def fit_exported(X_fit, y_fit, params, seed, feature_names, input_cast=None):
+    """Train, choose tau on 5-fold out-of-fold scores, export, return (model, ensemble, predictor).
+
+    input_cast 'float32' converts inputs as XGBoost does; it is needed for data with decimal values
+    (Cardio-70k); the default keeps the export of the frozen BRFSS models."""
     oof = train.oof_scores("xgboost", X_fit, y_fit, params, seed)
     tau = train.youden_threshold(oof, y_fit)
     model = train.fit("xgboost", X_fit, y_fit, params, seed)
-    ens = export_model(model, "xgboost", feature_names)
+    ens = export_model(model, "xgboost", feature_names, input_cast)
     ens.tau = tau
     return model, ens, ExactPredictor(ens)
 
@@ -133,9 +136,9 @@ def evaluate_releases(eval_cands, y_eval, yhat_eval, grid, C_cert, y_cert, prior
 
 
 def evaluate_config(name, params, X, y, idx_fit, idx_cert, idx_eval, idx_prior, feature_names, seed, M, delta1,
-                    delta2_each, alpha0_list, beta_list, lambdas, M_list, log=print):
+                    delta2_each, alpha0_list, beta_list, lambdas, M_list, log=print, input_cast=None):
     t0 = time.time()
-    model, ens, pred = fit_exported(X[idx_fit], y[idx_fit], params, seed, feature_names)
+    model, ens, pred = fit_exported(X[idx_fit], y[idx_fit], params, seed, feature_names, input_cast)
     g = pred.grid
     dev_cal = np.r_[idx_cert, idx_eval]
     auroc = roc_auc_score(y[dev_cal], pred.score(X[dev_cal]))

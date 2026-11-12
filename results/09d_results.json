@@ -1,0 +1,116 @@
+{
+  "frozen_config_sha256": "52e5b43fdcfcfa13f6820512ef55ac5ac50a22bdf501d361016e95c92c36317c",
+  "box_table_sha256": "bd89196211fc28f3c573d4a316e95de574ba47ba13e7d16dd173aa3c7734f167",
+  "limit": null,
+  "verification": {
+    "eligible_boxes": 27192,
+    "sound": 27192,
+    "unknown": 0,
+    "z3_sample": {
+      "sound": 60,
+      "unknown": 0,
+      "checked": 60
+    },
+    "seconds": 51.600252628326416
+  },
+  "candidate_cells": 13356,
+  "median_seconds_per_cell": 0.035368352999853414,
+  "policy": {
+    "negative_outcome": {
+      "accepted": 3028,
+      "errors": 647,
+      "U_sel": 0.23087999986837615,
+      "alpha_sel": 0.2,
+      "delta_2": 0.0125,
+      "certified": false
+    },
+    "enrichment": {
+      "accepted": 2906,
+      "errors": 461,
+      "U_sel": 0.17443406642585302,
+      "alpha_sel": 0.2,
+      "delta_2": 0.0125,
+      "certified": true
+    }
+  },
+  "main": [
+    {
+      "task": "cardio70k",
+      "grid": "scaled",
+      "kind": "negative outcome",
+      "alpha_0": 0.2,
+      "beta": 0.8,
+      "target": 0.2,
+      "frozen_targets": true,
+      "cal2_accepted": 3028,
+      "cal2_errors": 647,
+      "U_sel": 0.23087999986837615,
+      "alpha_sel": 0.2,
+      "policy_certified": false,
+      "test_patients": 5000,
+      "test_certified_share": 0.291,
+      "test_certified_share_of_predicted_class": 0.5523917995444191,
+      "test_accepted": 1455,
+      "test_errors": 305,
+      "test_error_rate": 0.20962199312714777,
+      "test_error_lower_95": 0.1921712874863224,
+      "test_error_upper_95": 0.22794602985407822,
+      "mean_size": 3.6639175257731957,
+      "median_calibration_support": 1761.0
+    },
+    {
+      "task": "cardio70k",
+      "grid": "scaled",
+      "kind": "enrichment",
+      "alpha_0": 0.2,
+      "beta": 0.8,
+      "target": 0.2,
+      "frozen_targets": true,
+      "cal2_accepted": 2906,
+      "cal2_errors": 461,
+      "U_sel": 0.17443406642585302,
+      "alpha_sel": 0.2,
+      "policy_certified": true,
+      "test_patients": 5000,
+      "test_certified_share": 0.2836,
+      "test_certified_share_of_predicted_class": 0.599323753169907,
+      "test_accepted": 1418,
+      "test_errors": 226,
+      "test_error_rate": 0.15937940761636107,
+      "test_error_lower_95": 0.1435714310853027,
+      "test_error_upper_95": 0.17624170834250621,
+      "mean_size": 1.5133991537376588,
+      "median_calibration_support": 2943.0
+    }
+  ],
+  "model_metrics": [
+    {
+      "task": "cardio70k",
+      "n": 10500,
+      "prevalence": 0.49342857142857144,
+      "auroc": 0.803096527621515,
+      "auprc": 0.7875118886865025,
+      "brier": 0.179262450239872,
+      "ece_15_equal_mass": 0.014950860850222708,
+      "calibration_slope": 1.0408345472557377,
+      "calibration_intercept": -0.011344024042822656,
+      "sensitivity": 0.6981277745608956,
+      "specificity": 0.7800338409475465,
+      "predicted_positive_share": 0.4559047619047619
+    }
+  ],
+  "consistency_flags": 0,
+  "_written_utc": "2026-11-12T10:43:05+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.4.1",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

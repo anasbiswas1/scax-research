@@ -229,6 +229,24 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   not changed. Development certificates use 5,600 records against 21,000 in calibration split 1, so
   development release rates understate the final ones (notebooks 05 and 09: CDC Diabetes 22% in
   development and 51% on the test split at alpha_0 = 0.02).
+- Notebook 14, subgroups (E5, RQ5), decided 12 November 2026 before any group result was computed.
+  Groups: sex; age bands 18 to 44, 45 to 64, 65 or older (BRFSS age codes 1 to 5, 6 to 9 and 10 to
+  13; Cardio age in days divided by 365.25; no Cardio patient is 65 or older, so that group is left
+  out); income tertiles for the two BRFSS tasks, cut on the training portion at the codes whose
+  groups come closest to thirds (income is coded in 8 bands). Race and ethnicity are not in any of
+  the three public tables. Cardio gender is coded 1 for women and 2 for men (dataset card). One
+  fixed model per task, the frozen one, with its candidate sets, box table, explained subsamples and
+  targets. Group-conditional SCAX (Eq. 11) uses rho(g) = 1/|G| within one attribute (standard
+  version) and 1/(number of groups over all attributes) when every group of the patient must pass
+  (strict version); the release order is unchanged, with the group bound in place of the marginal
+  bound, and a box that a group bound would release is re-checked by the second exact check first.
+  Group policy tests use the explained patients of calibration split 2 at delta_2/(2|G|) per kind
+  and group (strict version: all groups). SGR is calibrated on calibration split 1 and the explained
+  patients of calibration split 2, with one threshold per kind at delta_2/2 and, as a group-wise
+  comparison, one per kind and group at delta_2/(2|G|). Results are on the explained test patients
+  at the frozen targets. Error bounds are one-sided 95% Clopper-Pearson bounds, as in notebook 09
+  (together a 90% two-sided interval); the gap between the groups with the highest and lowest
+  certified share uses Newcombe's 95% interval, without adjustment for picking those two groups.
 
 ## Notebook map
 

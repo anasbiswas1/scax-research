@@ -1,0 +1,241 @@
+{
+  "seed": 42,
+  "frozen_config_sha256": {
+    "cdc_diabetes": "42020030cd4a0f422f165f1f4130ae76b8ff48708090699343de7aae187489df",
+    "brfss2015_heart": "c656821f5d64dd87e4cd6b9b8b2dbccf9e483eb0ab7d45d88183fef527d57e1e"
+  },
+  "limit": null,
+  "units": {
+    "cdc_diabetes__lightgbm": {
+      "task": "cdc_diabetes",
+      "family": "lightgbm",
+      "settings": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "num_leaves": 15,
+        "max_bin": 32,
+        "learning_rate": 0.3,
+        "min_child_samples": 50,
+        "min_split_gain": 2.0
+      },
+      "model_sha256": "8b7e279f066a2ac88cb8d8f494ec98a099cd666d119d6da9bea76e1258e4e2ba",
+      "tau": -1.8652225132561822,
+      "exported_vs_native_training": {
+        "disagreements": 0,
+        "within_rounding": 0,
+        "beyond_rounding": 0,
+        "rounding_bound": 9.596051251324305e-05,
+        "max_gap": 0.0
+      },
+      "thresholds": 74,
+      "prior_boxes": 93207,
+      "boxes": 272893,
+      "eligible_boxes": 65600,
+      "unverified_boxes": 0,
+      "model_metrics": {
+        "n": 38052,
+        "prevalence": 0.14009776095868812,
+        "auroc": 0.828185085283971,
+        "auprc": 0.4330104071998072,
+        "brier": 0.09728328013150556,
+        "ece_15_equal_mass": 0.0060862552820393915,
+        "calibration_slope": 0.99241513359173,
+        "calibration_intercept": 0.0002950913805839176,
+        "sensitivity": 0.799099606077659,
+        "specificity": 0.7017511689740534,
+        "predicted_positive_share": 0.3684169031851151
+      },
+      "median_seconds_per_cell": 0.5588611319999472,
+      "seconds": 6608.533499002457
+    },
+    "cdc_diabetes__sklearn_rf": {
+      "task": "cdc_diabetes",
+      "family": "sklearn_rf",
+      "settings": {
+        "n_estimators": 50,
+        "max_depth": 4,
+        "min_samples_leaf": 50
+      },
+      "model_sha256": "fce9dcb87793a68d595800cccd5e1ddbb15f3f93e073f82c791ace16623b8621",
+      "tau": 0.1583823472029164,
+      "exported_vs_native_training": {
+        "disagreements": 0,
+        "within_rounding": 0,
+        "beyond_rounding": 0,
+        "rounding_bound": 0.00030301580342548295,
+        "max_gap": 0.0
+      },
+      "thresholds": 69,
+      "prior_boxes": 50360,
+      "boxes": 138459,
+      "eligible_boxes": 45700,
+      "unverified_boxes": 0,
+      "model_metrics": {
+        "n": 38052,
+        "prevalence": 0.14009776095868812,
+        "auroc": 0.8124401846042355,
+        "auprc": 0.40858146683561364,
+        "brier": 0.10215267409028225,
+        "ece_15_equal_mass": 0.03780449377839857,
+        "calibration_slope": 1.609876327662942,
+        "calibration_intercept": 0.9207266787295536,
+        "sensitivity": 0.7715250422059651,
+        "specificity": 0.714709208153785,
+        "predicted_positive_share": 0.35341112162304217
+      },
+      "median_seconds_per_cell": 0.3927837735000139,
+      "seconds": 4537.537232637405
+    },
+    "brfss2015_heart__lightgbm": {
+      "task": "brfss2015_heart",
+      "family": "lightgbm",
+      "settings": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "num_leaves": 15,
+        "max_bin": 32,
+        "learning_rate": 0.3,
+        "min_child_samples": 50,
+        "min_split_gain": 2.0
+      },
+      "model_sha256": "b98d8c9d1d77950dd4b832cc35406c7500c8fac1d6e75db3e87e75a4c4557b4a",
+      "tau": -2.3657298341512707,
+      "exported_vs_native_training": {
+        "disagreements": 0,
+        "within_rounding": 0,
+        "beyond_rounding": 0,
+        "rounding_bound": 8.973775529806189e-05,
+        "max_gap": 0.0
+      },
+      "thresholds": 69,
+      "prior_boxes": 79466,
+      "boxes": 375180,
+      "eligible_boxes": 63694,
+      "unverified_boxes": 0,
+      "model_metrics": {
+        "n": 38052,
+        "prevalence": 0.09573741196257753,
+        "auroc": 0.8478677446094253,
+        "auprc": 0.37989769119085537,
+        "brier": 0.07097557706625453,
+        "ece_15_equal_mass": 0.005484936353644035,
+        "calibration_slope": 0.9905597119576588,
+        "calibration_intercept": 0.013132367146538095,
+        "sensitivity": 0.8278891023881416,
+        "specificity": 0.7166729634688599,
+        "predicted_positive_share": 0.3354619993692841
+      },
+      "median_seconds_per_cell": 0.38977430399972945,
+      "seconds": 7068.51189494133
+    },
+    "brfss2015_heart__sklearn_rf": {
+      "task": "brfss2015_heart",
+      "family": "sklearn_rf",
+      "settings": {
+        "n_estimators": 50,
+        "max_depth": 4,
+        "min_samples_leaf": 50
+      },
+      "model_sha256": "218c579f3cb5eb4949816b819b646b9335befac5d84228f238144f3ea57bf0eb",
+      "tau": 0.09266967905708265,
+      "exported_vs_native_training": {
+        "disagreements": 0,
+        "within_rounding": 0,
+        "beyond_rounding": 0,
+        "rounding_bound": 0.0003107771086391712,
+        "max_gap": 0.0
+      },
+      "thresholds": 73,
+      "prior_boxes": 21052,
+      "boxes": 79983,
+      "eligible_boxes": 20896,
+      "unverified_boxes": 0,
+      "model_metrics": {
+        "n": 38052,
+        "prevalence": 0.09573741196257753,
+        "auroc": 0.8285712415551898,
+        "auprc": 0.3519608298526343,
+        "brier": 0.0746816736109077,
+        "ece_15_equal_mass": 0.028691521181463578,
+        "calibration_slope": 1.5785620577461297,
+        "calibration_intercept": 1.1101076385974786,
+        "sensitivity": 0.831183090859182,
+        "specificity": 0.6756371879450144,
+        "predicted_positive_share": 0.37288447387785134
+      },
+      "median_seconds_per_cell": 0.16583317399999942,
+      "seconds": 3477.238123893738
+    }
+  },
+  "policy": {
+    "cdc_diabetes__lightgbm": {
+      "negative outcome": {
+        "certified": false,
+        "U_sel": 0.05080753657898083,
+        "alpha_sel": 0.05,
+        "accepted": 1740
+      },
+      "enrichment": {
+        "certified": false,
+        "U_sel": 0.7078205238141849,
+        "alpha_sel": 0.7,
+        "accepted": 967
+      }
+    },
+    "cdc_diabetes__sklearn_rf": {
+      "negative outcome": {
+        "certified": false,
+        "U_sel": 0.05908068758742451,
+        "alpha_sel": 0.05,
+        "accepted": 1856
+      },
+      "enrichment": {
+        "certified": false,
+        "U_sel": 0.7191507486261421,
+        "alpha_sel": 0.7,
+        "accepted": 995
+      }
+    },
+    "brfss2015_heart__lightgbm": {
+      "negative outcome": {
+        "certified": true,
+        "U_sel": 0.02710059350219467,
+        "alpha_sel": 0.05,
+        "accepted": 6058
+      },
+      "enrichment": {
+        "certified": true,
+        "U_sel": 0.7674708016971066,
+        "alpha_sel": 0.8,
+        "accepted": 2502
+      }
+    },
+    "brfss2015_heart__sklearn_rf": {
+      "negative outcome": {
+        "certified": true,
+        "U_sel": 0.030576710572073833,
+        "alpha_sel": 0.05,
+        "accepted": 5832
+      },
+      "enrichment": {
+        "certified": true,
+        "U_sel": 0.7903901156993122,
+        "alpha_sel": 0.8,
+        "accepted": 2644
+      }
+    }
+  },
+  "_written_utc": "2026-11-12T06:27:09+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.4.1",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

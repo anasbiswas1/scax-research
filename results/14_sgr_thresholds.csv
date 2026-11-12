@@ -1,0 +1,47 @@
+task,method,attribute,group,kind,threshold,bound,calibration_accepted
+cdc_diabetes,SGR,,All,negative outcome,1.9698972321365331,0.0452267515061978,48234
+cdc_diabetes,SGR,,All,enrichment,-1.8185365786793013,0.6999982889387385,27996
+cdc_diabetes,"SGR, per group",Sex,Female,negative outcome,1.9703426663926407,0.04231124840741613,28416
+cdc_diabetes,"SGR, per group",Sex,Female,enrichment,-1.7482724927848508,0.6999819552438109,13822
+cdc_diabetes,"SGR, per group",Sex,Male,negative outcome,2.0565105146978353,0.04997246515062146,19081
+cdc_diabetes,"SGR, per group",Sex,Male,enrichment,-1.7956805435550236,0.6999792770949891,13313
+cdc_diabetes,"SGR, per group",Age band,Age 18 to 44,negative outcome,1.971667740757654,0.028837927920513998,15550
+cdc_diabetes,"SGR, per group",Age band,Age 18 to 44,enrichment,-0.9874596976459329,0.6993231440953671,411
+cdc_diabetes,"SGR, per group",Age band,Age 45 to 64,negative outcome,1.9699809648171835,0.04772967267341859,21601
+cdc_diabetes,"SGR, per group",Age band,Age 45 to 64,enrichment,-1.7644658688240056,0.6999812977029299,10914
+cdc_diabetes,"SGR, per group",Age band,Age 65 or older,negative outcome,2.4341843172459234,0.04990012890400488,7266
+cdc_diabetes,"SGR, per group",Age band,Age 65 or older,enrichment,-1.8096428366860677,0.6999876707518862,15378
+cdc_diabetes,"SGR, per group",Income tertile,"Income under $35,000",negative outcome,2.3676277596986224,0.049903948058710935,8513
+cdc_diabetes,"SGR, per group",Income tertile,"Income under $35,000",enrichment,-1.9696200120105245,0.6919701514172173,15077
+cdc_diabetes,"SGR, per group",Income tertile,"Income $35,000 to $74,999",negative outcome,1.9698972321365331,0.04928698177543844,15488
+cdc_diabetes,"SGR, per group",Income tertile,"Income $35,000 to $74,999",enrichment,-1.5186427488241647,0.6999972614330958,6771
+cdc_diabetes,"SGR, per group",Income tertile,"Income $75,000 or more",negative outcome,1.9699409997573425,0.03748667822573489,21925
+cdc_diabetes,"SGR, per group",Income tertile,"Income $75,000 or more",enrichment,-1.400121582066164,0.6999300685947609,3449
+brfss2015_heart,SGR,,All,negative outcome,2.3571528206876824,0.026467290151633155,56789
+brfss2015_heart,SGR,,All,enrichment,-2.356835194637009,0.7764077904473042,28659
+brfss2015_heart,"SGR, per group",Sex,Female,negative outcome,2.3571528206876824,0.026138341180770994,35578
+brfss2015_heart,"SGR, per group",Sex,Female,enrichment,-2.3535658088577325,0.7999979879536662,12451
+brfss2015_heart,"SGR, per group",Sex,Male,negative outcome,2.357238859235716,0.02992933614075562,21210
+brfss2015_heart,"SGR, per group",Sex,Male,enrichment,-2.356835194637009,0.7647185534016475,16178
+brfss2015_heart,"SGR, per group",Age band,Age 18 to 44,negative outcome,2.36036069598695,0.013122079721723735,17845
+brfss2015_heart,"SGR, per group",Age band,Age 18 to 44,enrichment,-1.5910946804861883,0.7991624771149376,202
+brfss2015_heart,"SGR, per group",Age band,Age 45 to 64,negative outcome,2.357238859235716,0.027994288481411205,27932
+brfss2015_heart,"SGR, per group",Age band,Age 45 to 64,enrichment,-2.2167814256455163,0.7999917763037159,7964
+brfss2015_heart,"SGR, per group",Age band,Age 65 or older,negative outcome,2.4705756254325966,0.04972813434269822,10135
+brfss2015_heart,"SGR, per group",Age band,Age 65 or older,enrichment,-2.3564254500734965,0.7637600222749312,19136
+brfss2015_heart,"SGR, per group",Income tertile,"Income under $35,000",negative outcome,2.3571528206876824,0.03905287455971768,13331
+brfss2015_heart,"SGR, per group",Income tertile,"Income under $35,000",enrichment,-2.3562643277756283,0.7624657820574836,14678
+brfss2015_heart,"SGR, per group",Income tertile,"Income $35,000 to $74,999",negative outcome,2.357203044935071,0.02783782405574729,18500
+brfss2015_heart,"SGR, per group",Income tertile,"Income $35,000 to $74,999",enrichment,-2.356623077073076,0.7945912818107449,8592
+brfss2015_heart,"SGR, per group",Income tertile,"Income $75,000 or more",negative outcome,2.357579930691921,0.023235120545948725,24958
+brfss2015_heart,"SGR, per group",Income tertile,"Income $75,000 or more",enrichment,-2.155477487663214,0.7999085494746593,4426
+cardio70k,SGR,,All,negative outcome,0.8175619999288417,0.19999577014269337,8979
+cardio70k,SGR,,All,enrichment,0.5309036933708169,0.19998192587248878,11159
+cardio70k,"SGR, per group",Sex,Female,negative outcome,0.8146337296689696,0.19991664269864848,5989
+cardio70k,"SGR, per group",Sex,Female,enrichment,0.5724566505181767,0.19997051365793864,7093
+cardio70k,"SGR, per group",Sex,Male,negative outcome,0.9917375176788144,0.19991205616633254,2402
+cardio70k,"SGR, per group",Sex,Male,enrichment,1.0364234838293098,0.19985536838927165,3527
+cardio70k,"SGR, per group",Age band,Age 18 to 44,negative outcome,0.05799865819204819,0.17165178079952118,3542
+cardio70k,"SGR, per group",Age band,Age 18 to 44,enrichment,inf,1.0,0
+cardio70k,"SGR, per group",Age band,Age 45 to 64,negative outcome,1.1448779773541562,0.19945172416409485,2646
+cardio70k,"SGR, per group",Age band,Age 45 to 64,enrichment,0.5735844632967539,0.1999222064032393,10130

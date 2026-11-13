@@ -266,6 +266,40 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   frozen Youden rule and checked against the native library. CDC Diabetes is timed for the frozen
   model only. The frozen models are described in the paper by their effective size as well as their
   100 boosting rounds.
+- Notebooks 06 and 07 on the frozen models (recorded 13 November 2026): plan Section 9.1 step 4 asks
+  for notebooks 06 and 07 to be rerun on the frozen models. They were not rerun as separate
+  notebooks; their checks were made on the frozen models inside other notebooks. Notebook 05
+  compared each final model with the native library and ran the primary and second exact checks on
+  300 boxes and Z3 on 30 (zero disagreements; configs/frozen/*.json, frozen_model_checks), and
+  verified the 2,000-patient prior; notebook 08 re-checked every box that could be released at the
+  loosest grid target with the second exact implementation (63,781 boxes for CDC Diabetes and 62,356
+  for BRFSS Heart, all sound; Z3 on a sample of 60 each). Candidate statistics of the frozen models
+  come from the candidate caches of notebook 08 and are reported in notebook 16.
+- Main table intervals (recorded 13 November 2026): plan Section 6.8 asks for 95% percentile
+  bootstrap intervals over test patients for the main results. Notebook 09 reports one-sided 95%
+  Clopper-Pearson bounds on error rates; the bootstrap intervals for certified shares and error
+  rates are computed in notebook 16 from the saved releases of the explained test patients, without
+  rerunning any model.
+- Novelty search (plan Section 9.1 step 9), done 13 November 2026 on Scopus (84 documents, 69
+  preprints), Web of Science (50 records) and the open web; no record certifies the recorded-outcome
+  rate of formally sound explanation regions with selection validity. Queries, counts and the
+  citations to add are in docs/novelty_search_2026-11-13.md.
+- Notebook 09e, LightGBM and random forest on Cardio-70k and UCI Heart (E1), decided 13 November
+  2026; it closes the open E1 scope recorded above (three model families on four tasks). Cardio-70k
+  follows notebook 09b on the frozen Cardio design of notebook 09c: the same training portion, prior
+  patients and lambda, M, feature-order seed and search budget, explained subsamples, calibration
+  split 1, targets (alpha_0 = 0.20, beta = 0.80, both grids) and alpha_sel; LightGBM and random
+  forest with the settings closest to the frozen XGBoost (as in notebook 09b; the frozen Cardio
+  model has 16 bins), each with a Youden threshold on 5-fold out-of-fold scores of the training
+  portion, exported, checked against the native library and hashed before calibration split 1 is
+  read. UCI Heart follows the leave-one-site-out design of notebook 13b on the same rows: for each
+  held-out site, the training, calibration and test rows of the other three sites from the same
+  split seed, prior from the training rows, settings chosen on the training rows by 5-fold
+  out-of-fold AUROC over the same grid as the XGBoost models (depth 2, 3 or 4; at least 1 or 5
+  records per leaf, the counterpart of minimum child weight 1 or 5; LightGBM with 100 trees, 32
+  bins, learning rate 0.3 and 2^depth - 1 leaves; random forest with 50 trees), the frozen heart
+  targets and the lenient grid point, and no policy test. The XGBoost rows are those of notebooks
+  09d and 13b.
 
 ## Notebook map
 
@@ -284,6 +318,7 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
 | 09b | Main results for LightGBM and random forest on the frozen design, with the policy test |
 | 09c | Cardio-70k: splits, development (gates G1, G3) and freezing |
 | 09d | Cardio-70k: certificates, release, policy test and results |
+| 09e | LightGBM and random forest on Cardio-70k and on UCI Heart (leave-one-site-out) |
 | 10 | Validity study on the synthetic population |
 | 11 | Baselines |
 | 12 | Ablations |

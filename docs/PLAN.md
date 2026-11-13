@@ -247,6 +247,25 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   at the frozen targets. Error bounds are one-sided 95% Clopper-Pearson bounds, as in notebook 09
   (together a 90% two-sided interval); the gap between the groups with the highest and lowest
   certified share uses Newcombe's 95% interval, without adjustment for picking those two groups.
+- Notebook 15, runtime (E6, RQ6, gate G5), decided 12 November 2026. Production runtime is read from
+  the seconds per distinct cell stored with every candidate cache of the main results (notebooks 08,
+  09, 09d and 09b), for the explained patients, with the cell cache and memo hit rates. A timing
+  study in one session runs the frozen candidate generator with clocks on its interval pre-check,
+  exact search, deletion and inflation steps (answers unchanged): up to 100 distinct cells per
+  model, taken from the explained test patients in a seeded random order, within 240 seconds per
+  model; a cell still running after 120 seconds is stopped and counted as censored, and a median
+  with half the cells censored is reported as a lower bound. A test run of the timing code showed
+  that the frozen settings (gamma 2, minimum child weight 50) stop trees from splitting after about
+  30 trees (31 of the 100 BRFSS Heart trees have a split), so a scaling series with them barely
+  grows; scaling therefore has two series on BRFSS Heart disease and Cardio-70k, each with 25, 50,
+  100 and 200 trees: the frozen settings with depth 3 to 6 (the 100-tree, depth-4 model must
+  reproduce the frozen model), and no regularisation (gamma 0, minimum child weight 1, other
+  settings frozen) with depth 3, 4 and 6, where every requested tree can split. Effective size
+  (trees with at least one split, internal nodes, depth reached, distinct thresholds) and the
+  out-of-fold AUROC on the training portion are reported for every model, which is trained with the
+  frozen Youden rule and checked against the native library. CDC Diabetes is timed for the frozen
+  model only. The frozen models are described in the paper by their effective size as well as their
+  100 boosting rounds.
 
 ## Notebook map
 

@@ -48,16 +48,29 @@ def counts_from(n, accepted_0, errors_0, accepted_1, errors_1):
     return c
 
 
-def bootstrap_patients(cat, B=10000, seed=0, chunk=500):
-    """Category counts of B resamples of the patients (rows: resamples)."""
+def bootstrap_patients(cat, B=10000, seed=0, chunk=500, weights=None):
+    """Category counts of B resamples of the patients (rows: resamples). With weights (for example survey
+    weights), each resampled patient adds its weight instead of 1, so the statistics are weighted."""
     cat = np.asarray(cat, dtype=np.int64)
+    w = None if weights is None else np.asarray(weights, dtype=float)
     rng = np.random.default_rng(seed)
     n, out = len(cat), []
     for start in range(0, B, chunk):
         b = min(chunk, B - start)
-        c = cat[rng.integers(0, n, size=(b, n))]
-        out.append(np.stack([(c == k).sum(axis=1) for k in range(5)], axis=1))
+        idx = rng.integers(0, n, size=(b, n))
+        c = cat[idx]
+        if w is None:
+            out.append(np.stack([(c == k).sum(axis=1) for k in range(5)], axis=1))
+        else:
+            ww = w[idx]
+            out.append(np.stack([np.where(c == k, ww, 0.0).sum(axis=1) for k in range(5)], axis=1))
     return np.vstack(out)
+
+
+def weighted_counts(cat, weights):
+    """Weighted category totals of the observed patients."""
+    cat, w = np.asarray(cat, dtype=np.int64), np.asarray(weights, dtype=float)
+    return np.array([w[cat == k].sum() for k in range(5)])
 
 
 def bootstrap_counts(counts, B=10000, seed=0):

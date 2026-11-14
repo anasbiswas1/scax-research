@@ -67,3 +67,19 @@ def test_md_table_and_claims():
         cl.add("A1", "Section", "text", ["f.csv"], True)
     assert "1 of 1 checks hold" in cl.markdown("T", "intro")
     assert paper.pct_ci(0.586, 0.573, 0.6) == "58.6% (57.3 to 60.0)"
+
+
+def test_weighted_bootstrap():
+    rng = np.random.default_rng(4)
+    n = 1500
+    cat = rng.integers(0, 5, n)
+    ones = np.ones(n)
+    a = paper.bootstrap_patients(cat, 300, seed=5)
+    b = paper.bootstrap_patients(cat, 300, seed=5, weights=ones)
+    assert np.allclose(a, b)
+    w = np.where(cat == 2, 3.0, 1.0)                 # wrong negative-outcome releases count three times
+    obs = paper.weighted_counts(cat, w)
+    s = paper.summarise(paper.bootstrap_patients(cat, 2000, seed=6, weights=w), obs)
+    u = paper.summarise(paper.bootstrap_patients(cat, 2000, seed=6), np.bincount(cat, minlength=5))
+    assert s["error_0"] > u["error_0"] and s["error_0_lo"] < s["error_0"] < s["error_0_hi"]
+    assert np.isclose(obs.sum(), w.sum())

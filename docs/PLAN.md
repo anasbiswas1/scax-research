@@ -336,6 +336,21 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   that file. Pinned versions: results/16_requirements_lock.txt (the session that ran notebook 16) and
   results/16_versions.csv (the versions recorded in every results file). Gate G4 uses the added
   repetitions of notebook 10b when they are committed.
+- Notebook 16 version 2 and pinned requirements, decided 14 November 2026 at the start of the manuscript
+  stage. Plan Section 6.2 asks for a survey-weighted sensitivity analysis (weighted prevalence and
+  weighted selective risk next to the unweighted results); it had not been run. The public tables carry
+  no survey weights, but the rebuilt 2015 table of notebook 02 holds the final weight (_LLCPWT) and equals
+  the public table row by row (gate G0), so notebook 16 attaches each respondent's weight (checked row by
+  row again) and reports, for the frozen XGBoost on BRFSS Heart disease and CDC Diabetes, the weighted
+  certified share and the weighted share with the outcome among released test patients, with
+  bootstrap intervals that carry the weights; this is descriptive, and the certificates stay unweighted.
+  Notebook 16 also writes the explanation cards of the manuscript introduction (for each task and claim
+  kind, the box released to the most explained test patients, from the saved releases), draws
+  manuscript Figures 1 and 2 (schematic), numbers the figures as in the manuscript, and fixes the
+  wording of claim V4. requirements.txt is pinned: versions recorded in the results files where they
+  exist, the notebook 16 session otherwise; pyreadstat, ucimlrepo, imodels, lime and anchor-exp were
+  installed without a pin, and their pins are the latest PyPI releases at the run dates, marked as
+  inferred.
 
 ## Notebook map
 

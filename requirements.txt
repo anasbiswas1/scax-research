@@ -1,19 +1,26 @@
-numpy
-pandas
-scipy
-statsmodels
-scikit-learn
-xgboost
-lightgbm
-z3-solver
-python-sat
-pyreadstat
-pyarrow
-matplotlib
-ucimlrepo
+# Versions behind the committed results. numpy to statsmodels, z3-solver and python-sat are recorded in the
+# results files themselves (results/16_versions.csv); pyarrow, matplotlib, pytest and nbformat are those of the
+# Colab session that ran notebook 16 (results/16_requirements_lock.txt).
+numpy==2.4.6
+pandas==2.2.3
+scipy==1.16.3
+statsmodels==0.15.0
+scikit-learn==1.6.1
+xgboost==3.4.1
+lightgbm==4.6.0
+# z3 checks a random sample of boxes only; earlier notebooks ran 5.3.3 and 5.4.0
+z3-solver==5.4.1.0
+# notebook 06 only
+python-sat==1.9.dev21
+pyarrow==23.0.1
+matplotlib==3.10.0
 kaggle==1.6.17
-pytest
-nbformat
-imodels
-lime
-anchor-exp
+pytest==8.4.2
+nbformat==5.11.1
+# Installed without a pin when their notebooks ran (01, 02, 03 and 11); the latest PyPI release at each run
+# date, inferred from the release dates, not recorded at run time.
+pyreadstat==1.3.7
+ucimlrepo==0.0.7
+imodels==3.0.4
+lime==0.2.0.1
+anchor-exp==0.0.2.0

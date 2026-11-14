@@ -24,7 +24,7 @@ REMOTE_URL = os.environ.get("SCAX_REMOTE_URL", "https://github.com/anasbiswas1/s
 GIT_NAME = "Md Anas Biswas"
 GIT_EMAIL = "anasbiswas@gmail.com"
 STAGE_DIRS = ["notebooks", "results", "tools", "docs", "src", "tests", "configs"]
-STAGE_FILES = ["README.md", ".gitignore", "requirements.txt"]
+STAGE_FILES = ["README.md", ".gitignore", "requirements.txt", "CITATION.cff"]
 FORBIDDEN_NAMES = {".git-credentials", ".gitconfig", "kaggle.json", ".env"}
 FORBIDDEN_PREFIXES = ("datasets/", "data/", ".secrets/")
 MAX_FILE_MB = 50
@@ -36,7 +36,7 @@ SECRET_PATTERNS = [
     re.compile(r"AKIA[0-9A-Z]{16}"),               # AWS access key id
     re.compile(r"AIza[0-9A-Za-z_\-]{35}"),         # Google API key
 ]
-TEXT_EXT = {".py", ".ipynb", ".md", ".txt", ".json", ".csv", ".yaml", ".yml", ".toml", ".cfg", ".ini", ".sh"}
+TEXT_EXT = {".py", ".ipynb", ".md", ".txt", ".json", ".csv", ".yaml", ".yml", ".toml", ".cfg", ".ini", ".sh", ".cff"}
 
 
 def run(args, check=True):

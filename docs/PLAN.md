@@ -300,6 +300,42 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
   bins, learning rate 0.3 and 2^depth - 1 leaves; random forest with 50 trees), the frozen heart
   targets and the lenient grid point, and no policy test. The XGBoost rows are those of notebooks
   09d and 13b.
+- Notebook 10b, more repetitions for gate G4, decided 14 November 2026 before any added repetition was
+  run: notebook 10 left 35 of the 936 SCAX configurations inconclusive at 500 repetitions (all with the
+  mixture prior, every point estimate at or below delta_1) and none with excess violations; plan Section
+  6.8 and gate G4 ask for more repetitions where an interval is inconclusive. Every configuration left
+  inconclusive (box certificates or policy) gets 4,500 more repetitions, 5,000 in all; no other
+  configuration is rerun. Each label setting is rebuilt from the candidate cache of notebook 10 with the
+  same seed and must reproduce the classifier hash and box count of results/10_settings.csv; the added
+  repetitions use new seeds. Verdicts use the pooled repetitions with the same rule and the same
+  correction for 936 configurations; configurations still inconclusive are reported with their point
+  estimates.
+- Notebook 16, paper results, decided 14 November 2026: it reads only committed results files, the frozen
+  configurations, the public tables (recorded outcomes of the explained test patients) and, on Drive, the
+  candidate caches and box tables of notebooks 08 and 09d and the NHANES table of notebook 03; every data
+  file is checked against the hash recorded when its results were made; no model is fitted and no
+  certificate is recomputed. Main table: BRFSS Heart disease, CDC Diabetes, Cardio-70k and UCI Heart with
+  the three model families at the frozen targets; UCI Heart pools the four held-out sites (frozen heart
+  targets, no policy test), with per-site rows in a second table. Intervals: 95% percentile bootstrap over
+  the explained test patients, 10,000 resamples per model. Each statistic depends on a patient only through
+  five categories (no release; a negative-outcome release with a correct or wrong prediction; an enrichment
+  release with a correct or wrong prediction), so resampling patients equals drawing the five counts from a
+  multinomial: XGBoost uses the saved per-patient releases (which must reproduce the saved counts),
+  LightGBM and random forest, whose per-patient releases were not saved, use the saved counts, and the
+  notebook checks on the XGBoost rows that the two give the same distribution; UCI resamples within each
+  site. The plan's 5 model seeds x 20 calibration re-draws are not repeated for the main table: the frozen
+  XGBoost does not depend on the seed (notebook 12b) and the 20 calibration re-draws are notebook 11.
+  Every figure is regenerated from the results CSV files under its existing name, with two new paper
+  figures: violation frequency and certification rate against delta_1 (plan Figure 4,
+  fig_validity_delta) and certification-rate curves for three tasks and three families (plan Figure 5,
+  fig_certified_share_curves). The NHANES figure of notebook 03 is drawn from a summary table (histogram
+  counts and group shares) written from the NHANES table. Two fixes: the subgroup legend lists the
+  policy-target line only when it is drawn, and the within-box shift figure has whole-number percentage
+  ticks. Plan Figures 1 and 2 are drawn for the manuscript. results/16_claims_check.md states every
+  numerical claim planned for the paper with the results file it comes from and a check computed from
+  that file. Pinned versions: results/16_requirements_lock.txt (the session that ran notebook 16) and
+  results/16_versions.csv (the versions recorded in every results file). Gate G4 uses the added
+  repetitions of notebook 10b when they are committed.
 
 ## Notebook map
 
@@ -320,13 +356,14 @@ Clopper-Pearson bound on its error among accepted patients is at most alpha_sel.
 | 09d | Cardio-70k: certificates, release, policy test and results |
 | 09e | LightGBM and random forest on Cardio-70k and on UCI Heart (leave-one-site-out) |
 | 10 | Validity study on the synthetic population |
+| 10b | Validity: more repetitions for the configurations left inconclusive (gate G4) |
 | 11 | Baselines |
 | 12 | Ablations |
 | 13 | Shift, BRFSS: temporal and geographic; transport, re-certification sample sizes, within-box shift |
 | 13b | Shift: measurement (NHANES) and site (UCI); UCI Heart main result, leave-one-site-out |
 | 14 | Subgroups and group-conditional certificates |
 | 15 | Runtime |
-| 16 | Paper results and claims check |
+| 16 | Paper results: gates, final tables with bootstrap intervals, figures from CSV, claims check |
 
 ## Conventions
 

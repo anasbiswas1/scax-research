@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "SCAX: Statistically Certified Abductive Explanations for Disease Classification"
+type: software
+authors:
+  - family-names: Biswas
+    given-names: Md Anas
+    orcid: "https://orcid.org/0009-0009-0113-5816"
+    affiliation: "School of Computing, University of Portsmouth"
+  - family-names: Laila
+    given-names: Alif
+    affiliation: "School of Computing, University of Portsmouth"
+repository-code: "https://github.com/anasbiswas1/scax-research"
+abstract: >-
+  SCAX is a certify-or-abstain framework for disease classification on public health data. A tree
+  ensemble is trained; a logic solver proves explanations (boxes of feature ranges) inside which the
+  model's prediction cannot change; each box receives a statistical certificate on how often the
+  recorded outcome disagrees with the prediction among people inside it; and the release policy is
+  certified on held-out data before deployment.
+keywords:
+  - formal explanations
+  - abductive explanations
+  - selective prediction
+  - Clopper-Pearson
+  - tree ensembles
+  - BRFSS

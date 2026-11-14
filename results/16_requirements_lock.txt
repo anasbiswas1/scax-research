@@ -9,13 +9,13 @@ xgboost==3.4.1
 lightgbm==4.6.0
 z3-solver==5.4.1.0
 # python-sat: not installed in this session
-# pyreadstat: not installed in this session
 pyarrow==23.0.1
 matplotlib==3.10.0
-# ucimlrepo: not installed in this session
 kaggle==2.0.2
 pytest==8.4.2
 nbformat==5.11.1
+# pyreadstat: not installed in this session
+# ucimlrepo: not installed in this session
 # imodels: not installed in this session
 # lime: not installed in this session
 # anchor-exp: not installed in this session

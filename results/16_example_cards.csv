@@ -1,0 +1,7 @@
+task,task_name,kind,explanation,features,calibration_records,bound,claim_target,claim,explained_test_patients_given_it,outcome_share_among_them
+brfss2015_heart,BRFSS Heart disease,negative outcome,HighBP < 1 and Stroke < 1 and GenHlth < 3 and Age < 5,4,6661,0.0057177726919028,0.05,at most 0.6% have the outcome (target at most 5.0%),441,0.0022675736961451248
+brfss2015_heart,BRFSS Heart disease,enrichment,1 <= HighBP and 1 <= HighChol and 4 <= GenHlth and 10 <= Age,4,2950,0.6336780402634301,0.7,at least 36.6% have the outcome (target at least 30.0%),94,0.3404255319148936
+cdc_diabetes,CDC Diabetes,negative outcome,HighBP < 1 and Stroke < 1 and GenHlth < 2 and Age < 10,4,8467,0.01164216084237,0.05,at most 1.2% have the outcome (target at most 5.0%),198,0.010101010101010102
+cdc_diabetes,CDC Diabetes,enrichment,1 <= CholCheck and 31 <= BMI and HvyAlcoholConsump < 1 and 3 <= GenHlth and 9 <= Age,5,6405,0.6055082463627004,0.7,at least 39.4% have the outcome (target at least 30.0%),226,0.37610619469026546
+cardio70k,Cardio-70k,negative outcome,age < 16059 and ap_hi < 130 and cholesterol < 2,3,1761,0.1559303485736042,0.2,at most 15.6% have the outcome (target at most 20.0%),436,0.12155963302752294
+cardio70k,Cardio-70k,enrichment,141 <= ap_hi,1,2943,0.1711767397251341,0.2,at least 82.9% have the outcome (target at least 80.0%),712,0.8806179775280899

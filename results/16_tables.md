@@ -576,6 +576,32 @@ Source: 15_runtime.csv
 | cardio70k | no regularisation | 100 | 6 | 100 | 5429 | 0.782 | 17 | 0 | 12.37 | no | 23.34 | 98.9% | 91.6% |
 | cardio70k | no regularisation | 200 | 6 | 200 | 10813 | 0.772 | 8 | 0 | 31.68 | no | 45.56 | 99.1% | 95.0% |
 
+## Table 14. Survey-weighted sensitivity analysis, frozen XGBoost (plan Section 6.2)
+
+Source: 16_weighted_sensitivity.csv
+
+| task_name | kind | certified_share | Share | outcome_share | Outcome | prevalence_explained_test | prevalence_explained_test_weighted | prevalence_table | prevalence_table_weighted |
+|---|---|---|---|---|---|---|---|---|---|
+| BRFSS Heart disease | negative outcome | 65.3% | 72.0% (69.8 to 74.2) | 2.3% | 1.6% (1.0 to 2.2) | 9.5% | 6.9% | 9.4% | 7.4% |
+| BRFSS Heart disease | enrichment | 26.0% | 20.6% (18.7 to 22.7) | 27.1% | 24.5% (20.5 to 28.9) | 9.5% | 6.9% | 9.4% | 7.4% |
+| CDC Diabetes | negative outcome | 58.6% | 64.5% (62.0 to 66.9) | 4.0% | 3.9% (2.5 to 5.7) | 14.6% | 13.7% | 13.9% | 12.3% |
+| CDC Diabetes | enrichment | 35.0% | 29.8% (27.6 to 32.2) | 32.2% | 33.4% (29.1 to 37.8) | 14.6% | 13.7% | 13.9% | 12.3% |
+
+Weighted columns use the BRFSS 2015 final survey weight (_LLCPWT) of each explained test patient; intervals: 95% percentile bootstrap over patients with the weights carried along. Descriptive only: the certificates are not weighted.
+
+## Table 15. Explanation cards: the box released to the most explained test patients
+
+Source: 16_example_cards.csv, 09_test_releases.csv, 09d_test_releases.csv
+
+| task_name | kind | explanation | features | calibration_records | bound | claim_target | claim | explained_test_patients_given_it | outcome_share_among_them |
+|---|---|---|---|---|---|---|---|---|---|
+| BRFSS Heart disease | negative outcome | HighBP < 1 and Stroke < 1 and GenHlth < 3 and Age < 5 | 4 | 6661 | 0.6% | 5.0% | at most 0.6% have the outcome (target at most 5.0%) | 441 | 0.2% |
+| BRFSS Heart disease | enrichment | 1 <= HighBP and 1 <= HighChol and 4 <= GenHlth and 10 <= Age | 4 | 2950 | 63.4% | 70.0% | at least 36.6% have the outcome (target at least 30.0%) | 94 | 34.0% |
+| CDC Diabetes | negative outcome | HighBP < 1 and Stroke < 1 and GenHlth < 2 and Age < 10 | 4 | 8467 | 1.2% | 5.0% | at most 1.2% have the outcome (target at most 5.0%) | 198 | 1.0% |
+| CDC Diabetes | enrichment | 1 <= CholCheck and 31 <= BMI and HvyAlcoholConsump < 1 and 3 <= GenHlth and 9 <= Age | 5 | 6405 | 60.6% | 70.0% | at least 39.4% have the outcome (target at least 30.0%) | 226 | 37.6% |
+| Cardio-70k | negative outcome | age < 16059 and ap_hi < 130 and cholesterol < 2 | 3 | 1761 | 15.6% | 20.0% | at most 15.6% have the outcome (target at most 20.0%) | 436 | 12.2% |
+| Cardio-70k | enrichment | 141 <= ap_hi | 1 | 2943 | 17.1% | 20.0% | at least 82.9% have the outcome (target at least 80.0%) | 712 | 88.1% |
+
 ## Table 13. Candidate explanations of the frozen models
 
 Source: 16_candidate_stats.csv
@@ -609,22 +635,24 @@ Source: 16_candidate_stats.csv
 
 | paper_figure | file | sources |
 |---|---|---|
+| Figure 1 | figures/fig_framework.png | schematic (no data) |
+| Figure 2 | figures/fig_mechanism.png | schematic (simulated points, illustrative numbers) |
 | Figure 3 | figures/fig_validity_naive_vs_scax.png | 10_validity.csv |
-| Figure S1 | figures/fig_validity_overlap_p4.png | 10_validity.csv |
+| Figure 5 | figures/fig_validity_overlap_p4.png | 10_validity.csv |
 | Figure 4 | figures/fig_validity_delta.png | 10_validity.csv, 10b_validity_more_repetitions.csv |
-| Figure 5 | figures/fig_certified_share_curves.png | 09b_main.csv, 09e_cardio_main.csv |
-| Figure S2 | figures/fig_certified_share_vs_target.png | 09_main.csv |
-| Figure S3 | figures/fig_certified_share_by_family.png | 09b_main.csv |
-| Figure S4 | figures/fig_cardio_certified_share.png | 09d_main.csv |
-| Figure S5 | figures/fig_families_cardio_uci.png | 09e_cardio_main.csv, 09e_uci_main.csv |
-| Figure 6 | figures/fig_coverage_vs_true_claim_precision.png | 11_synthetic_summary.csv |
-| Figure S6 | figures/fig_baselines_claims_real.png | 11_baselines_summary.csv |
-| Figure 7 | figures/fig_shift_recertification.png | 13_shift_recertification.csv, 13_shift_targets.csv, 13_shift.csv |
-| Figure S7 | figures/fig_shift_measurement.png | 13b_shift_recertification.csv, 13b_shift.csv |
-| Figure S8 | figures/fig_shift_box_diagnostics.png | 13_shift_boxes.csv |
-| Figure 8a | figures/fig_subgroups_negative_outcome.png | 14_fairness.csv, 14_group_sizes.csv |
-| Figure 8b | figures/fig_subgroups_enrichment.png | 14_fairness.csv, 14_group_sizes.csv |
-| Figure 9 | figures/fig_runtime.png | 15_runtime.csv, 15_runtime.json |
-| Figure S9 | figures/fig_ablations_frozen_model.png | 12_ablations_summary.csv |
-| Figure S10 | figures/fig_ablations_model_factors.png | 12b_model_ablations.csv |
-| Figure S11 | figures/fig_nhanes_measurement.png | 16_nhanes_measurement_summary.csv (from the NHANES table of notebook 03) |
+| Figure 6 | figures/fig_certified_share_curves.png | 09b_main.csv, 09e_cardio_main.csv |
+| not in the manuscript (covered by Figure 6) | figures/fig_certified_share_vs_target.png | 09_main.csv |
+| not in the manuscript (covered by Figure 6) | figures/fig_certified_share_by_family.png | 09b_main.csv |
+| not in the manuscript (covered by Figure 6) | figures/fig_cardio_certified_share.png | 09d_main.csv |
+| Figure A1 | figures/fig_families_cardio_uci.png | 09e_cardio_main.csv, 09e_uci_main.csv |
+| Figure 7 | figures/fig_coverage_vs_true_claim_precision.png | 11_synthetic_summary.csv |
+| Figure A2 | figures/fig_baselines_claims_real.png | 11_baselines_summary.csv |
+| Figure 8 | figures/fig_shift_recertification.png | 13_shift_recertification.csv, 13_shift_targets.csv, 13_shift.csv |
+| Figure A6 | figures/fig_shift_measurement.png | 13b_shift_recertification.csv, 13b_shift.csv |
+| Figure A7 | figures/fig_shift_box_diagnostics.png | 13_shift_boxes.csv |
+| Figure 9 | figures/fig_subgroups_negative_outcome.png | 14_fairness.csv, 14_group_sizes.csv |
+| Figure A5 | figures/fig_subgroups_enrichment.png | 14_fairness.csv, 14_group_sizes.csv |
+| Figure 10 | figures/fig_runtime.png | 15_runtime.csv, 15_runtime.json |
+| Figure A3 | figures/fig_ablations_frozen_model.png | 12_ablations_summary.csv |
+| Figure A4 | figures/fig_ablations_model_factors.png | 12b_model_ablations.csv |
+| Figure A8 | figures/fig_nhanes_measurement.png | 16_nhanes_measurement_summary.csv (from the NHANES table of notebook 03) |

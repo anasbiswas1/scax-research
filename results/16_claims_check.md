@@ -2,7 +2,7 @@
 
 Every numerical claim planned for the paper, written by notebook 16 from the results file it cites, with a check computed from that file. A claim whose check does not hold is not used in the paper as stated.
 
-43 of 43 checks hold.
+53 of 53 checks hold.
 
 ## Soundness (Theorem 1 in practice, gate G2)
 
@@ -16,10 +16,10 @@ Every numerical claim planned for the paper, written by notebook 16 from the res
 
 | id | claim | sources | holds | note |
 |---|---|---|---|---|
-| V1 | No SCAX configuration showed excess box-certificate violations (936 configurations, Occam and mixture priors); the largest violation frequency was 0.026. | 10_validity.csv | yes |  |
-| V2 | No configuration showed excess policy violations; the largest frequency was 0.010 against delta_2 = 0.025. | 10_validity.csv | yes |  |
+| V1 | No SCAX configuration showed excess box-certificate violations (936 configurations, Occam and mixture priors); the largest violation frequency was 0.026. | 10_validity.csv, 10b_validity_more_repetitions.csv | yes |  |
+| V2 | No configuration showed excess policy violations; the largest frequency was 0.010 against delta_2 = 0.025. | 10_validity.csv, 10b_validity_more_repetitions.csv | yes |  |
 | V3 | Per-box bounds without the prior showed excess violations in 356 of 468 configurations (Proposition 3). | 10_validity.csv | yes |  |
-| V4 | With the Occam prior every configuration was 'low enough' (468 of 468); with the mixture prior 0 of 468 were inconclusive (at n/a repetitions), each with a point estimate at or below delta_1. | 10_validity.csv, 10b_validity_more_repetitions.csv | yes |  |
+| V4 | With the Occam prior every configuration was 'low enough' (468 of 468); with the mixture prior every configuration was 'low enough' (468 of 468), 35 of them after 5,000 repetitions because 500 had left them inconclusive. | 10_validity.csv, 10b_validity_more_repetitions.csv | yes |  |
 | V5 | Overlap problem on P4 (10,000 calibration records, delta_1 = 0.025): every released box was within target while the released patients were above alpha_sel in up to 52% of repetitions (mixture prior), and the policy test certified such a policy in at most 1.0%. | 10_validity.csv | yes |  |
 
 ## Main results (E1, RQ2, RQ3)
@@ -80,6 +80,26 @@ Every numerical claim planned for the paper, written by notebook 16 from the res
 | R1 | Production runtime of the main results: median 0.04 to 0.56 seconds per distinct cell, 95th percentile at most 1.24 s, maximum 3.9 s, no search stopped by the node budget (7 models). | 15_runtime_production.csv | yes |  |
 | R2 | With the frozen settings every model up to 100 trees and depth 6 had a median of at most 0.89 s (RQ6 criterion 5 s); without regularisation 9 of 18 models up to 100 trees were above 5 s. | 15_runtime.json, 15_runtime.csv | yes |  |
 | R3 | The frozen 100-round models have CDC Diabetes 33 trees with a split (420 internal nodes); BRFSS Heart disease 31 trees with a split (391 internal nodes); Cardio-70k 20 trees with a split (220 internal nodes). | 15_runtime.csv | yes |  |
+
+## Survey-weighted sensitivity (plan Section 6.2)
+
+| id | claim | sources | holds | note |
+|---|---|---|---|---|
+| W-brfss2015_heart-negative-outcome | BRFSS Heart disease, negative-outcome claims, frozen XGBoost: with the BRFSS survey weights, 72.0% (69.8 to 74.2) of explained test patients received a certified claim (unweighted 65.3%), and 1.6% (1.0 to 2.2) of them had the outcome (unweighted 2.3%). | 16_weighted_sensitivity.csv, 02_brfss_rebuild.json | yes | descriptive; certificates are unweighted |
+| W-brfss2015_heart-enrichment | BRFSS Heart disease, enrichment claims, frozen XGBoost: with the BRFSS survey weights, 20.6% (18.7 to 22.7) of explained test patients received a certified claim (unweighted 26.0%), and 24.5% (20.5 to 28.9) of them had the outcome (unweighted 27.1%). | 16_weighted_sensitivity.csv, 02_brfss_rebuild.json | yes | descriptive; certificates are unweighted |
+| W-cdc_diabetes-negative-outcome | CDC Diabetes, negative-outcome claims, frozen XGBoost: with the BRFSS survey weights, 64.5% (62.0 to 66.9) of explained test patients received a certified claim (unweighted 58.6%), and 3.9% (2.5 to 5.7) of them had the outcome (unweighted 4.0%). | 16_weighted_sensitivity.csv, 02_brfss_rebuild.json | yes | descriptive; certificates are unweighted |
+| W-cdc_diabetes-enrichment | CDC Diabetes, enrichment claims, frozen XGBoost: with the BRFSS survey weights, 29.8% (27.6 to 32.2) of explained test patients received a certified claim (unweighted 35.0%), and 33.4% (29.1 to 37.8) of them had the outcome (unweighted 32.2%). | 16_weighted_sensitivity.csv, 02_brfss_rebuild.json | yes | descriptive; certificates are unweighted |
+
+## Explanation cards (introduction)
+
+| id | claim | sources | holds | note |
+|---|---|---|---|---|
+| C-brfss2015_heart-negative-outcome | BRFSS Heart disease, negative-outcome claim given to 441 explained test patients: 'HighBP < 1 and Stroke < 1 and GenHlth < 3 and Age < 5'; 6,661 calibration records, at most 0.6% have the outcome (target at most 5.0%). | 16_example_cards.csv, 09_test_releases.csv | yes |  |
+| C-brfss2015_heart-enrichment | BRFSS Heart disease, enrichment claim given to 94 explained test patients: '1 <= HighBP and 1 <= HighChol and 4 <= GenHlth and 10 <= Age'; 2,950 calibration records, at least 36.6% have the outcome (target at least 30.0%). | 16_example_cards.csv, 09_test_releases.csv | yes |  |
+| C-cdc_diabetes-negative-outcome | CDC Diabetes, negative-outcome claim given to 198 explained test patients: 'HighBP < 1 and Stroke < 1 and GenHlth < 2 and Age < 10'; 8,467 calibration records, at most 1.2% have the outcome (target at most 5.0%). | 16_example_cards.csv, 09_test_releases.csv | yes |  |
+| C-cdc_diabetes-enrichment | CDC Diabetes, enrichment claim given to 226 explained test patients: '1 <= CholCheck and 31 <= BMI and HvyAlcoholConsump < 1 and 3 <= GenHlth and 9 <= Age'; 6,405 calibration records, at least 39.4% have the outcome (target at least 30.0%). | 16_example_cards.csv, 09_test_releases.csv | yes |  |
+| C-cardio70k-negative-outcome | Cardio-70k, negative-outcome claim given to 436 explained test patients: 'age < 16059 and ap_hi < 130 and cholesterol < 2'; 1,761 calibration records, at most 15.6% have the outcome (target at most 20.0%). | 16_example_cards.csv, 09d_test_releases.csv | yes |  |
+| C-cardio70k-enrichment | Cardio-70k, enrichment claim given to 712 explained test patients: '141 <= ap_hi'; 2,943 calibration records, at least 82.9% have the outcome (target at least 80.0%). | 16_example_cards.csv, 09d_test_releases.csv | yes |  |
 
 ## Gates
 

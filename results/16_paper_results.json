@@ -51,10 +51,10 @@
       "sources": "15_runtime.json"
     }
   ],
-  "claims_hold": 43,
-  "claims": 43,
+  "claims_hold": 53,
+  "claims": 53,
   "claims_not_holding": [],
-  "figures": 19,
+  "figures": 21,
   "results_files_read": 94,
   "main_table": [
     {
@@ -922,7 +922,7 @@
       "outcome_bound_95_cp": NaN
     }
   ],
-  "_written_utc": "2026-11-14T12:07:37+00:00",
+  "_written_utc": "2026-11-14T21:57:03+00:00",
   "_versions": {
     "python": "3.13.18",
     "numpy": "2.4.6",

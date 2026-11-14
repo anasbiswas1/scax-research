@@ -1,20 +1,22 @@
 paper_figure,file,sources
+Figure 1,figures/fig_framework.png,schematic (no data)
+Figure 2,figures/fig_mechanism.png,"schematic (simulated points, illustrative numbers)"
 Figure 3,figures/fig_validity_naive_vs_scax.png,10_validity.csv
-Figure S1,figures/fig_validity_overlap_p4.png,10_validity.csv
+Figure 5,figures/fig_validity_overlap_p4.png,10_validity.csv
 Figure 4,figures/fig_validity_delta.png,"10_validity.csv, 10b_validity_more_repetitions.csv"
-Figure 5,figures/fig_certified_share_curves.png,"09b_main.csv, 09e_cardio_main.csv"
-Figure S2,figures/fig_certified_share_vs_target.png,09_main.csv
-Figure S3,figures/fig_certified_share_by_family.png,09b_main.csv
-Figure S4,figures/fig_cardio_certified_share.png,09d_main.csv
-Figure S5,figures/fig_families_cardio_uci.png,"09e_cardio_main.csv, 09e_uci_main.csv"
-Figure 6,figures/fig_coverage_vs_true_claim_precision.png,11_synthetic_summary.csv
-Figure S6,figures/fig_baselines_claims_real.png,11_baselines_summary.csv
-Figure 7,figures/fig_shift_recertification.png,"13_shift_recertification.csv, 13_shift_targets.csv, 13_shift.csv"
-Figure S7,figures/fig_shift_measurement.png,"13b_shift_recertification.csv, 13b_shift.csv"
-Figure S8,figures/fig_shift_box_diagnostics.png,13_shift_boxes.csv
-Figure 8a,figures/fig_subgroups_negative_outcome.png,"14_fairness.csv, 14_group_sizes.csv"
-Figure 8b,figures/fig_subgroups_enrichment.png,"14_fairness.csv, 14_group_sizes.csv"
-Figure 9,figures/fig_runtime.png,"15_runtime.csv, 15_runtime.json"
-Figure S9,figures/fig_ablations_frozen_model.png,12_ablations_summary.csv
-Figure S10,figures/fig_ablations_model_factors.png,12b_model_ablations.csv
-Figure S11,figures/fig_nhanes_measurement.png,16_nhanes_measurement_summary.csv (from the NHANES table of notebook 03)
+Figure 6,figures/fig_certified_share_curves.png,"09b_main.csv, 09e_cardio_main.csv"
+not in the manuscript (covered by Figure 6),figures/fig_certified_share_vs_target.png,09_main.csv
+not in the manuscript (covered by Figure 6),figures/fig_certified_share_by_family.png,09b_main.csv
+not in the manuscript (covered by Figure 6),figures/fig_cardio_certified_share.png,09d_main.csv
+Figure A1,figures/fig_families_cardio_uci.png,"09e_cardio_main.csv, 09e_uci_main.csv"
+Figure 7,figures/fig_coverage_vs_true_claim_precision.png,11_synthetic_summary.csv
+Figure A2,figures/fig_baselines_claims_real.png,11_baselines_summary.csv
+Figure 8,figures/fig_shift_recertification.png,"13_shift_recertification.csv, 13_shift_targets.csv, 13_shift.csv"
+Figure A6,figures/fig_shift_measurement.png,"13b_shift_recertification.csv, 13b_shift.csv"
+Figure A7,figures/fig_shift_box_diagnostics.png,13_shift_boxes.csv
+Figure 9,figures/fig_subgroups_negative_outcome.png,"14_fairness.csv, 14_group_sizes.csv"
+Figure A5,figures/fig_subgroups_enrichment.png,"14_fairness.csv, 14_group_sizes.csv"
+Figure 10,figures/fig_runtime.png,"15_runtime.csv, 15_runtime.json"
+Figure A3,figures/fig_ablations_frozen_model.png,12_ablations_summary.csv
+Figure A4,figures/fig_ablations_model_factors.png,12b_model_ablations.csv
+Figure A8,figures/fig_nhanes_measurement.png,16_nhanes_measurement_summary.csv (from the NHANES table of notebook 03)

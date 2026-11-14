@@ -1,0 +1,70 @@
+{
+  "seed": 42,
+  "repetition_seeds": "5000 + 10 x setting index + calibration-size index",
+  "repetitions_first": 500,
+  "repetitions_added": 4500,
+  "configurations": 35,
+  "configurations_for_multiplicity": 936,
+  "V1_verdicts_first": {
+    "inconclusive": 35
+  },
+  "V1_verdicts_total": {
+    "low enough": 35
+  },
+  "V2_verdicts_total": {
+    "low enough": 35
+  },
+  "excess": 0,
+  "still_inconclusive": 0,
+  "seconds": {
+    "P1_eps0.05": {
+      "rebuild": 7.664020776748657,
+      "repetitions": 84.21248054504395
+    },
+    "P1_eps0.10": {
+      "rebuild": 0.8399147987365723,
+      "repetitions": 136.19588971138
+    },
+    "P1_eps0.20": {
+      "rebuild": 1.2178301811218262,
+      "repetitions": 244.49542999267578
+    },
+    "P2_eps0.05": {
+      "rebuild": 1.1977527141571045,
+      "repetitions": 27.74545979499817
+    },
+    "P2_eps0.20": {
+      "rebuild": 1.2287542819976807,
+      "repetitions": 277.53756642341614
+    },
+    "P3_eps0.05": {
+      "rebuild": 2.9325122833251953,
+      "repetitions": 128.20004749298096
+    },
+    "P3_eps0.10": {
+      "rebuild": 2.144416570663452,
+      "repetitions": 121.25579309463501
+    },
+    "P3_eps0.20": {
+      "rebuild": 41.98702335357666,
+      "repetitions": 179.24194645881653
+    },
+    "P4_eps0.00": {
+      "rebuild": 60.08878493309021,
+      "repetitions": 820.9911620616913
+    }
+  },
+  "_written_utc": "2026-11-14T02:43:43+00:00",
+  "_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "z3": "5.4.1",
+    "pysat": null,
+    "statsmodels": "0.15.0"
+  }
+}

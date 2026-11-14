@@ -1,0 +1,21 @@
+# Package versions in the Colab session that ran notebook 16 (Python 3.13.18).
+# The versions behind each result are recorded in its results file (_versions); see results/16_versions.csv.
+numpy==2.4.6
+pandas==2.2.3
+scipy==1.16.3
+statsmodels==0.15.0
+scikit-learn==1.6.1
+xgboost==3.4.1
+lightgbm==4.6.0
+z3-solver==5.4.1.0
+# python-sat: not installed in this session
+# pyreadstat: not installed in this session
+pyarrow==23.0.1
+matplotlib==3.10.0
+# ucimlrepo: not installed in this session
+kaggle==2.0.2
+pytest==8.4.2
+nbformat==5.11.1
+# imodels: not installed in this session
+# lime: not installed in this session
+# anchor-exp: not installed in this session
